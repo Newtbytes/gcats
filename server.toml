@@ -255,3 +255,8 @@ version = "XqCzI2eC"
 type = "modrinth"
 id = "afk-dim-names"
 version = "Ey6b0R3u"
+
+[[mods]]
+type = "modrinth"
+id = "afk-sit"
+version = "77SFXORJ"
