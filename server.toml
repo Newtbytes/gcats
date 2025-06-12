@@ -190,3 +190,18 @@ version = "dGvgd002"
 type = "modrinth"
 id = "balm"
 version = "KHiNGdha"
+
+[[mods]]
+type = "modrinth"
+id = "formations-overworld"
+version = "wBfHURmx"
+
+[[mods]]
+type = "modrinth"
+id = "formations"
+version = "1kcjaPDC"
+
+[[mods]]
+type = "modrinth"
+id = "hopo-better-mineshaft"
+version = "MCgkP4Rh"
