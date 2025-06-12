@@ -205,3 +205,8 @@ version = "1kcjaPDC"
 type = "modrinth"
 id = "hopo-better-mineshaft"
 version = "MCgkP4Rh"
+
+[[mods]]
+type = "modrinth"
+id = "lunas-keep-inventory"
+version = "8A4t8eG2"
