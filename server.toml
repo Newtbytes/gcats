@@ -245,3 +245,13 @@ version = "ctRpRL9K"
 type = "modrinth"
 id = "no-firework-boosting"
 version = "mrPn9id4"
+
+[[mods]]
+type = "modrinth"
+id = "detect-afk"
+version = "XqCzI2eC"
+
+[[mods]]
+type = "modrinth"
+id = "afk-dim-names"
+version = "Ey6b0R3u"
