@@ -1,0 +1,25 @@
+on:
+  workflow_dispatch
+
+name: Test GCATs server config
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: rustup toolchain install stable
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Setup java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install mcman
+        run: |
+          cargo install --git https://github.com/ParadigmMC/mcman.git
+      - name: Test the server
+        run: |
+          mcman run --test
