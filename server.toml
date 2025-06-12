@@ -235,3 +235,13 @@ version = "DMV9aGIr"
 type = "modrinth"
 id = "no-debug-screen"
 version = "OAEyVNHB"
+
+[[mods]]
+type = "modrinth"
+id = "fast-minecart"
+version = "ctRpRL9K"
+
+[[mods]]
+type = "modrinth"
+id = "no-firework-boosting"
+version = "mrPn9id4"
