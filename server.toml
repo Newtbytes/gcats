@@ -210,3 +210,28 @@ version = "MCgkP4Rh"
 type = "modrinth"
 id = "lunas-keep-inventory"
 version = "8A4t8eG2"
+
+[[mods]]
+type = "modrinth"
+id = "player-locator-bars"
+version = "7Dz1dXjP"
+
+[[mods]]
+type = "modrinth"
+id = "just-atlas"
+version = "eFzG3DU9"
+
+[[mods]]
+type = "modrinth"
+id = "interdimensional-map-markers"
+version = "eHNcLwUN"
+
+[[mods]]
+type = "modrinth"
+id = "cheaper-maps"
+version = "DMV9aGIr"
+
+[[mods]]
+type = "modrinth"
+id = "no-debug-screen"
+version = "OAEyVNHB"
