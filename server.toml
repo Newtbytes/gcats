@@ -1,0 +1,192 @@
+name = "GCATs"
+mc_version = "1.21.5"
+
+[jar]
+type = "fabric"
+loader = "0.16.14"
+installer = "latest"
+
+[variables]
+SERVER_PORT = "25565"
+
+[launcher]
+eula_args = true
+nogui = true
+
+[markdown]
+files = ["README.md"]
+auto_update = false
+
+[options]
+success_line = ""
+stop_command = ""
+
+[[mods]]
+type = "modrinth"
+id = "g96Z4WVZ"
+version = "flRkZbyf"
+
+[[mods]]
+type = "modrinth"
+id = "5ZwdcRci"
+version = "dk4uLLmV"
+
+[[mods]]
+type = "modrinth"
+id = "qQyHxfxd"
+version = "CHlHxkvf"
+
+[[mods]]
+type = "modrinth"
+id = "Ps1zyz6x"
+version = "UueJNiJn"
+
+[[mods]]
+type = "modrinth"
+id = "VSNURh3q"
+version = "OvXvTD3H"
+
+[[mods]]
+type = "modrinth"
+id = "9s6osm5g"
+version = "qA00xo1O"
+
+[[mods]]
+type = "modrinth"
+id = "NNAgCjsB"
+version = "29GV7fju"
+
+[[mods]]
+type = "modrinth"
+id = "P7dR8mSH"
+version = "w6P5mySo"
+
+[[mods]]
+type = "modrinth"
+id = "uXXizFIs"
+version = "CtMpt7Jr"
+
+[[mods]]
+type = "modrinth"
+id = "gvQqBUqZ"
+version = "VWYoZjBF"
+
+[[mods]]
+type = "modrinth"
+id = "51shyZVL"
+version = "MDkI6Huh"
+
+[[mods]]
+type = "modrinth"
+id = "KuNKN7d2"
+version = "sUh67T4Y"
+
+[[mods]]
+type = "modrinth"
+id = "AANobbMI"
+version = "DA250htH"
+
+[[mods]]
+type = "modrinth"
+id = "vSEH1ERy"
+version = "IvtlnXcT"
+
+[[mods]]
+type = "modrinth"
+id = "wnEe9KBa"
+version = "EKg6v67t"
+
+[[mods]]
+type = "modrinth"
+id = "geophilic"
+version = "P4R9W6RV"
+
+[[mods]]
+type = "modrinth"
+id = "hopo-better-ruined-portals"
+version = "evvyMtKE"
+
+[[mods]]
+type = "modrinth"
+id = "invview"
+version = "VD8wa5Wp"
+
+[[mods]]
+type = "modrinth"
+id = "kleeslabs"
+version = "GTkzTHuw"
+
+[[mods]]
+type = "modrinth"
+id = "no-portals"
+version = "ghjbmWGw"
+
+[[mods]]
+type = "modrinth"
+id = "nodurability"
+version = "tLtjbex2"
+
+[[mods]]
+type = "modrinth"
+id = "no-chat-reports"
+version = "CHlHxkvf"
+
+[[mods]]
+type = "modrinth"
+id = "no-hostiles-around-campfire"
+version = "gH4BfZ8u"
+
+[[mods]]
+type = "modrinth"
+id = "wabi-sabi-structures"
+version = "E4l1JSkp"
+
+[[mods]]
+type = "modrinth"
+id = "tt20"
+version = "MjGahcCF"
+
+[[mods]]
+type = "modrinth"
+id = "wwoo"
+version = "nfm1RIo8"
+
+[[mods]]
+type = "modrinth"
+id = "torch-hit"
+version = "iZvbqo6T"
+
+[[mods]]
+type = "modrinth"
+id = "too-fast"
+version = "dYcSl7Ir"
+
+[[mods]]
+type = "modrinth"
+id = "tnt-breaks-bedrock"
+version = "YOBYUBNe"
+
+[[mods]]
+type = "modrinth"
+id = "nullscape"
+version = "4qC7kfiC"
+
+[[mods]]
+type = "modrinth"
+id = "forge-config-api-port"
+version = "mlQdrgSO"
+
+[[mods]]
+type = "modrinth"
+id = "collective"
+version = "aCWSF57s"
+
+[[mods]]
+type = "modrinth"
+id = "cobweb"
+version = "dGvgd002"
+
+[[mods]]
+type = "modrinth"
+id = "balm"
+version = "KHiNGdha"
