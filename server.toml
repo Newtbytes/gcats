@@ -260,3 +260,13 @@ version = "Ey6b0R3u"
 type = "modrinth"
 id = "afk-sit"
 version = "77SFXORJ"
+
+[[mods]]
+type = "modrinth"
+id = "just-mob-heads"
+version = "hbgvhaSJ"
+
+[[mods]]
+type = "modrinth"
+id = "just-player-heads"
+version = "kIVhv3YU"
