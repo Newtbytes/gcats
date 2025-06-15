@@ -1,7 +1,8 @@
-
 # mcman: Exclude mcman build outputs
 **/server
 # mcman: Exclude exported mrpacks
 *.mrpack
 # mcman: Exclude local dotenv files
 **/.env
+
+.venv/
