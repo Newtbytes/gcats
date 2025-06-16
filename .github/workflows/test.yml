@@ -20,6 +20,10 @@ jobs:
       - name: Install mcman
         run: |
           cargo install --git https://github.com/ParadigmMC/mcman.git
+
+      - name: Build the server
+        run: make
+
       - name: Test the server
         run: |
           mcman run --test
