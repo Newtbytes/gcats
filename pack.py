@@ -47,6 +47,7 @@ def main(url_list_path, output_zip_path):
     conf = parse_conf(url_list_path)
 
     packs = get_packs(conf)
+    packs.reverse()
 
     print(f"Merging {len(packs)} ZIPs into: {output_zip_path}")
 
@@ -59,7 +60,7 @@ def main(url_list_path, output_zip_path):
 
     print("Done.")
 
-    pack.save(output_zip_path)
+    pack.save(output_zip_path, zipped=True, overwrite=True)
 
 
 if __name__ == "__main__":
