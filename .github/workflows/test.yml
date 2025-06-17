@@ -31,8 +31,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Build the server
-        run: make
+      - name: Build the server resource pack
+        run: |
+          make pack
 
       - name: Test the server
         run: |
