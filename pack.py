@@ -58,9 +58,14 @@ def main(url_list_path, output_zip_path):
 
     pack.name = "pack"
 
+    print("Loading Modally Stranded")
+    # FIXME: unhardcode this
+    modally_stranded = beet.DataPack("Modally Stranded", "datapacks/modally_stranded")
+
     print("Done.")
 
     pack.save(output_zip_path, zipped=True, overwrite=True)
+    modally_stranded.save(output_zip_path, zipped=True, overwrite=True)
 
 
 if __name__ == "__main__":
