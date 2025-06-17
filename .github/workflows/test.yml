@@ -8,8 +8,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: rustup toolchain install stable
+      - name: Cache mcman .cache directory
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mcman
+          key: ${{ runner.os }}-${{ hashFiles('*.toml') }}
+
       - uses: Swatinem/rust-cache@v2
+      - run: rustup toolchain install stable
 
       - name: Setup java
         uses: actions/setup-java@v4
