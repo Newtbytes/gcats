@@ -118,11 +118,6 @@ version = "GTkzTHuw"
 
 [[mods]]
 type = "modrinth"
-id = "no-portals"
-version = "ghjbmWGw"
-
-[[mods]]
-type = "modrinth"
 id = "nodurability"
 version = "tLtjbex2"
 
