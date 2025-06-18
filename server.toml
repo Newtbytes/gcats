@@ -17,10 +17,6 @@ nogui = true
 files = ["README.md"]
 auto_update = false
 
-[options]
-success_line = ""
-stop_command = ""
-
 # MARK: Simply Optimized
 [[mods]]
 type = "modrinth"
@@ -147,9 +143,11 @@ id = "geophilic"
 version = "P4R9W6RV"
 
 [[mods]]
-type = "modrinth"
-id = "wwoo"
-version = "nfm1RIo8"
+type = "url"
+url = "https://github.com/Crystalis7/Hybrid-Beta/releases/download/source-v1.0.4%2F1.21.5/cascades-source-v1.0.4-1.21.5.zip"
+# FIXME: this directory escalation is probably undefined behavior in mcman
+# ...but it works!
+filename = "../world/datapacks/cascades-source-v1.0.4-1.21.5.zip"
 
 [[mods]]
 type = "modrinth"
@@ -241,11 +239,6 @@ version = "eHNcLwUN"
 type = "modrinth"
 id = "cheaper-maps"
 version = "DMV9aGIr"
-
-[[mods]]
-type = "modrinth"
-id = "no-debug-screen"
-version = "OAEyVNHB"
 
 [[mods]]
 type = "modrinth"
