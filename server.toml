@@ -114,8 +114,8 @@ type = "modrinth"
 id = "no-chat-reports"
 version = "CHlHxkvf"
 
-# MARK: Libraries
 
+# MARK: Libraries
 [[mods]]
 type = "modrinth"
 id = "forge-config-api-port"
@@ -135,6 +135,12 @@ version = "dGvgd002"
 type = "modrinth"
 id = "balm"
 version = "KHiNGdha"
+
+[[mods]]
+type = "modrinth"
+id = "resourceful-config"
+version = "pF00Cagz"
+
 
 # MARK: Worldgen
 [[mods]]
@@ -196,6 +202,12 @@ version = "MCgkP4Rh"
 type = "modrinth"
 id = "explorations"
 version = "e3PQefJc"
+
+[[mods]]
+type = "modrinth"
+id = "structure-layout-optimizer"
+version = "uBUMz6rF"
+
 
 # MARK: Admin Tools
 [[mods]]
