@@ -171,6 +171,22 @@ type = "modrinth"
 id = "cliff-face"
 version = "bG1RvM4K"
 
+# Fix snow generation on/under trees
+[[mods]]
+type = "modrinth"
+id = "simple-snowy-fix-(forge-fabric)"
+version = "pLf7zNs7"
+
+[[mods]]
+type = "modrinth"
+id = "snow-under-trees-remastered"
+version = "7PhCVqwn"
+
+[[mods]]
+type = "modrinth"
+id = "mru"
+version = "uXeTJtYs"
+
 
 # MARK: Structures
 [[mods]]
