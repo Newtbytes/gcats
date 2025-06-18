@@ -154,6 +154,17 @@ type = "modrinth"
 id = "nullscape"
 version = "4qC7kfiC"
 
+# Fix stone on cliffs
+[[mods]]
+type = "modrinth"
+id = "mc-258859"
+version = "x688NRQ5"
+
+[[mods]]
+type = "modrinth"
+id = "cliff-face"
+version = "bG1RvM4K"
+
 
 # MARK: Structures
 [[mods]]
