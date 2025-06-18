@@ -270,3 +270,8 @@ version = "kIVhv3YU"
 type = "modrinth"
 id = "viafabric"
 version = "2JihKmGc"
+
+[[mods]]
+type = "modrinth"
+id = "explorations"
+version = "e3PQefJc"
