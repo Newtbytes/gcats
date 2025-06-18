@@ -21,6 +21,7 @@ auto_update = false
 success_line = ""
 stop_command = ""
 
+# MARK: Simply Optimized
 [[mods]]
 type = "modrinth"
 id = "g96Z4WVZ"
@@ -96,45 +97,16 @@ type = "modrinth"
 id = "wnEe9KBa"
 version = "EKg6v67t"
 
+# MARK: Server Tweaks
 [[mods]]
 type = "modrinth"
-id = "geophilic"
-version = "P4R9W6RV"
+id = "too-fast"
+version = "dYcSl7Ir"
 
 [[mods]]
 type = "modrinth"
-id = "hopo-better-ruined-portals"
-version = "evvyMtKE"
-
-[[mods]]
-type = "modrinth"
-id = "invview"
-version = "VD8wa5Wp"
-
-[[mods]]
-type = "modrinth"
-id = "kleeslabs"
-version = "GTkzTHuw"
-
-[[mods]]
-type = "modrinth"
-id = "nodurability"
-version = "tLtjbex2"
-
-[[mods]]
-type = "modrinth"
-id = "no-chat-reports"
-version = "CHlHxkvf"
-
-[[mods]]
-type = "modrinth"
-id = "no-hostiles-around-campfire"
-version = "gH4BfZ8u"
-
-[[mods]]
-type = "modrinth"
-id = "wabi-sabi-structures"
-version = "E4l1JSkp"
+id = "viafabric"
+version = "2JihKmGc"
 
 [[mods]]
 type = "modrinth"
@@ -143,28 +115,10 @@ version = "MjGahcCF"
 
 [[mods]]
 type = "modrinth"
-id = "wwoo"
-version = "nfm1RIo8"
+id = "no-chat-reports"
+version = "CHlHxkvf"
 
-[[mods]]
-type = "modrinth"
-id = "torch-hit"
-version = "iZvbqo6T"
-
-[[mods]]
-type = "modrinth"
-id = "too-fast"
-version = "dYcSl7Ir"
-
-[[mods]]
-type = "modrinth"
-id = "tnt-breaks-bedrock"
-version = "YOBYUBNe"
-
-[[mods]]
-type = "modrinth"
-id = "nullscape"
-version = "4qC7kfiC"
+# MARK: Libraries
 
 [[mods]]
 type = "modrinth"
@@ -186,6 +140,34 @@ type = "modrinth"
 id = "balm"
 version = "KHiNGdha"
 
+# MARK: Worldgen
+[[mods]]
+type = "modrinth"
+id = "geophilic"
+version = "P4R9W6RV"
+
+[[mods]]
+type = "modrinth"
+id = "wwoo"
+version = "nfm1RIo8"
+
+[[mods]]
+type = "modrinth"
+id = "nullscape"
+version = "4qC7kfiC"
+
+
+# MARK: Structures
+[[mods]]
+type = "modrinth"
+id = "hopo-better-ruined-portals"
+version = "evvyMtKE"
+
+[[mods]]
+type = "modrinth"
+id = "wabi-sabi-structures"
+version = "E4l1JSkp"
+
 [[mods]]
 type = "modrinth"
 id = "formations-overworld"
@@ -203,14 +185,48 @@ version = "MCgkP4Rh"
 
 [[mods]]
 type = "modrinth"
-id = "lunas-keep-inventory"
-version = "8A4t8eG2"
+id = "explorations"
+version = "e3PQefJc"
+
+# MARK: Admin Tools
+[[mods]]
+type = "modrinth"
+id = "invview"
+version = "VD8wa5Wp"
+
+# MARK: Tweaks
+[[mods]]
+type = "modrinth"
+id = "kleeslabs"
+version = "GTkzTHuw"
 
 [[mods]]
 type = "modrinth"
-id = "player-locator-bars"
-version = "7Dz1dXjP"
+id = "nodurability"
+version = "tLtjbex2"
 
+[[mods]]
+type = "modrinth"
+id = "no-hostiles-around-campfire"
+version = "gH4BfZ8u"
+
+[[mods]]
+type = "modrinth"
+id = "torch-hit"
+version = "iZvbqo6T"
+
+[[mods]]
+type = "modrinth"
+id = "tnt-breaks-bedrock"
+version = "YOBYUBNe"
+
+[[mods]]
+type = "modrinth"
+id = "lunas-keep-inventory"
+version = "8A4t8eG2"
+
+
+# MARK: Navigation
 [[mods]]
 type = "modrinth"
 id = "just-atlas"
@@ -243,6 +259,12 @@ version = "mrPn9id4"
 
 [[mods]]
 type = "modrinth"
+id = "player-locator-bars"
+version = "7Dz1dXjP"
+
+# MARK: AFK
+[[mods]]
+type = "modrinth"
 id = "detect-afk"
 version = "XqCzI2eC"
 
@@ -256,6 +278,7 @@ type = "modrinth"
 id = "afk-sit"
 version = "77SFXORJ"
 
+# MARK: Head drops
 [[mods]]
 type = "modrinth"
 id = "just-mob-heads"
@@ -265,13 +288,3 @@ version = "hbgvhaSJ"
 type = "modrinth"
 id = "just-player-heads"
 version = "kIVhv3YU"
-
-[[mods]]
-type = "modrinth"
-id = "viafabric"
-version = "2JihKmGc"
-
-[[mods]]
-type = "modrinth"
-id = "explorations"
-version = "e3PQefJc"
