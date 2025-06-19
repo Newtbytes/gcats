@@ -145,6 +145,18 @@ metafile = true
 preserve = false
 
 [[files]]
+file = "mods/mru-1.0.17+1.21.5+fabric.pw.toml"
+hash = "124bca6c4b204985a6cd482a6d02eaf1ccd8df12f5ae37e1ae9becaeeabb1109"
+metafile = true
+preserve = false
+
+[[files]]
+file = "mods/formations-1.0.3-fabric-mc1.21.2.pw.toml"
+hash = "ebf4146d6c48ac3c1e0326b01aabec0efe770ebb26a00c7b347a9499f1d8739b"
+metafile = true
+preserve = false
+
+[[files]]
 file = "mods/Geophilic v3.4.1 f15-71.mod.pw.toml"
 hash = "0d1ae19c6f9a61094f0d9c1f39a9d21a6824c5a8a8204a8a593cf46154f9c6e8"
 metafile = true
@@ -181,8 +193,8 @@ metafile = true
 preserve = false
 
 [[files]]
-file = "mods/mru-1.0.17+1.21.5+fabric.pw.toml"
-hash = "124bca6c4b204985a6cd482a6d02eaf1ccd8df12f5ae37e1ae9becaeeabb1109"
+file = "mods/Amplified_Nether_1.21.x_v1.2.8.pw.toml"
+hash = "7c1dff5eca11bc6a99054389b17474db3ba79a42a1fec5772e0adffb939c71a8"
 metafile = true
 preserve = false
 
@@ -205,8 +217,8 @@ metafile = true
 preserve = false
 
 [[files]]
-file = "mods/formations-1.0.3-fabric-mc1.21.2.pw.toml"
-hash = "ebf4146d6c48ac3c1e0326b01aabec0efe770ebb26a00c7b347a9499f1d8739b"
+file = "mods/formationsnether-1.0.5-mc1.21+.pw.toml"
+hash = "313dab071c96c1b55cca33a421c8853963fbd1f99c9c2c53a5f5f5d100691890"
 metafile = true
 preserve = false
 
@@ -267,6 +279,18 @@ preserve = false
 [[files]]
 file = "mods/lunas-keep-inventory-1.2.pw.toml"
 hash = "6ac7d9a0d2aab724d505f5fa052e5266797b9e22bc992ba7294167364ab7c1de"
+metafile = true
+preserve = false
+
+[[files]]
+file = "mods/netherportalfix-fabric-1.21.5-21.5.1.pw.toml"
+hash = "c3a37af5e7c351c918b89572e27a7801cb9a0dd93d8631f2e2dab7afb5705130"
+metafile = true
+preserve = false
+
+[[files]]
+file = "mods/BetterWitherSkullRates.pw.toml"
+hash = "128eb32d59cd13edfa60dadb43b069a6e51563ad7a89dc59457485dfa08c3dc2"
 metafile = true
 preserve = false
 

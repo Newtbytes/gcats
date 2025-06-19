@@ -142,6 +142,16 @@ type = "modrinth"
 id = "resourceful-config"
 version = "pF00Cagz"
 
+[[mods]]
+type = "modrinth"
+id = "mru"
+version = "uXeTJtYs"
+
+[[mods]]
+type = "modrinth"
+id = "formations"
+version = "1kcjaPDC"
+
 
 # MARK: Worldgen
 [[mods]]
@@ -178,8 +188,8 @@ version = "7PhCVqwn"
 
 [[mods]]
 type = "modrinth"
-id = "mru"
-version = "uXeTJtYs"
+id = "amplified-nether"
+version = "RWIwVls3"
 
 
 # MARK: Structures
@@ -200,8 +210,8 @@ version = "wBfHURmx"
 
 [[mods]]
 type = "modrinth"
-id = "formations"
-version = "1kcjaPDC"
+id = "formations-nether"
+version = "6DBJbZXK"
 
 [[mods]]
 type = "modrinth"
@@ -255,6 +265,16 @@ version = "YOBYUBNe"
 type = "modrinth"
 id = "lunas-keep-inventory"
 version = "8A4t8eG2"
+
+[[mods]]
+type = "modrinth"
+id = "netherportalfix"
+version = "3xwbxqcv"
+
+[[mods]]
+type = "modrinth"
+id = "better-wither-skull-rates"
+version = "IKonkgv1"
 
 
 # MARK: Navigation

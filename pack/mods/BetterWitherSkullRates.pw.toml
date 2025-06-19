@@ -1,0 +1,17 @@
+name = "BetterWitherSkullRates"
+filename = "BetterWitherSkullRates.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ydT0c3wO/versions/IKonkgv1/BetterWitherSkullRates.jar"
+hash = "2b9dfe4bd5b5d30c53aa8aff15bfd09464c3ed3235906f4c528c77e60b796f51a6a3b81951797c3bba0573af7dcaca21111673fd1e655f4cb08668f73044a6aa"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "better-wither-skull-rates"
+version = "IKonkgv1"
