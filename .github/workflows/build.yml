@@ -22,8 +22,15 @@ jobs:
 
     needs: [info]
 
+    outputs:
+      filename: ${{ steps.get_filename.outputs.filename }}
+
     steps:
     - uses: actions/checkout@v2
+
+    - name: Get filename
+      id: get_filename
+      run: echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip" >> $GITHUB_OUTPUT
 
     - name: Install mcman
       run: |
@@ -41,21 +48,28 @@ jobs:
         commit_message: Update packwiz pack
 
     - name: Create packwiz zip
-      run: zip -r ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip pack
+      run: zip -r ${{ steps.get_filename.outputs.filename }} pack
     
     - name: Upload packwiz zip
       uses: actions/upload-artifact@v4
       with:
         name: ${{ needs.info.outputs.server_version }}.packwiz
-        path: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip
+        path: ${{ steps.get_filename.outputs.filename }}
 
   mrpack-export:
     runs-on: ubuntu-latest
     
     needs: [info]
 
+    outputs:
+      filename: ${{ steps.get_filename.outputs.filename }}
+
     steps:
     - uses: actions/checkout@v2
+
+    - name: Get filename
+      id: get_filename
+      run: echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack" >> $GITHUB_OUTPUT
 
     - name: Install mcman
       run: |
@@ -70,7 +84,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: ${{ needs.info.outputs.server_version }}.mrpack
-        path: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack
+        path: ${{ steps.get_filename.outputs.filename }}
 
   info:
     runs-on: ubuntu-latest
@@ -142,8 +156,8 @@ jobs:
           tag_name: ${{ needs.info.outputs.server_version }}
           target_commitish: ${{ github.ref_name }}
           files: |
-            ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip
-            ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack
+            ${{ needs.mrpack-export.outputs.filename }}
+            ${{ needs.packwiz-export.outputs.filename }}
           prerelease: false
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
