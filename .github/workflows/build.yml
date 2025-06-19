@@ -53,8 +53,7 @@ jobs:
     - name: Upload packwiz zip
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ needs.info.outputs.server_version }}.packwiz
-        path: ${{ steps.get_filename.outputs.filename }}
+        name: ${{ steps.get_filename.outputs.filename }}
 
   mrpack-export:
     runs-on: ubuntu-latest
@@ -83,8 +82,7 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: ${{ needs.info.outputs.server_version }}.mrpack
-        path: ${{ steps.get_filename.outputs.filename }}
+        name: ${{ steps.get_filename.outputs.filename }}
 
   info:
     runs-on: ubuntu-latest
@@ -141,11 +139,11 @@ jobs:
         shell: bash
         run: |
           if [ ! -f ${{ needs.packwiz-export.outputs.filename }} ]; then
-            echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}.packwiz`.' && exit 1
+            echo '::error::No value found for artifact `${{ needs.packwiz-export.outputs.filename }}`.' && exit 1
           fi
 
           if [ ! -f ${{ needs.mrpack-export.outputs.filename }} ]; then
-            echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}.mrpack`.' && exit 1
+            echo '::error::No value found for artifact `${{ needs.mrpack-export.outputs.filename }}`.' && exit 1
           fi
 
       - name: Publish release
