@@ -1,4 +1,4 @@
-name: YAML Linter
+name: Linting & Validation
 
 on:
   push:
@@ -34,6 +34,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Install build requirements
+        run: python3 -m pip install -r requirements.txt
 
       - name: Build resource pack
         run: python pack.py pack.toml resourcepack.zip
