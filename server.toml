@@ -1,6 +1,6 @@
 name = "GCATs"
 mc_version = "1.21.5"
-server_version = "0.1"
+server_version = "0.2"
 
 [jar]
 type = "fabric"
