@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@
+        uses: actions/checkout@v4
 
       - name: Build resource pack
         run: python pack.py pack.toml resourcepack.zip
