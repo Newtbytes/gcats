@@ -10,7 +10,7 @@ on:
       - '**.json'
       - 'config/**'
       - 'datapacks/**'
-      - '.github/workflows/build.yml'
+      - '.github/workflows/test.yml'
   workflow_dispatch:
 
 jobs:
@@ -36,6 +36,7 @@ jobs:
         MODPACK_VERSION: ${{ needs.info.outputs.server_version }}
 
     - uses: stefanzweifel/git-auto-commit-action@v5
+      if: ${{ github.event_name == 'pull_request' }}
       with:
         commit_message: Update packwiz pack
 
