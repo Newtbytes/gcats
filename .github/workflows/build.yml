@@ -140,11 +140,11 @@ jobs:
         id: check_artifact
         shell: bash
         run: |
-          if [ ! -f ${{ needs.info.outputs.server_version }}.packwiz ]; then
+          if [ ! -f ${{ needs.packwiz-export.outputs.filename }} ]; then
             echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}.packwiz`.' && exit 1
           fi
 
-          if [ ! -f ${{ needs.info.outputs.server_version }}.mrpack ]; then
+          if [ ! -f ${{ needs.mrpack-export.outputs.filename }} ]; then
             echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}.mrpack`.' && exit 1
           fi
 
