@@ -212,11 +212,11 @@ jobs:
           tag_name: ${{ needs.info.outputs.server_version }}
           target_commitish: ${{ github.ref_name }}
           body: |
-            ## ${ needs.info.outputs.server_name } v${{ needs.info.outputs.server_version }}
+            ## ${{ needs.info.outputs.server_name }} v${{ needs.info.outputs.server_version }}
 
             ### Modpack Changes
             ```diff
-            ${ needs.info.outputs.readme_diff }
+            ${{ needs.info.outputs.readme_diff }}
             ```
           files: |
             ${{ needs.mrpack-export.outputs.filename }}
