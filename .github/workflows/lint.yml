@@ -4,6 +4,8 @@ on:
   push:
     paths:
     - '**.yml'
+    - '**.yaml'
+    - '**.json'
   pull_request:
     branches:
     - master
@@ -12,13 +14,27 @@ permissions:
   contents: read
 
 jobs:
+  validate:
+    name: Validate JSON and YAML files
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v3.3.2
+
   lint-yaml:
     name: Lint YAML
+
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
     - name: YAML Linter
       uses: ibiqlik/action-yamllint@v3.1.1
       with:
