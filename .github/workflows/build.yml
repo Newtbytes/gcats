@@ -129,6 +129,7 @@ jobs:
     outputs:
       server_name: ${{ steps.server_name.outputs.value }}
       server_version: ${{ steps.server_version.outputs.value }}
+      readme_diff: ${{ steps.readme_diff.outputs.value }}
       make_release: ${{ steps.check_release.outputs.make_release }}
 
     steps:
@@ -151,6 +152,23 @@ jobs:
       - name: Get server version
         id: server_version
         run: echo "value=v${{ steps.check_server_version.outputs.value }}" >> $GITHUB_OUTPUT
+
+      - name: Get previous tag
+        id: previous_tag
+        run: |
+          git fetch --tags
+          echo "value=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+
+      - name: Get README.md diff
+        id: readme_diff
+        run: |
+          git fetch origin main
+          git diff --unified=0 ${{ steps.previous_tag.outputs.value }} README.md > readme_diff.txt || true
+          if [ -s readme_diff.txt ]; then
+            echo "value=$(cat readme_diff.txt)" >> $GITHUB_OUTPUT
+          else
+            echo "value=" >> $GITHUB_OUTPUT
+          fi
 
       - name: Check if tag exists
         uses: mukunku/tag-exists-action@v1.6.0
@@ -202,6 +220,13 @@ jobs:
           name: ${{ needs.info.outputs.server_version }}
           tag_name: ${{ needs.info.outputs.server_version }}
           target_commitish: ${{ github.ref_name }}
+          body: |
+            ## ${ needs.info.outputs.server_name } v${{ needs.info.outputs.server_version }}
+
+            ### Modpack Changes
+            ```diff
+            ${ needs.info.outputs.readme_diff }
+            ```
           files: |
             ${{ needs.mrpack-export.outputs.filename }}
             ${{ needs.packwiz-export.outputs.filename }}
