@@ -26,6 +26,24 @@ jobs:
       - name: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v3.3.2
 
+  validate-resource-pack:
+    name: Validate Minecraft resource packs
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@
+
+      - name: Build resource pack
+        run: python pack.py pack.toml resourcepack.zip
+
+      - name: Validate resource pack
+        uses: MrKinau/ResourcePackValidator@v2
+
+        with:
+          resourcepack: resourcepack
+
   lint-yaml:
     name: Lint YAML
 
