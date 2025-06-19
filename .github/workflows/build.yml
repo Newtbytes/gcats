@@ -154,7 +154,7 @@ jobs:
         id: readme_diff
         run: |
           git fetch origin main
-          git diff --unified=0 ${{ steps.previous_tag.outputs.value }} README.md > readme_diff.txt || true
+          git diff --unified=0 ${{ steps.previous_tag.outputs.value }} HEAD -- README.md > readme_diff.txt || true
           if [ -s readme_diff.txt ]; then
             echo "value=$(cat readme_diff.txt)" >> $GITHUB_OUTPUT
           else
