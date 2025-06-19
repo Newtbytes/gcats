@@ -41,13 +41,13 @@ jobs:
         commit_message: Update packwiz pack
 
     - name: Create packwiz zip
-      run: zip -r ${{ needs.info.outputs.server_name }}-packwiz.zip pack
+      run: zip -r ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip pack
     
     - name: Upload packwiz zip
       uses: actions/upload-artifact@v4
       with:
         name: ${{ needs.info.outputs.server_version }}.packwiz
-        path: ${{ needs.info.outputs.server_name }}-packwiz.zip
+        path: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip
 
   mrpack-export:
     runs-on: ubuntu-latest
@@ -65,12 +65,12 @@ jobs:
     - name: Run mcman export mrpack
       run: mcman export mrpack
       env:
-        MODPACK_VERSION: ${{ github.sha }}
+        MODPACK_VERSION: ${{ needs.info.outputs.server_version }}
 
     - uses: actions/upload-artifact@v4
       with:
         name: ${{ needs.info.outputs.server_version }}.mrpack
-        path: ${{ needs.info.outputs.server_name }}.mrpack
+        path: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack
 
   info:
     runs-on: ubuntu-latest
@@ -126,8 +126,8 @@ jobs:
         id: check_artifact
         shell: bash
         run: |
-          if [ ! -f ${{ needs.info.outputs.server_version }}-packwiz.zip ]; then
-            echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}-packwiz.zip`.' && exit 1
+          if [ ! -f ${{ needs.info.outputs.server_version }}.packwiz ]; then
+            echo '::error::No value found for artifact `${{ needs.info.outputs.server_version }}.packwiz`.' && exit 1
           fi
 
           if [ ! -f ${{ needs.info.outputs.server_version }}.mrpack ]; then
@@ -142,8 +142,8 @@ jobs:
           tag_name: ${{ needs.info.outputs.server_version }}
           target_commitish: ${{ github.ref_name }}
           files: |
-            ${{ needs.info.outputs.server_name }}-packwiz.zip
-            ${{ needs.info.outputs.server_name }}.mrpack
+            ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip
+            ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack
           prerelease: false
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
