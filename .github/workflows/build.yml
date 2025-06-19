@@ -2,15 +2,6 @@ name: Build & Publish
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    paths:
-      - '**.toml'
-      - '**.json'
-      - 'config/**'
-      - 'datapacks/**'
-      - '.github/workflows/test.yml'
   workflow_dispatch:
 
 jobs:
