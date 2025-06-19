@@ -34,10 +34,19 @@ jobs:
     needs: [validate]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+
+      - name: Get server Minecraft version
+        uses: SebRollen/toml-action@v1.2.0
+        id: mc_version
+        with:
+          file: 'server.toml'
+          field: 'mc_version'
+
       - uses: mcbeet/check-commands@v1
         with:
           source: datapacks/modally_stranded
+          minecraft: "${{ steps.mc_version.value }}"
 
   lint-yaml:
     name: Lint YAML
