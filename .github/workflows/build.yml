@@ -4,80 +4,81 @@ on:
   push:
   workflow_dispatch:
 
+env:
+  PAKKU_TAG: v1.2.1
+
 jobs:
-  packwiz-export:
+  check:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
-    needs: [info]
-
     outputs:
-      filename: ${{ steps.get_filename.outputs.filename }}
+      pakku: ${{ steps.pakku.outputs.path }}
+      pakku_json: ${{ steps.pakku-lock.outputs.path }}
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Get filename
-      id: get_filename
-      run: echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-packwiz.zip" >> $GITHUB_OUTPUT
+      - name: Check pakku.json
+        id: pakku
+        run: |
+          if [ ! -f "pakku.json" ]; then
+            echo "Could not find 'pakku.json'" && exit 1
+          else
+            echo "path=pakku.json" >> $GITHUB_OUTPUT
+          fi
 
-    - name: Install mcman
-      run: |
-        sudo curl -L -o /usr/bin/mcman https://github.com/ParadigmMC/mcman/releases/latest/download/mcman
-        sudo chmod +x /usr/bin/mcman
+      - name: Check pakku-lock.json
+        id: pakku-lock
+        run: |
+          if [ ! -f "pakku-lock.json" ]; then
+            echo "Could not find 'pakku-lock.json'" && exit 1
+          else
+            echo "path=pakku-lock.json" >> $GITHUB_OUTPUT
+          fi
 
-    - name: Run mcman export packwiz
-      run: mcman export packwiz
-      env:
-        MODPACK_VERSION: ${{ needs.info.outputs.server_version }}
-
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      if: ${{ github.event_name == 'pull_request' }}
-      with:
-        commit_message: Update packwiz pack
-
-    - name: Create packwiz zip
-      run: zip -r ${{ steps.get_filename.outputs.filename }} pack
-
-    - name: Upload packwiz zip
-      uses: actions/upload-artifact@v4
-      with:
-        name: ${{ steps.get_filename.outputs.filename }}
-        path: ${{ steps.get_filename.outputs.filename }}
-        if-no-files-found: error
-
-  mrpack-export:
+  info:
     runs-on: ubuntu-latest
-    
-    needs: [info]
+
+    needs: [check]
 
     outputs:
-      filename: ${{ steps.get_filename.outputs.filename }}
+      server_name: ${{ steps.server_name.outputs.prop }}
+      server_version: ${{ steps.server_version.outputs.prop }}
+      make_release: ${{ steps.check_release.outputs.make_release }}
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Get filename
-      id: get_filename
-      run: echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack" >> $GITHUB_OUTPUT
+      - name: Get server name
+        id: server_name
+        uses: notiz-dev/github-action-json-property@v0.2.0
+        with:
+          path: ${{ needs.check.outputs.pakku }}
+          prop_path: name
 
-    - name: Install mcman
-      run: |
-        sudo curl -L -o /usr/bin/mcman https://github.com/ParadigmMC/mcman/releases/latest/download/mcman
-        sudo chmod +x /usr/bin/mcman
+      - name: Get server version
+        id: server_version
+        uses: notiz-dev/github-action-json-property@v0.2.0
+        with:
+          path: ${{ needs.check.outputs.pakku }}
+          prop_path: version
 
-    - name: Run mcman export
-      run: mcman export mrpack ${{ steps.get_filename.outputs.filename }}
-      env:
-        MODPACK_VERSION: ${{ needs.info.outputs.server_version }}
+      - name: Get previous tag
+        id: previous_tag
+        run: |
+          git fetch --tags
+          echo "value=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
 
-    - uses: actions/upload-artifact@v4
-      with:
-        name: ${{ steps.get_filename.outputs.filename }}
-        path: ${{ steps.get_filename.outputs.filename }}
-        if-no-files-found: error
+      - name: Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.server_version.outputs.value }}
+
+      - name: Check if new release should be generated
+        id: check_release
+        run: |
+          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && github.ref_name == 'main' }}" >> $GITHUB_OUTPUT
 
   build-resource-pack:
     runs-on: ubuntu-latest
@@ -100,128 +101,66 @@ jobs:
 
       - name: Install build requirements
         run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install -r requirements.txt
+          pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Build resource pack
         run: |
-          python pack.py pack.toml server
-          mv server/pack.zip ${{ steps.get_filename.outputs.filename }}
+          mkdir -p build
+          python pack.py pack.toml build/${{ steps.get_filename.outputs.filename }}
 
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.get_filename.outputs.filename }}
-          path: ${{ steps.get_filename.outputs.filename }}
+          path: build/${{ steps.get_filename.outputs.filename }}
           if-no-files-found: error
 
-  info:
+  build-modpack:
     runs-on: ubuntu-latest
 
-    outputs:
-      server_name: ${{ steps.server_name.outputs.value }}
-      server_version: ${{ steps.server_version.outputs.value }}
-      readme_diff: ${{ steps.readme_diff.outputs.value }}
-      make_release: ${{ steps.check_release.outputs.make_release }}
+    needs: [info]
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Get server name
-        uses: SebRollen/toml-action@v1.2.0
-        id: server_name
-        with:
-          file: 'server.toml'
-          field: 'name'
-
-      - name: Check server version
-        uses: SebRollen/toml-action@v1.2.0
-        id: check_server_version
-        with:
-          file: 'server.toml'
-          field: 'server_version'
-      
-      - name: Get server version
-        id: server_version
-        run: echo "value=v${{ steps.check_server_version.outputs.value }}" >> $GITHUB_OUTPUT
-
-      - name: Get previous tag
-        id: previous_tag
+      - name: Get mrpack info
+        id: mrpack
         run: |
-          git fetch --tags
-          echo "value=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+          echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.mrpack" >> $GITHUB_OUTPUT
+          echo "dir=build/modrinth" >> $GITHUB_OUTPUT
 
-      - name: Get README.md diff
-        id: readme_diff
+      - name: Get serverpack info
+        id: serverpack
         run: |
-          git fetch origin main
-          git diff --unified=0 ${{ steps.previous_tag.outputs.value }} HEAD -- README.md > readme_diff.txt || true
-          if [ -s readme_diff.txt ]; then
-            echo "value=$(cat readme_diff.txt)" >> $GITHUB_OUTPUT
-          else
-            echo "value=" >> $GITHUB_OUTPUT
-          fi
+          echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}.zip" >> $GITHUB_OUTPUT
+          echo "dir=build/serverpack" >> $GITHUB_OUTPUT
 
-      - name: Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
-        id: check_tag
+      - uses: actions/setup-java@v4
         with:
-          tag: ${{ steps.server_version.outputs.value }}
+          distribution: 'temurin'
+          java-version: '21'
 
-      - name: Check if new release should be generated
-        id: check_release
+      - name: Cache pakku.jar
+        id: cache-pakku
+        uses: actions/cache@v3
+        with:
+          path: pakku.jar
+          key: pakku-${{ env.PAKKU_TAG }}
+
+      - name: Download pakku.jar if not cached
+        if: steps.cache-pakku.outputs.cache-hit != 'true'
         run: |
-          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && github.ref_name == 'main' }}" >> $GITHUB_OUTPUT
+          curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/${{ env.PAKKU_TAG }}/pakku.jar
 
-  publish-release:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    needs: [info, packwiz-export, mrpack-export, build-resource-pack]
-
-    if: ${{ needs.info.outputs.make_release == 'true' }}
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v4
-        with:
-          merge-multiple: true
-
-      - name: Check if required artifacts exist
-        id: check_artifact
-        shell: bash
+      - name: Export modpack
         run: |
-          if [ ! -f ${{ needs.packwiz-export.outputs.filename }} ]; then
-            echo '::error::No value found for artifact `${{ needs.packwiz-export.outputs.filename }}`.' && exit 1
-          fi
+          java -jar pakku.jar export
 
-          if [ ! -f ${{ needs.mrpack-export.outputs.filename }} ]; then
-            echo '::error::No value found for artifact `${{ needs.mrpack-export.outputs.filename }}`.' && exit 1
-          fi
-
-          if [ ! -f ${{ needs.build-resource-pack.outputs.filename }} ]; then
-            echo '::error::No value found for artifact `${{ needs.build-resource-pack.outputs.filename }}`.' && exit 1
-          fi
-
-      - name: Publish release
-        id: release
-        uses: softprops/action-gh-release@v2.3.2
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
         with:
-          name: ${{ needs.info.outputs.server_version }}
-          tag_name: ${{ needs.info.outputs.server_version }}
-          target_commitish: ${{ github.ref_name }}
-          body: |
-            ## ${{ needs.info.outputs.server_name }} v${{ needs.info.outputs.server_version }}
-
-            ### Modpack Changes
-            ```diff
-            ${{ needs.info.outputs.readme_diff }}
-            ```
-          files: |
-            ${{ needs.mrpack-export.outputs.filename }}
-            ${{ needs.packwiz-export.outputs.filename }}
-            ${{ needs.build-resource-pack.outputs.filename }}
-          prerelease: false
-          generate_release_notes: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}
+          path: |
+            ${{ steps.mrpack.outputs.dir }}/${{ steps.mrpack.outputs.filename }}
+            ${{ steps.serverpack.outputs.dir }}/${{ steps.serverpack.outputs.filename }}
+          if-no-files-found: error
