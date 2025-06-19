@@ -1,4 +1,4 @@
-name: Export Packwiz
+name: Build & Publish
 
 on:
   push:
@@ -49,12 +49,13 @@ jobs:
 
     - name: Create packwiz zip
       run: zip -r ${{ steps.get_filename.outputs.filename }} pack
-    
+
     - name: Upload packwiz zip
       uses: actions/upload-artifact@v4
       with:
         name: ${{ steps.get_filename.outputs.filename }}
         path: ${{ steps.get_filename.outputs.filename }}
+        if-no-files-found: error
 
   mrpack-export:
     runs-on: ubuntu-latest
@@ -76,8 +77,8 @@ jobs:
         sudo curl -L -o /usr/bin/mcman https://github.com/ParadigmMC/mcman/releases/latest/download/mcman
         sudo chmod +x /usr/bin/mcman
 
-    - name: Run mcman export mrpack
-      run: mcman export mrpack
+    - name: Run mcman export
+      run: mcman export mrpack ${{ steps.get_filename.outputs.filename }}
       env:
         MODPACK_VERSION: ${{ needs.info.outputs.server_version }}
 
@@ -85,6 +86,7 @@ jobs:
       with:
         name: ${{ steps.get_filename.outputs.filename }}
         path: ${{ steps.get_filename.outputs.filename }}
+        if-no-files-found: error
 
   info:
     runs-on: ubuntu-latest
@@ -135,6 +137,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
 
       - name: Check if required artifacts exist
         id: check_artifact
