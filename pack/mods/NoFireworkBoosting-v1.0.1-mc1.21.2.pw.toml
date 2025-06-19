@@ -1,0 +1,17 @@
+name = "NoFireworkBoosting-v1.0.1-mc1.21.2"
+filename = "NoFireworkBoosting-v1.0.1-mc1.21.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xdJ5eVIN/versions/mrPn9id4/NoFireworkBoosting-v1.0.1-mc1.21.2.jar"
+hash = "74a03f56c24c93b19065f00e176e7da052944d70f1a55b4af7ae87b16be285fade22ffccd3d333197043135d95f57ea53b8646b0142b5a69821497fc7a6b20b0"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "no-firework-boosting"
+version = "mrPn9id4"

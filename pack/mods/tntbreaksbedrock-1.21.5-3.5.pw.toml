@@ -1,0 +1,17 @@
+name = "tntbreaksbedrock-1.21.5-3.5"
+filename = "tntbreaksbedrock-1.21.5-3.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eU2O6Xp1/versions/YOBYUBNe/tntbreaksbedrock-1.21.5-3.5.jar"
+hash = "78e01961a0cb853325f9a1e5f80207de9beeb03895c6c41496844cdd36a7437bb608bd43bc110f1dd325991fc9af0e427d97c3e205e844f69844e2495e949b0c"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "tnt-breaks-bedrock"
+version = "YOBYUBNe"

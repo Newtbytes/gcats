@@ -1,0 +1,17 @@
+name = "lunas-keep-inventory-1.2"
+filename = "lunas-keep-inventory-1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iwQb9r2B/versions/8A4t8eG2/lunas-keep-inventory-1.2.jar"
+hash = "1943e331d03af43084fc277b2fa7862d53cf1b6db6a7ec09e2ca11638a42d357cd652a791e6c0921d9edc6d86390a999b9e2d1e66f3068125d8f7c8965ce5a25"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "lunas-keep-inventory"
+version = "8A4t8eG2"

@@ -1,0 +1,14 @@
+name = "GCATs"
+version = "v0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash = "fc6b3a7b0e27b6468655296ac5c39307c1ddb243c60c60620192b4a716575ac2"
+hash-format = "sha256"
+metafile = false
+preserve = false
+
+[versions]
+minecraft = "1.21.5"
+fabric = "0.16.14"

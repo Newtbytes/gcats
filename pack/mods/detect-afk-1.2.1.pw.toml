@@ -1,0 +1,17 @@
+name = "detect-afk-1.2.1"
+filename = "detect-afk-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OZdgwUpA/versions/XqCzI2eC/detect-afk-1.2.1.jar"
+hash = "4e901e6c4a3d8d044f24d97eab2f8df0c46b0dde8b50c5be7141f2c5bd00d63b9fe2c2f8a34d3780cd029fcfc201df44bd60982474a9083fb1f7067ba8aca6ca"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "detect-afk"
+version = "XqCzI2eC"

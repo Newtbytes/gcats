@@ -1,0 +1,17 @@
+name = "ResourcefulConfig-fabric-1.21.5-3.5.9"
+filename = "ResourcefulConfig-fabric-1.21.5-3.5.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/M1953qlQ/versions/pF00Cagz/ResourcefulConfig-fabric-1.21.5-3.5.9.jar"
+hash = "288faab470f26ec8378fde19120f9b5addc2b3bbc11c63d1ee1c22db888a67f80c7a91b2a7d9c503d687a77838eecc234d0eb8742c45865c7c2b5f05f45b9835"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "resourceful-config"
+version = "pF00Cagz"

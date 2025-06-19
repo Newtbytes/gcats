@@ -1,0 +1,17 @@
+name = "afk-sit-1.0.1"
+filename = "afk-sit-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aFIdKOKp/versions/77SFXORJ/afk-sit-1.0.1.jar"
+hash = "24b5c07b4e487579bd6df6182511c4c8b90573e1242f49eea614ef72835d60f8b5dd0aeab19bfefb9ccad8803f68650bc5ed651b0a016bb0ab6b8971952f4b2a"
+hash-format = "sha512"
+mode = "url"
+
+[option]
+optional = false
+default = false
+
+[update.modrinth]
+mod-id = "afk-sit"
+version = "77SFXORJ"
