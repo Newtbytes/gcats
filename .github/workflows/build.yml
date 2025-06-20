@@ -16,7 +16,7 @@ jobs:
       pakku_json: ${{ steps.pakku-lock.outputs.path }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Check pakku.json
         id: pakku
@@ -47,7 +47,7 @@ jobs:
       make_release: ${{ steps.check_release.outputs.make_release }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Get server name
         id: server_name
@@ -89,7 +89,7 @@ jobs:
       filename: ${{ steps.get_filename.outputs.filename }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Get filename
         id: get_filename
@@ -121,7 +121,7 @@ jobs:
     needs: [info]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Get mrpack info
         id: mrpack
