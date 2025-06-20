@@ -713,7 +713,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fabric-api-0.125.0+1.21.5.jar",
+                    "file_name": "fabric-api-0.127.1+1.21.5.jar",
                     "mc_versions": [
                         "1.21.5"
                     ],
@@ -721,16 +721,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/w6P5mySo/fabric-api-0.125.0+1.21.5.jar",
-                    "id": "w6P5mySo",
+                    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/vNBWcMLP/fabric-api-0.127.1+1.21.5.jar",
+                    "id": "vNBWcMLP",
                     "parent_id": "P7dR8mSH",
                     "hashes": {
-                        "sha512": "159cf97b0869c923e3b7f477db8eefe70e4a4906f3663ac4e9c23e4237bbd0e07d79405de6b323a7a9989c76d33959770ba499abba12c90d64ca710c079b2bc7",
-                        "sha1": "96bfdd1ec1109a720f7cbe9a829116baa56aaf40"
+                        "sha512": "067c56d51216ca378eae5017686d0101afaee254abd45679f29a93909579de2f103c8adb384d3f6e271c4525575b1dd45e9581bccba33e394afcf07572b7f076",
+                        "sha1": "bef26a2bace523efb8f8d7d822566ea403985009"
                     },
                     "required_dependencies": [],
-                    "size": 2223764,
-                    "date_published": "2025-05-26T13:59:13.055371Z"
+                    "size": 2247539,
+                    "date_published": "2025-06-18T19:44:30.778537Z"
                 }
             ]
         },
@@ -1035,7 +1035,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Geophilic v3.4.1 f15-71.mod.jar",
+                    "file_name": "Geophilic v3.4.2 f15-80.mod.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -1049,7 +1049,8 @@
                         "1.21.2",
                         "1.21.3",
                         "1.21.4",
-                        "1.21.5"
+                        "1.21.5",
+                        "1.21.6"
                     ],
                     "loaders": [
                         "fabric",
@@ -1058,16 +1059,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hl5OLM95/versions/P4R9W6RV/Geophilic v3.4.1 f15-71.mod.jar",
-                    "id": "P4R9W6RV",
+                    "url": "https://cdn.modrinth.com/data/hl5OLM95/versions/Z3bWyYpn/Geophilic v3.4.2 f15-80.mod.jar",
+                    "id": "Z3bWyYpn",
                     "parent_id": "hl5OLM95",
                     "hashes": {
-                        "sha512": "1dbe8c0fc76b802728d7b22585735da73e6e8c96932e35758243c24249b19ce932aaa740cde849eb73848639121548b24d9586106c96fabbe6fbb73f23c09e24",
-                        "sha1": "306010df473a8ae16c9b13fb4fc5d6326f2a8339"
+                        "sha512": "e253d17d12f94227154cc045eb8c47f70b7119328792f28a52c8605560cc463b5aa00d254e50a29c4c37061353136bf82dc8ae8ccadac551f035925b8935ced5",
+                        "sha1": "ce2a105c9de82726e0d04b446695882f6dafde38"
                     },
                     "required_dependencies": [],
                     "size": 753719,
-                    "date_published": "2025-04-20T20:12:39.826912Z"
+                    "date_published": "2025-06-17T17:40:37.985689Z"
                 }
             ]
         },
@@ -1413,7 +1414,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "lithium-fabric-0.16.2+mc1.21.5.jar",
+                    "file_name": "lithium-fabric-0.16.3+mc1.21.5.jar",
                     "mc_versions": [
                         "1.21.5"
                     ],
@@ -1422,16 +1423,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/VWYoZjBF/lithium-fabric-0.16.2+mc1.21.5.jar",
-                    "id": "VWYoZjBF",
+                    "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/xcELvp6R/lithium-fabric-0.16.3+mc1.21.5.jar",
+                    "id": "xcELvp6R",
                     "parent_id": "gvQqBUqZ",
                     "hashes": {
-                        "sha512": "09a68051504bb16069dd6af8901f2bbeadfd08ad5353d8bcc0c4784e814fb293d9197b4fb0a8393be1f2db003cd987a9e4b98391bbe18c50ae181dace20c2fa4",
-                        "sha1": "6216d899b7ba74838ada9be140aa743b39aa3193"
+                        "sha512": "42d1538caa913bb35e76208efc14bce3e89fb01e8dbd7cf2a3b8576377d83d2d2f63a207cb7b6f081e20b00e5edff8d01e94a52d89e8c9ce9e3dfecc3fac4d78",
+                        "sha1": "eaa7ef4e1dba9006dd216bb310eb8ec3dccd84bc"
                     },
                     "required_dependencies": [],
-                    "size": 783290,
-                    "date_published": "2025-04-09T00:57:08.919121Z"
+                    "size": 791052,
+                    "date_published": "2025-06-16T19:14:30.399948Z"
                 }
             ]
         },
