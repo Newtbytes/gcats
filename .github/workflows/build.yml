@@ -142,7 +142,7 @@ jobs:
 
       - name: Cache pakku.jar
         id: cache-pakku
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: pakku.jar
           key: pakku-${{ env.PAKKU_TAG }}
