@@ -2,9 +2,6 @@
     "name": "GCATs",
     "version": "0.0.1",
     "overrides": [
-        "config",
-        "server.properties",
-        "world",
-        "mods"
+        "server.properties"
     ]
 }
