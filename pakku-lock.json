@@ -2521,6 +2521,101 @@
             ]
         },
         {
+            "pakku_id": "6LgDwo9FyUWivnPw",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "viaversion"
+            },
+            "name": {
+                "modrinth": "ViaVersion"
+            },
+            "id": {
+                "modrinth": "P1OZGk5p"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "ViaVersion-5.4.0.jar",
+                    "mc_versions": [
+                        "1.8.9",
+                        "1.9",
+                        "1.9.1",
+                        "1.9.2",
+                        "1.9.3",
+                        "1.9.4",
+                        "1.10",
+                        "1.10.1",
+                        "1.10.2",
+                        "1.11",
+                        "1.11.1",
+                        "1.11.2",
+                        "1.12",
+                        "1.12.1",
+                        "1.12.2",
+                        "1.13",
+                        "1.13.1",
+                        "1.13.2",
+                        "1.14",
+                        "1.14.1",
+                        "1.14.2",
+                        "1.14.3",
+                        "1.14.4",
+                        "1.15",
+                        "1.15.1",
+                        "1.15.2",
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "folia",
+                        "paper",
+                        "velocity"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/wMqhJcIA/ViaVersion-5.4.0.jar",
+                    "id": "wMqhJcIA",
+                    "parent_id": "P1OZGk5p",
+                    "hashes": {
+                        "sha512": "eb7c5ca197ad1ad3cba50786c879072f193211c425268860d09af2ce109611a1e27a752afcedb168841037ce8fbe23a5f7d029f5e49784c5c092478459e2494c",
+                        "sha1": "30d7c12ed3fcc3b5c11d6fe5aa64af4c78fa1680"
+                    },
+                    "required_dependencies": [],
+                    "size": 5592144,
+                    "date_published": "2025-06-20T18:06:24.620175Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "kKnVP6BvaL2pNNtn",
             "type": "MOD",
             "side": "SERVER",
