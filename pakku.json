@@ -1,7 +1,4 @@
 {
     "name": "GCATs",
-    "version": "0.0.1",
-    "overrides": [
-        "server.properties"
-    ]
+    "version": "0.0.1"
 }
