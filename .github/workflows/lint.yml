@@ -2,8 +2,7 @@ name: Linting & Validation
 
 on:
   push:
-    branches:
-    - master
+    branches: [main]
 
   pull_request:
     paths:
