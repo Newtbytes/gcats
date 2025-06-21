@@ -93,7 +93,7 @@ jobs:
 
       - name: Get filename
         id: get_filename
-        run: echo "filename=${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}-resourcepack.zip" >> $GITHUB_OUTPUT
+        run: echo "filename=${{ needs.info.outputs.server_name }}.zip" >> $GITHUB_OUTPUT
 
       - uses: actions/setup-python@v5
         with:
@@ -107,7 +107,7 @@ jobs:
       - name: Build resource pack
         run: |
           mkdir -p build
-          python pack.py pack.toml build/${{ steps.get_filename.outputs.filename }}
+          beet
 
       - uses: actions/upload-artifact@v4
         with:
