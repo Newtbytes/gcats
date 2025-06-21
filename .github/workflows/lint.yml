@@ -2,22 +2,52 @@ name: Linting & Validation
 
 on:
   push:
+    branches:
+    - master
+
+  pull_request:
     paths:
     - '**.yml'
     - '**.yaml'
     - '**.json'
-  pull_request:
-    branches:
-    - master
+    - '**.py'
+    - 'requirements.txt'
+    - 'datapacks/'
+    - '.github/workflows/lint.yml'
 
 permissions:
   contents: read
 
 jobs:
+  info:
+    name: Get info needed for lint workflow
+
+    runs-on: ubuntu-latest
+
+    outputs:
+      changed-files: ${{ steps.changed-files.outputs.files }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
+
   validate:
     name: Validate JSON and YAML files
 
     runs-on: ubuntu-latest
+
+    if: |
+      contains(${{ needs.info.changed-files.outputs.files }}, '.yml') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, '.yaml') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, '.json') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'lint') ||
+      github.ref_name == 'main'
 
     steps:
       - name: Checkout repository
@@ -33,6 +63,13 @@ jobs:
 
     needs: [validate]
 
+    if: |
+      contains(${{ needs.info.changed-files.outputs.files }}, '.mcmeta') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, '.mcfunction') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'datapack') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'lint') ||
+      github.ref_name == 'main'
+
     steps:
       - uses: actions/checkout@v4
 
@@ -46,6 +83,12 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: [validate]
+
+    if: |
+      contains(${{ needs.info.changed-files.outputs.files }}, '.yml') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, '.yaml') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'lint') ||
+      github.ref_name == 'main'
 
     steps:
     - name: Checkout repository

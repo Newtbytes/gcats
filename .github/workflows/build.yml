@@ -2,6 +2,19 @@ name: Build & Publish
 
 on:
   push:
+    branches: [main]
+  pull_request:
+    paths:
+      - '**.json'
+      - '**.yml'
+      - '**.yaml'
+      - '**.mcmeta'
+      - '**.mcfunction'
+      - '**.py'
+      - 'requirements.txt'
+      - '.pakku'
+      - 'datapacks'
+      - '.github/workflows/build.yml'
   workflow_dispatch:
 
 env:
@@ -44,6 +57,7 @@ jobs:
     outputs:
       server_name: ${{ steps.server_name.outputs.prop }}
       server_version: ${{ steps.server_version.outputs.prop }}
+      changed-files: ${{ steps.changed-files.outputs.files }}
       make_release: ${{ steps.check_release.outputs.make_release }}
 
     steps:
@@ -62,6 +76,12 @@ jobs:
         with:
           path: ${{ needs.check.outputs.pakku }}
           prop_path: version
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
       - name: Get previous tag
         id: previous_tag
@@ -87,6 +107,13 @@ jobs:
 
     outputs:
       filename: ${{ steps.get_filename.outputs.filename }}
+
+    if: |
+      contains(${{ needs.info.changed-files.outputs.files }}, 'beet') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'datapack') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'resourcepack') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'build') ||
+      github.ref_name == 'main'
 
     steps:
       - uses: actions/checkout@v4
@@ -119,6 +146,13 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: [info]
+
+    if: |
+      contains(${{ needs.info.changed-files.outputs.files }}, 'pakku') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'mod') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'datapack') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'build') ||
+      github.ref_name == 'main'
 
     steps:
       - uses: actions/checkout@v4
