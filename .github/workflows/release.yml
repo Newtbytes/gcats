@@ -1,0 +1,63 @@
+name: Publish Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    paths:
+      - 'pakku.json'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    env:
+      ARTIFACT_FILES: |
+        artifacts/**/*.zip
+        artifacts/**/*.mrpack
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Get version
+        id: version
+        run: |
+          echo "version=$(jq -r .version pakku.json)" >> $GITHUB_OUTPUT
+
+      - name: Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.version.outputs.version }}
+
+      - name: Check if new release should be generated
+        id: check_release
+        run: |
+          if [[ "${{ steps.check_tag.outputs.exists }}" == "false" && "${{ github.ref_name }}" == "main" ]]; then
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "release=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download build artifacts
+        if: ${{ steps.check_release.outputs.release == 'true' }}
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Create Release
+        if: steps.check_release.outputs.release == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Release v${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: ${{ env.ARTIFACT_FILES }}

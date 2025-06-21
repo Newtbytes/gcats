@@ -1,4 +1,4 @@
-name: Build & Publish
+name: Build Server with Pakku
 
 on:
   push:
@@ -58,7 +58,6 @@ jobs:
       server_name: ${{ steps.server_name.outputs.prop }}
       server_version: ${{ steps.server_version.outputs.prop }}
       changed-files: ${{ steps.changed-files.outputs.files }}
-      make_release: ${{ steps.check_release.outputs.make_release }}
 
     steps:
       - uses: actions/checkout@v4
@@ -82,23 +81,6 @@ jobs:
         run: |
           git fetch origin ${{ github.base_ref }}
           echo "files=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
-
-      - name: Get previous tag
-        id: previous_tag
-        run: |
-          git fetch --tags
-          echo "value=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
-
-      - name: Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
-        id: check_tag
-        with:
-          tag: ${{ steps.server_version.outputs.value }}
-
-      - name: Check if new release should be generated
-        id: check_release
-        run: |
-          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && github.ref_name == 'main' }}" >> $GITHUB_OUTPUT
 
   build-resource-pack:
     runs-on: ubuntu-latest
