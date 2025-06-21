@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      changed-files: ${{ steps.changed-files.outputs.files }}
+      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
 
     steps:
       - name: Checkout repository
@@ -32,9 +32,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        run: |
-          git fetch origin ${{ github.base_ref }}
-          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
+        uses: tj-actions/changed-files@v46.0.5
 
   validate:
     name: Validate JSON and YAML files
