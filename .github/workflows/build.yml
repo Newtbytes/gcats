@@ -57,7 +57,7 @@ jobs:
     outputs:
       server_name: ${{ steps.server_name.outputs.prop }}
       server_version: ${{ steps.server_version.outputs.prop }}
-      changed-files: ${{ steps.changed-files.outputs.files }}
+      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
 
     steps:
       - uses: actions/checkout@v4
@@ -78,9 +78,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        run: |
-          git fetch origin ${{ github.base_ref }}
-          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
+        uses: tj-actions/changed-files@v46.0.5
 
   build-resource-pack:
     runs-on: ubuntu-latest
@@ -133,6 +131,7 @@ jobs:
       contains(${{ needs.info.changed-files.outputs.files }}, 'pakku') ||
       contains(${{ needs.info.changed-files.outputs.files }}, 'mod') ||
       contains(${{ needs.info.changed-files.outputs.files }}, 'datapack') ||
+      contains(${{ needs.info.changed-files.outputs.files }}, 'server') ||
       contains(${{ needs.info.changed-files.outputs.files }}, 'build') ||
       github.ref_name == 'main'
 
