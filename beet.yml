@@ -12,6 +12,7 @@ resource_pack:
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/AQvH8uLq/better_flame_particles-v2.2-mc1.14x-1.21x-resourcepack.zip
     - https://github.com/RedSyven/player-locator/raw/fc904f041444621ae243d09228c88f1ac2b3a7a7/RedSyven's%20Player%20Locator%20Resourcepack%201-21-5+.zip
     - resources/remove-too-expensive
+  zipped: true
 
 pipeline:
   - beet.contrib.copy_files
