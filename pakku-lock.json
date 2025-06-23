@@ -659,6 +659,64 @@
             ]
         },
         {
+            "pakku_id": "g5raXlAUkIXBxTSe",
+            "pakku_links": [
+                "Zhv0xEKDgxcdvscy"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "enchanter-fix"
+            },
+            "name": {
+                "modrinth": "Enchanter Fix"
+            },
+            "id": {
+                "modrinth": "vNE5j3Te"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "enchanter_fix-1.4+mc1.20-1.21.6.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vNE5j3Te/versions/eaCsIQp9/enchanter_fix-1.4+mc1.20-1.21.6.jar",
+                    "id": "eaCsIQp9",
+                    "parent_id": "vNE5j3Te",
+                    "hashes": {
+                        "sha512": "b239bc9deb55754753133423f30e19ab55e37d27b1d4fbede172eeb03175ead326218ddeb4dc1235b960e19a830c28058a8b6dc612883458fbe28b439c2e2e90",
+                        "sha1": "5f1ac4681c8e6d14980aa8b4976b49ca8a5fb8bc"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 120487,
+                    "date_published": "2025-06-18T17:53:23.102414Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "2iYg3MfDypvzUmhm",
             "type": "MOD",
             "side": "CLIENT",
@@ -1108,6 +1166,48 @@
                     "required_dependencies": [],
                     "size": 753719,
                     "date_published": "2025-06-17T17:40:37.985689Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zMRWQyQXyFi7aeHr",
+            "pakku_links": [
+                "Zhv0xEKDgxcdvscy"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "grind-enchantments"
+            },
+            "name": {
+                "modrinth": "Grind Enchantments"
+            },
+            "id": {
+                "modrinth": "WC4UgDcZ"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "grind-enchantments-4.0.1+1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/WC4UgDcZ/versions/zKmPxbbK/grind-enchantments-4.0.1+1.21.5.jar",
+                    "id": "zKmPxbbK",
+                    "parent_id": "WC4UgDcZ",
+                    "hashes": {
+                        "sha512": "a8e099ea12e394db6550f3d480a43cb9883f1de6f588207b05c6c51a03ff7e318c305f7cc99708bfa494fb1d9ba5e180936908d0e4b321f1d900a49114c0bf53",
+                        "sha1": "5229c56739aa91ae5b8f1feb2f6c563552b052d3"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 227170,
+                    "date_published": "2025-04-08T06:03:00.428835Z"
                 }
             ]
         },
@@ -2182,6 +2282,51 @@
                     "required_dependencies": [],
                     "size": 1336477,
                     "date_published": "2025-04-04T00:11:11.321194Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "8kojMIxrsLEsclML",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "sticky-enchanting-lapis"
+            },
+            "name": {
+                "modrinth": "Sticky Enchanting Lapis"
+            },
+            "id": {
+                "modrinth": "tH1zAs3C"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "stickyenchantinglapis-1.21.5-1.5.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/tH1zAs3C/versions/ycyYVrCt/stickyenchantinglapis-1.21.5-1.5.jar",
+                    "id": "ycyYVrCt",
+                    "parent_id": "tH1zAs3C",
+                    "hashes": {
+                        "sha512": "a1d4c4d5c23e50adf3329b682116b186868905211e3ddffce4667afe9c16cbb90af3f18dccb1dfced5f17afed1d78b66ffbad7036f3021302db6a8f4caa010f3",
+                        "sha1": "d275f060f686a884f21c170a18ddd0ff708abbe0"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 61322,
+                    "date_published": "2025-03-27T14:55:46.244043Z"
                 }
             ]
         },
