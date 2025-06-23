@@ -1784,6 +1784,51 @@
             ]
         },
         {
+            "pakku_id": "Wu21dBgGmDiiBxYq",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "name-tag-tweaks"
+            },
+            "name": {
+                "modrinth": "Name Tag Tweaks"
+            },
+            "id": {
+                "modrinth": "LrLZEnPl"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "nametagtweaks-1.21.5-4.0.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/LrLZEnPl/versions/DKpFUjXB/nametagtweaks-1.21.5-4.0.jar",
+                    "id": "DKpFUjXB",
+                    "parent_id": "LrLZEnPl",
+                    "hashes": {
+                        "sha512": "86466d5a7947e11f0a52e932b495d41d74646916fac76953fb7384cfc17b99000128b936f6ab65923b4dd672264dc470720b53e8d70efec01df03f7381775148",
+                        "sha1": "af65c0c71093f6cf97ee9be7a2c86b3823040519"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 40816,
+                    "date_published": "2025-03-27T17:38:29.187849Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "X2CFN5Qy5xFq4qUO",
             "pakku_links": [
                 "jvgKvyyWoI9k3ndE"
