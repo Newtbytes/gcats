@@ -535,6 +535,51 @@
             ]
         },
         {
+            "pakku_id": "NH1QwCRhnq2COsMY",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "compact-help-command"
+            },
+            "name": {
+                "modrinth": "Compact Help Command"
+            },
+            "id": {
+                "modrinth": "XdiGl7ZL"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "compacthelpcommand-1.21.5-2.8.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XdiGl7ZL/versions/O6D1RDAG/compacthelpcommand-1.21.5-2.8.jar",
+                    "id": "O6D1RDAG",
+                    "parent_id": "XdiGl7ZL",
+                    "hashes": {
+                        "sha512": "a2b2ced710af49e204b4ed9025180ccda5400d21c0361dfefe4eb32b808312128ba35f691a108f73b45de781e44deb0bba5205b72fe1b60f06b0d5ab8d8f002f",
+                        "sha1": "51611a67a9f7d6acd8295af733fc0bbc2487da1a"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 40687,
+                    "date_published": "2025-03-27T19:43:41.778510Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5pWqG1KgSo2BBSdZ",
             "type": "MOD",
             "side": "BOTH",
@@ -881,6 +926,51 @@
                     "required_dependencies": [],
                     "size": 79653,
                     "date_published": "2025-03-30T07:36:20.484598Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "tbrkESpGU1FaCjUj",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "first-join-message"
+            },
+            "name": {
+                "modrinth": "First Join Message"
+            },
+            "id": {
+                "modrinth": "Ppny3rjF"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "firstjoinmessage-1.21.5-3.8.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Ppny3rjF/versions/YKveWctJ/firstjoinmessage-1.21.5-3.8.jar",
+                    "id": "YKveWctJ",
+                    "parent_id": "Ppny3rjF",
+                    "hashes": {
+                        "sha512": "ee48c6bbad477b55c291a7048c04aafa6b5b7482ad224be4c36765b0fc7f8a366a713801c19f13c4c7459e86a571dd917bf8ca3a46269756f1b7f9cc710d03f7",
+                        "sha1": "509e7016976f06ce3b06cf326d010a85abb2b694"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 33571,
+                    "date_published": "2025-05-07T14:54:33.286371Z"
                 }
             ]
         },
@@ -1934,6 +2024,44 @@
             ]
         },
         {
+            "pakku_id": "9am6uOXSPkcj2tfA",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "offlinecommands"
+            },
+            "name": {
+                "modrinth": "OfflineCommands"
+            },
+            "id": {
+                "modrinth": "rkgXkDl7"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "OfflineCommands-1.0.2+1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/rkgXkDl7/versions/ollrfxwS/OfflineCommands-1.0.2+1.21.5.jar",
+                    "id": "ollrfxwS",
+                    "parent_id": "rkgXkDl7",
+                    "hashes": {
+                        "sha512": "47888a7604bb88ce965fed4abb7bcaff905dc89c3658edb028a5a2afd4669e980e75b72be8f3b9361511a23703370ce94d5839d59e0e9c975fe2f9b57fe8ae89",
+                        "sha1": "e6fb5ee31befec5858375ddb93b61ebe6d6d329c"
+                    },
+                    "required_dependencies": [],
+                    "size": 158767,
+                    "date_published": "2025-04-22T13:28:04.287503Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "XaUUnHMyJote2kNi",
             "type": "MOD",
             "side": "SERVER",
@@ -2186,6 +2314,210 @@
             ]
         },
         {
+            "pakku_id": "DnlGosY8UB8V8hdh",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "stackdeobf"
+            },
+            "name": {
+                "modrinth": "StackDeobfuscator"
+            },
+            "id": {
+                "modrinth": "NusMqsjF"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+                    "mc_versions": [
+                        "1.14",
+                        "1.14.1",
+                        "1.14.2",
+                        "1.14.3",
+                        "1.14.4",
+                        "1.15",
+                        "1.15.1",
+                        "1.15.2",
+                        "20w14infinite",
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "22w13oneblockatatime",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "23w12a",
+                        "23w13a",
+                        "23w13a_or_b",
+                        "23w14a",
+                        "23w16a",
+                        "23w17a",
+                        "23w18a",
+                        "1.20-pre1",
+                        "1.20-pre2",
+                        "1.20-pre3",
+                        "1.20-pre4",
+                        "1.20-pre5",
+                        "1.20-pre6",
+                        "1.20-pre7",
+                        "1.20-rc1",
+                        "1.20",
+                        "1.20.1-rc1",
+                        "1.20.1",
+                        "23w31a",
+                        "23w32a",
+                        "23w33a",
+                        "23w35a",
+                        "1.20.2-pre1",
+                        "1.20.2-pre2",
+                        "1.20.2-pre3",
+                        "1.20.2-pre4",
+                        "1.20.2-rc1",
+                        "1.20.2-rc2",
+                        "1.20.2",
+                        "23w40a",
+                        "23w41a",
+                        "23w42a",
+                        "23w43a",
+                        "23w43b",
+                        "23w44a",
+                        "23w45a",
+                        "23w46a",
+                        "1.20.3-pre1",
+                        "1.20.3-pre2",
+                        "1.20.3-pre3",
+                        "1.20.3-pre4",
+                        "1.20.3-rc1",
+                        "1.20.3",
+                        "1.20.4-rc1",
+                        "1.20.4",
+                        "23w51a",
+                        "23w51b",
+                        "24w03a",
+                        "24w03b",
+                        "24w04a",
+                        "24w05a",
+                        "24w05b",
+                        "24w06a",
+                        "24w07a",
+                        "24w09a",
+                        "24w10a",
+                        "24w11a",
+                        "24w12a",
+                        "24w13a",
+                        "24w14potato",
+                        "24w14a",
+                        "1.20.5-pre1",
+                        "1.20.5-pre2",
+                        "1.20.5-pre3",
+                        "1.20.5-pre4",
+                        "1.20.5-rc1",
+                        "1.20.5-rc2",
+                        "1.20.5-rc3",
+                        "1.20.5",
+                        "1.20.6-rc1",
+                        "1.20.6",
+                        "24w18a",
+                        "24w19a",
+                        "24w19b",
+                        "24w20a",
+                        "24w21a",
+                        "24w21b",
+                        "1.21-pre1",
+                        "1.21-pre2",
+                        "1.21-pre3",
+                        "1.21-pre4",
+                        "1.21-rc1",
+                        "1.21",
+                        "1.21.1-rc1",
+                        "1.21.1",
+                        "24w33a",
+                        "24w34a",
+                        "24w35a",
+                        "24w36a",
+                        "24w37a",
+                        "24w38a",
+                        "24w39a",
+                        "24w40a",
+                        "1.21.2-pre1",
+                        "1.21.2-pre2",
+                        "1.21.2-pre3",
+                        "1.21.2-pre4",
+                        "1.21.2-pre5",
+                        "1.21.2-rc1",
+                        "1.21.2-rc2",
+                        "1.21.2",
+                        "1.21.3",
+                        "24w44a",
+                        "24w45a",
+                        "24w46a",
+                        "1.21.4-pre1",
+                        "1.21.4-pre2",
+                        "1.21.4-pre3",
+                        "1.21.4-rc1",
+                        "1.21.4-rc2",
+                        "1.21.4-rc3",
+                        "1.21.4",
+                        "25w02a",
+                        "25w03a",
+                        "25w04a",
+                        "25w05a",
+                        "25w06a",
+                        "25w07a",
+                        "25w08a",
+                        "25w09a",
+                        "25w09b",
+                        "25w10a",
+                        "1.21.5-pre1",
+                        "1.21.5-pre2",
+                        "1.21.5-pre3",
+                        "1.21.5-rc1",
+                        "1.21.5-rc2",
+                        "1.21.5",
+                        "25w14craftmine",
+                        "25w15a",
+                        "25w16a",
+                        "25w17a",
+                        "25w18a",
+                        "25w19a",
+                        "25w20a",
+                        "25w21a",
+                        "1.21.6-pre1",
+                        "1.21.6-pre2",
+                        "1.21.6-pre3",
+                        "1.21.6-pre4",
+                        "1.21.6-rc1",
+                        "1.21.6"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/NusMqsjF/versions/pyiVLk9R/StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+                    "id": "pyiVLk9R",
+                    "parent_id": "NusMqsjF",
+                    "hashes": {
+                        "sha512": "ef851d54a60e223e90cfd21da91effcdc70175dd32b194366ca3ba29646c9ebdbfb60a1eaa88070c4e9f83bd654da1344e67226dfdf5c68140db4ef693361353",
+                        "sha1": "c36982af69e6d9d9dbac52e4d6c43e8a64fc6163"
+                    },
+                    "required_dependencies": [],
+                    "size": 321213,
+                    "date_published": "2024-07-07T16:29:28.103329Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "XZ65KN0K6LAeTJzg",
             "pakku_links": [
                 "JVGsRYZ8iEyG2CvJ"
@@ -2224,6 +2556,94 @@
                     ],
                     "size": 70762,
                     "date_published": "2025-03-27T01:18:50.532402Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "N1LAq8Zt5nNrxjGA",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "styled-chat"
+            },
+            "name": {
+                "modrinth": "Styled Chat"
+            },
+            "id": {
+                "modrinth": "doqSKB0e"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "styled-chat-2.8.0+1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5-rc1",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/doqSKB0e/versions/E1RdcKyb/styled-chat-2.8.0+1.21.5.jar",
+                    "id": "E1RdcKyb",
+                    "parent_id": "doqSKB0e",
+                    "hashes": {
+                        "sha512": "60bcd6541ec408241f5e2fd3711afd3b7b572c8fbe6dbdbea3c7486288f7e5424a37e07bad0dee355d0cf2d7b13933ed8b9b7904807c8e26146611b1ec3fcca9",
+                        "sha1": "c63c7a435a73cfc8cf1ff79691dd0a4b26672b03"
+                    },
+                    "required_dependencies": [],
+                    "size": 508034,
+                    "date_published": "2025-03-24T11:05:32.242380Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "f91H9Z1fZ1jmbaZN",
+            "pakku_links": [
+                "lIj5DZZ5YWpHpSsc"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "suggestion-tweaker"
+            },
+            "name": {
+                "modrinth": "Suggestion Tweaker"
+            },
+            "id": {
+                "modrinth": "MBLj38R0"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "suggestion-tweaker-1.20.6-1.5.2-fabric.jar",
+                    "mc_versions": [
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/MBLj38R0/versions/mmkX2a1K/suggestion-tweaker-1.20.6-1.5.2-fabric.jar",
+                    "id": "mmkX2a1K",
+                    "parent_id": "MBLj38R0",
+                    "hashes": {
+                        "sha512": "2d085aa13982c96827b0573d244d974bfc87eb66e458e6634d9d7ff443d972e5ef32f4472b2ed8ea63606516b8f40d913ae03b7c235c648cf16cd903de66e9af",
+                        "sha1": "0edfa0664e69632038e60c141e6206695119552e"
+                    },
+                    "required_dependencies": [
+                        "9s6osm5g"
+                    ],
+                    "size": 23557,
+                    "date_published": "2024-05-13T22:07:37.030571Z"
                 }
             ]
         },
