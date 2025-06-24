@@ -21,4 +21,4 @@ meta:
     resource_pack:
       pack.png: server-icon.png
 
-output: build
+output: build/resourcepack
