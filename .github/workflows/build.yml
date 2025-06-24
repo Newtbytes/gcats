@@ -12,8 +12,8 @@ on:
       - '**.mcfunction'
       - '**.py'
       - 'requirements.txt'
-      - '.pakku'
-      - 'datapacks'
+      - '.pakku/**'
+      - 'datapacks/**'
       - '.github/workflows/build.yml'
   workflow_dispatch:
 
