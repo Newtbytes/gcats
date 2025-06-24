@@ -2,8 +2,6 @@ name: Build Server with Pakku
 
 on:
   push:
-    branches: [main]
-  pull_request:
     paths:
       - '**.json'
       - '**.yml'
