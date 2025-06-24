@@ -617,6 +617,49 @@
             ]
         },
         {
+            "pakku_id": "xeG95C9mmi8LP5aE",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "dataloader"
+            },
+            "name": {
+                "modrinth": "Data Loader"
+            },
+            "id": {
+                "modrinth": "gEUERjxK"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "data-loader-1.1.6+1.21.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/gEUERjxK/versions/Du7xlu89/data-loader-1.1.6+1.21.jar",
+                    "id": "Du7xlu89",
+                    "parent_id": "gEUERjxK",
+                    "hashes": {
+                        "sha512": "c9cd09cb95325cf240d54e28f5ba239f16901c547d87203e2c020f3c7c1697926955c20167d53c0c1af91bcc45be7dcda94f38a8c23e6f40690b24feace020f3",
+                        "sha1": "31551f4692fcc23a3fd90a006b49977f971d18df"
+                    },
+                    "required_dependencies": [],
+                    "size": 20999,
+                    "date_published": "2024-08-19T10:57:58.236843Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "p7m7FNjFxhN4TMTq",
             "type": "MOD",
             "side": "SERVER",
