@@ -327,6 +327,46 @@
             ]
         },
         {
+            "pakku_id": "u1WFaXp5Y5i2UM0A",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "better-safe-bed"
+            },
+            "name": {
+                "modrinth": "Better Safe Bed"
+            },
+            "id": {
+                "modrinth": "aUp4r9hY"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "bettersafebed-fabric-1.21.3-1.jar",
+                    "mc_versions": [
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/aUp4r9hY/versions/wjEq4p3A/bettersafebed-fabric-1.21.3-1.jar",
+                    "id": "wjEq4p3A",
+                    "parent_id": "aUp4r9hY",
+                    "hashes": {
+                        "sha512": "7fca1d5c075d9fb21fd11d977aaa7e07f95cea570ce5f70f42ce607b21a8044b9400d7fb9407c5ab089d5bcd9585023128108bb5959b912afbc2956686f5ff60",
+                        "sha1": "d836dcdc3ab514e7ef7cf8ca252c6cfb6e9cd481"
+                    },
+                    "required_dependencies": [],
+                    "size": 4775,
+                    "date_published": "2024-11-03T08:27:10.163513Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "gpVLQxJ459mGI5Z4",
             "type": "MOD",
             "side": "SERVER",
