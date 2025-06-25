@@ -327,6 +327,44 @@
             ]
         },
         {
+            "pakku_id": "wOQDZ0WjC44gwpIi",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "better-respawn"
+            },
+            "name": {
+                "modrinth": "Better Respawn"
+            },
+            "id": {
+                "modrinth": "ZUQINcGy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "better-respawn-fabric-1.21.5-2.0.6.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ZUQINcGy/versions/2HZ8S1hU/better-respawn-fabric-1.21.5-2.0.6.jar",
+                    "id": "2HZ8S1hU",
+                    "parent_id": "ZUQINcGy",
+                    "hashes": {
+                        "sha512": "980fea0886aba78ccc3fdd62a7056f8f536a42193597d4c682e74d7607221fdc1d5dd04b618873431d42a52619e8977283882a458544bcc7a2b8b9e72b9e8ea1",
+                        "sha1": "c50e55573f9054b2351ea71c896a80e3a71cfa4a"
+                    },
+                    "required_dependencies": [],
+                    "size": 79865,
+                    "date_published": "2025-03-27T08:35:42.235652Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "u1WFaXp5Y5i2UM0A",
             "type": "MOD",
             "side": "SERVER",
