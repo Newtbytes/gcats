@@ -327,44 +327,6 @@
             ]
         },
         {
-            "pakku_id": "gpVLQxJ459mGI5Z4",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "better-wither-skull-rates"
-            },
-            "name": {
-                "modrinth": "Better Wither Skull Rates"
-            },
-            "id": {
-                "modrinth": "ydT0c3wO"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "BetterWitherSkullRates.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ydT0c3wO/versions/IKonkgv1/BetterWitherSkullRates.jar",
-                    "id": "IKonkgv1",
-                    "parent_id": "ydT0c3wO",
-                    "hashes": {
-                        "sha512": "2b9dfe4bd5b5d30c53aa8aff15bfd09464c3ed3235906f4c528c77e60b796f51a6a3b81951797c3bba0573af7dcaca21111673fd1e655f4cb08668f73044a6aa",
-                        "sha1": "effca8aba035390d8bc9e890460a4dee9578e998"
-                    },
-                    "required_dependencies": [],
-                    "size": 27931,
-                    "date_published": "2025-03-25T22:58:57.315188Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "uY43FVvxp2qEB09C",
             "type": "MOD",
             "side": "SERVER",
