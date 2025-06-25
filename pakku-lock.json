@@ -327,6 +327,84 @@
             ]
         },
         {
+            "pakku_id": "wOQDZ0WjC44gwpIi",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "better-respawn"
+            },
+            "name": {
+                "modrinth": "Better Respawn"
+            },
+            "id": {
+                "modrinth": "ZUQINcGy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "better-respawn-fabric-1.21.5-2.0.6.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ZUQINcGy/versions/2HZ8S1hU/better-respawn-fabric-1.21.5-2.0.6.jar",
+                    "id": "2HZ8S1hU",
+                    "parent_id": "ZUQINcGy",
+                    "hashes": {
+                        "sha512": "980fea0886aba78ccc3fdd62a7056f8f536a42193597d4c682e74d7607221fdc1d5dd04b618873431d42a52619e8977283882a458544bcc7a2b8b9e72b9e8ea1",
+                        "sha1": "c50e55573f9054b2351ea71c896a80e3a71cfa4a"
+                    },
+                    "required_dependencies": [],
+                    "size": 79865,
+                    "date_published": "2025-03-27T08:35:42.235652Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "u1WFaXp5Y5i2UM0A",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "better-safe-bed"
+            },
+            "name": {
+                "modrinth": "Better Safe Bed"
+            },
+            "id": {
+                "modrinth": "aUp4r9hY"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "bettersafebed-fabric-1.21.3-1.jar",
+                    "mc_versions": [
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/aUp4r9hY/versions/wjEq4p3A/bettersafebed-fabric-1.21.3-1.jar",
+                    "id": "wjEq4p3A",
+                    "parent_id": "aUp4r9hY",
+                    "hashes": {
+                        "sha512": "7fca1d5c075d9fb21fd11d977aaa7e07f95cea570ce5f70f42ce607b21a8044b9400d7fb9407c5ab089d5bcd9585023128108bb5959b912afbc2956686f5ff60",
+                        "sha1": "d836dcdc3ab514e7ef7cf8ca252c6cfb6e9cd481"
+                    },
+                    "required_dependencies": [],
+                    "size": 4775,
+                    "date_published": "2024-11-03T08:27:10.163513Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "L3wif828Y1RY3ZDk",
             "pakku_links": [
                 "Zhv0xEKDgxcdvscy"
@@ -1650,6 +1728,50 @@
             ]
         },
         {
+            "pakku_id": "RMEKddjcm3IXNKOi",
+            "pakku_links": [
+                "Zhv0xEKDgxcdvscy"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "midnightlib"
+            },
+            "name": {
+                "modrinth": "MidnightLib"
+            },
+            "id": {
+                "modrinth": "codAaoxh"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "midnightlib-1.7.3-fabric+1.21.4.jar",
+                    "mc_versions": [
+                        "1.21.4",
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/BTo6aJAT/midnightlib-1.7.3-fabric+1.21.4.jar",
+                    "id": "BTo6aJAT",
+                    "parent_id": "codAaoxh",
+                    "hashes": {
+                        "sha512": "6c85fc126567e6efbf84ba16dc57f29b06502f34b90429e3f8e7e0b5f01b160f3b67a493f438901a384c477dc84513998f964f8ab7e3eb1faf230fa69fe6e387",
+                        "sha1": "d82f22ae8038e3b1b67d9bf85bcc34f85917fcbb"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 63980,
+                    "date_published": "2025-05-13T10:06:24.634295Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Tv2Btkrxg3dX4A1W",
             "type": "MOD",
             "side": "CLIENT",
@@ -2227,6 +2349,49 @@
                     "required_dependencies": [],
                     "size": 119369,
                     "date_published": "2025-03-26T21:48:04.706607Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "YljJrGxJyaH3yUti",
+            "pakku_links": [
+                "RMEKddjcm3IXNKOi"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "sleep-warp-updated"
+            },
+            "name": {
+                "modrinth": "SleepWarp (Updated)"
+            },
+            "id": {
+                "modrinth": "DlSXkZVT"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "sleepwarp-2.7.0+1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/DlSXkZVT/versions/vnRGqK0o/sleepwarp-2.7.0+1.21.5.jar",
+                    "id": "vnRGqK0o",
+                    "parent_id": "DlSXkZVT",
+                    "hashes": {
+                        "sha512": "905b2aaf51ddff2f0d87bdd9c854ee5b936da1e0d242e7bfbb6e944e54a10e9779a6c979a21d88a20187f891ee54900b5f63862d36629d492e0ea0053b87967f",
+                        "sha1": "a4bf83271159d86a5e9e9992ad13d085c0e440fe"
+                    },
+                    "required_dependencies": [
+                        "codAaoxh"
+                    ],
+                    "size": 163644,
+                    "date_published": "2025-03-25T20:12:44.664340Z"
                 }
             ]
         },
