@@ -327,51 +327,6 @@
             ]
         },
         {
-            "pakku_id": "uY43FVvxp2qEB09C",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "cheaper-maps"
-            },
-            "name": {
-                "modrinth": "Cheaper Maps"
-            },
-            "id": {
-                "modrinth": "ZLppFg51"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "cheaper-maps-1.2.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ZLppFg51/versions/DMV9aGIr/cheaper-maps-1.2.jar",
-                    "id": "DMV9aGIr",
-                    "parent_id": "ZLppFg51",
-                    "hashes": {
-                        "sha512": "bda3c9eb56358fa3a2471c14fde5aec28e06517d2da0eab28d9fa11e8ccd0fb80901efca9a79711ad418cd2fe8af545137517a88b858e1f6c4be7c32c70e8217",
-                        "sha1": "c2752e2b8d97a66a99724a3c4791d2f4245cd7b6"
-                    },
-                    "required_dependencies": [],
-                    "size": 8856,
-                    "date_published": "2024-07-12T18:35:10.547739Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "L3wif828Y1RY3ZDk",
             "pakku_links": [
                 "Zhv0xEKDgxcdvscy"
