@@ -156,6 +156,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Download pakku.jar
+        run: |
+          if [ ! -f "pakku.jar" ]; then
+            curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/${{ env.PAKKU_TAG }}/pakku.jar
+          fi
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
       - name: Run tests
         run: |
           make test
