@@ -145,3 +145,17 @@ jobs:
             build/serverpack/*.zip
             build/resourcepack/*.zip
           if-no-files-found: error
+
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      PAKKU: java -jar pakku.jar
+      BEET: python -m beet
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          make test
