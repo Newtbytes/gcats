@@ -30,5 +30,14 @@ build-resourcepack:
 
 build: build-server build-resourcepack
 
+test:
+	make build-server
+
+	echo "eula=true" > build/server/eula.txt
+	cd build/server && echo "stop" | java -jar server.jar nogui
+
 clean:
 	rm -rf build
+
+.PHONY: build-modpack build-server build-resourcepack build test clean
+.DEFAULT_GOAL := build
