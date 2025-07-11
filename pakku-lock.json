@@ -1268,6 +1268,43 @@
             ]
         },
         {
+            "pakku_id": "vXRT31KYIa3qXj2I",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "im-fast"
+            },
+            "name": {
+                "modrinth": "I'm Fast"
+            },
+            "id": {
+                "modrinth": "PaUMOeP0"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "imfast-FABRIC-1.21.7-1.0.3.jar",
+                    "mc_versions": [
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/PaUMOeP0/versions/GMcpIa8p/imfast-FABRIC-1.21.7-1.0.3.jar",
+                    "id": "GMcpIa8p",
+                    "parent_id": "PaUMOeP0",
+                    "hashes": {
+                        "sha512": "4b01cb2353b95a2f00476292a26addd30b35a15b2695bc7486cfded0d7d7fdf2125fc9113ee8d05f4cafbde8df420739b54ce391f402cc1505a72f1ab3bab9ed",
+                        "sha1": "c556d834020f33d5659c211958958ee99b72ee4d"
+                    },
+                    "required_dependencies": [],
+                    "size": 3626,
+                    "date_published": "2025-07-04T13:34:27.492140Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ld6usvp6wzBC4Br4",
             "type": "MOD",
             "side": "CLIENT",
@@ -2849,43 +2886,6 @@
                     ],
                     "size": 144353,
                     "date_published": "2025-04-12T19:32:24.577003Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "V4mLyvdt8NYLTvrP",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "too-fast"
-            },
-            "name": {
-                "modrinth": "Too Fast"
-            },
-            "id": {
-                "modrinth": "w6JSkKSH"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "toofast-fabric-1.21.5-3.3.0.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/w6JSkKSH/versions/dYcSl7Ir/toofast-fabric-1.21.5-3.3.0.jar",
-                    "id": "dYcSl7Ir",
-                    "parent_id": "w6JSkKSH",
-                    "hashes": {
-                        "sha512": "fcadbfedc92baacf3439dc18caf096eb71815a562270315aa6f70704d25aa0fdaa852810f2d02823d9e8ff5c7123052fc5fb06b901ed55fde481db00f8324539",
-                        "sha1": "6ff72fd21f5b1c7625187c369b3623c0ebce005d"
-                    },
-                    "required_dependencies": [],
-                    "size": 63267,
-                    "date_published": "2025-04-28T02:31:37.882945Z"
                 }
             ]
         },
