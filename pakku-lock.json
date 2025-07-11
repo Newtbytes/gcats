@@ -1919,51 +1919,6 @@
             ]
         },
         {
-            "pakku_id": "Dy6qtMfUs8VoQSM7",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "nodurability"
-            },
-            "name": {
-                "modrinth": "No Durability"
-            },
-            "id": {
-                "modrinth": "I4TO1llk"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "nodurability-2.0.0.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1",
-                        "24w33a",
-                        "24w34a",
-                        "24w35a",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/I4TO1llk/versions/tLtjbex2/nodurability-2.0.0.jar",
-                    "id": "tLtjbex2",
-                    "parent_id": "I4TO1llk",
-                    "hashes": {
-                        "sha512": "2d3756e226ac61d942e6902ffed1441ce41bfcb28dbfe205c01ca6925ba092b1051a49aa89078dda0fc9db7802b30b2d42e2ced60bec1eb59e9d7a7b8a35cd14",
-                        "sha1": "cac1ff668274972bfdefff132490b826dace6d88"
-                    },
-                    "required_dependencies": [],
-                    "size": 31942,
-                    "date_published": "2024-06-16T13:35:20.156482Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "sNrP9WJPCJAHxfnx",
             "type": "MOD",
             "side": "SERVER",
@@ -3267,6 +3222,51 @@
                     "required_dependencies": [],
                     "size": 1886616,
                     "date_published": "2025-03-25T17:09:57.107069Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MkUpjBexAJNTftuG",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "what-durability"
+            },
+            "name": {
+                "modrinth": "What Durability?"
+            },
+            "id": {
+                "modrinth": "lKY2kyjj"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "whatdurability-1.21.7-1.3.jar",
+                    "mc_versions": [
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lKY2kyjj/versions/ikUy0KzL/whatdurability-1.21.7-1.3.jar",
+                    "id": "ikUy0KzL",
+                    "parent_id": "lKY2kyjj",
+                    "hashes": {
+                        "sha512": "87c3c0b706434f70e84db4b7d0c52340b3e8df5b77615268a3c2081fa46d8fed31ce6a2c7423e5003aacc52366edc6d368f7d8bfcb7c894eae124ec1fa832277",
+                        "sha1": "ab17f0b7ecc7cb788eecd3a7cef2cd610ee1b282"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 21692,
+                    "date_published": "2025-06-30T21:51:55.876106Z"
                 }
             ]
         }
