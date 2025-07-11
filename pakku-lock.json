@@ -2085,46 +2085,6 @@
             ]
         },
         {
-            "pakku_id": "XaUUnHMyJote2kNi",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "player-locator-bars"
-            },
-            "name": {
-                "modrinth": "Player Locator Bars"
-            },
-            "id": {
-                "modrinth": "y77inROU"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "player-locator-bars-1.11.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y77inROU/versions/7Dz1dXjP/player-locator-bars-1.11.jar",
-                    "id": "7Dz1dXjP",
-                    "parent_id": "y77inROU",
-                    "hashes": {
-                        "sha512": "6083c964330fb324ec95b1fb83b7daa6b85104ab17862aaa1743547b831a0aff1e1c60d13ca7e4aaac6732d6a23ce0e6bf043756b94b7842997cc1e56438303c",
-                        "sha1": "4be4d11884570d32cd93e4594f7a7f8f9d1512d7"
-                    },
-                    "required_dependencies": [],
-                    "size": 2126614,
-                    "date_published": "2025-04-18T00:53:43.312141Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "JVGsRYZ8iEyG2CvJ",
             "type": "MOD",
             "side": "BOTH",
