@@ -1542,7 +1542,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ResourcefulConfig-fabric-1.21.5-3.5.12.jar",
+                    "file_name": "ResourcefulConfig-fabric-1.21.5-3.5.14.jar",
                     "mc_versions": [
                         "1.21.5"
                     ],
@@ -1551,16 +1551,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/M1953qlQ/versions/rifuJXe5/ResourcefulConfig-fabric-1.21.5-3.5.12.jar",
-                    "id": "rifuJXe5",
+                    "url": "https://cdn.modrinth.com/data/M1953qlQ/versions/7IQGFD9U/ResourcefulConfig-fabric-1.21.5-3.5.14.jar",
+                    "id": "7IQGFD9U",
                     "parent_id": "M1953qlQ",
                     "hashes": {
-                        "sha512": "4290617ac115bbd558d43eca63f6ce9ce4cdba9694fe0b30c024db88857390b38018ba1ac64738c071e9731e953236841230f645315457b937e154037ee988ad",
-                        "sha1": "51cf9417e37b0be672f1f428ea97a7586352d5c4"
+                        "sha512": "3203c4ba48f7920c0e3403c13e682165a25f22f3c92e24708b7b850ecb4ac7be19a33dd38dd066c62757dee9b4596d5d8d944738a0aba4d78048b566489c4640",
+                        "sha1": "cb84e221736b2bea22c89169d1a01a628260fa22"
                     },
                     "required_dependencies": [],
-                    "size": 387802,
-                    "date_published": "2025-07-06T09:41:34.155228Z"
+                    "size": 390945,
+                    "date_published": "2025-07-08T21:55:51.972182Z"
                 }
             ]
         },
