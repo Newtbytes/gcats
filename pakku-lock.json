@@ -941,45 +941,6 @@
             ]
         },
         {
-            "pakku_id": "cVUiZIUeWsgn8WCL",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "just-atlas"
-            },
-            "name": {
-                "modrinth": "Just Atlas"
-            },
-            "id": {
-                "modrinth": "zp6touiL"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "just-atlas-2.1.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/zp6touiL/versions/eFzG3DU9/just-atlas-2.1.jar",
-                    "id": "eFzG3DU9",
-                    "parent_id": "zp6touiL",
-                    "hashes": {
-                        "sha512": "af7b6392cf8769bcdc720ee3ccd0a1c5041f54299047b43ff53b4f8f02cd17a36b6ebcdf12275a7722473049532630c3207b278d19c4492359a85788c8c713b5",
-                        "sha1": "4dae4f7caab007e800aab4614d2b9be121fa2d9b"
-                    },
-                    "required_dependencies": [],
-                    "size": 227154,
-                    "date_published": "2025-05-27T09:13:20.889314Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "iSkjkPo6ZtQFdQOT",
             "pakku_links": [
                 "r9oUCVZY6KnoVpXs"
