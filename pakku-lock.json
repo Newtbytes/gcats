@@ -752,45 +752,6 @@
             ]
         },
         {
-            "pakku_id": "EQFtcKxnw554SsOT",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "forge-config-api-port"
-            },
-            "name": {
-                "modrinth": "Forge Config API Port"
-            },
-            "id": {
-                "modrinth": "ohNO6lps"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ForgeConfigAPIPort-v21.7.0-1.21.7-Fabric.jar",
-                    "mc_versions": [
-                        "1.21.7"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/mw50luix/ForgeConfigAPIPort-v21.7.0-1.21.7-Fabric.jar",
-                    "id": "mw50luix",
-                    "parent_id": "ohNO6lps",
-                    "hashes": {
-                        "sha512": "4ca35d28245cb025c938c90540fa823d695f1d71f8763ebc3e5c37f883c42fd3203bcb3daf6d318393c4cb17d40c8d0c6c0340ff913eeb7ec316e4f69d9505bc",
-                        "sha1": "e44c82bfad04ee6cc8882f67d5051eefec95f781"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 633811,
-                    "date_published": "2025-07-01T12:36:37.211847Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "KdQW7RZGSTPqIMLv",
             "type": "MOD",
             "side": "SERVER",
@@ -2601,50 +2562,6 @@
                     ],
                     "size": 60299,
                     "date_published": "2025-01-03T10:29:34.864988Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "dvX7zCFrCPId3U32",
-            "pakku_links": [
-                "EQFtcKxnw554SsOT"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "torch-hit"
-            },
-            "name": {
-                "modrinth": "Torch hit!"
-            },
-            "id": {
-                "modrinth": "zTOq9jEI"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "torch-hit-fabric-1.21.5-7.0.0.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/zTOq9jEI/versions/iZvbqo6T/torch-hit-fabric-1.21.5-7.0.0.jar",
-                    "id": "iZvbqo6T",
-                    "parent_id": "zTOq9jEI",
-                    "hashes": {
-                        "sha512": "16e5e022b5c2fadc735ee03423fc19c601ce7a965790f3956e39ff8a789d53af1608b375aa8d3d6cadb29b31458d25a72152cbefffece56a88ec3d8a420762c7",
-                        "sha1": "3a77e50e99ea3b6ede295094c5974b70c8f7b5ad"
-                    },
-                    "required_dependencies": [
-                        "dQcfqGbl",
-                        "P7dR8mSH",
-                        "ohNO6lps"
-                    ],
-                    "size": 1226476,
-                    "date_published": "2025-05-05T20:41:49.412305Z"
                 }
             ]
         },
