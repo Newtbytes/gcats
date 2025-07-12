@@ -675,6 +675,44 @@
             ]
         },
         {
+            "pakku_id": "eSklrKcguirojp7N",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "floodgate"
+            },
+            "name": {
+                "modrinth": "Floodgate"
+            },
+            "id": {
+                "modrinth": "bWrNNfkb"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Floodgate-Fabric-2.2.5-b45.jar",
+                    "mc_versions": [
+                        "1.21.6",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/bWrNNfkb/versions/ps3IuRel/Floodgate-Fabric-2.2.5-b45.jar",
+                    "id": "ps3IuRel",
+                    "parent_id": "bWrNNfkb",
+                    "hashes": {
+                        "sha512": "eebd599f805cb0b090c5a917e0618509cc9e41161581e0f2240596e3d6c841e66ad6b37bc8140a651ca15eef37db52489c1431e022f7efafd13523b64ec92045",
+                        "sha1": "97ab836ee4cde9469279bca69ae60fa71ec690c9"
+                    },
+                    "required_dependencies": [],
+                    "size": 2638082,
+                    "date_published": "2025-06-26T21:07:12.490517Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "KdQW7RZGSTPqIMLv",
             "type": "MOD",
             "side": "SERVER",
@@ -862,6 +900,48 @@
                     "required_dependencies": [],
                     "size": 753719,
                     "date_published": "2025-06-17T17:40:37.985689Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "vYaRZZ6etueTR8pR",
+            "pakku_links": [
+                "Zhv0xEKDgxcdvscy"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "geyser"
+            },
+            "name": {
+                "modrinth": "Geyser"
+            },
+            "id": {
+                "modrinth": "wKkoqHrH"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.8.2-b880.jar",
+                    "mc_versions": [
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/Ww1VrYHv/geyser-fabric-Geyser-Fabric-2.8.2-b880.jar",
+                    "id": "Ww1VrYHv",
+                    "parent_id": "wKkoqHrH",
+                    "hashes": {
+                        "sha512": "bec45b915fd011022d8165d974b65cdb75c069117bceb1f350fddb993bdf88aee025534f7b92ad7979d857113a799a04568574fca848b01af14af038e3ccec3b",
+                        "sha1": "72789bc4f1429e0d0162499c0a081a8f86af393f"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 13814260,
+                    "date_published": "2025-07-11T01:41:39.211033Z"
                 }
             ]
         },
