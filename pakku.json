@@ -3,5 +3,19 @@
     "version": "v0.3.0",
     "overrides": [
         "datapacks"
-    ]
+    ],
+    "projects": {
+        "invview": {
+            "side": "SERVER"
+        },
+        "detect-afk": {
+            "side": "SERVER"
+        },
+        "afk-sit": {
+            "side": "SERVER"
+        },
+        "afk-dim-names": {
+            "side": "SERVER"
+        }
+    }
 }

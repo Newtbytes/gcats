@@ -51,119 +51,6 @@
             ]
         },
         {
-            "pakku_id": "WuXQHAH92bHvxwRq",
-            "pakku_links": [
-                "p7m7FNjFxhN4TMTq"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "afk-dim-names"
-            },
-            "name": {
-                "modrinth": "AFK Dim Names"
-            },
-            "id": {
-                "modrinth": "cm4wuX9d"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "afk-dim-names-1.3.0.jar",
-                    "mc_versions": [
-                        "1.18",
-                        "1.18.1",
-                        "1.18.2",
-                        "1.19",
-                        "1.19.1",
-                        "1.19.2",
-                        "1.19.3",
-                        "1.19.4",
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cm4wuX9d/versions/Ey6b0R3u/afk-dim-names-1.3.0.jar",
-                    "id": "Ey6b0R3u",
-                    "parent_id": "cm4wuX9d",
-                    "hashes": {
-                        "sha512": "8678634cce40e0b11ebd40f5c3274709e9af7045c0af0920a42f445b416ad773bcef282f526111768370acc9cb86281d3d1f6b5391274e0f467d54feb3c18041",
-                        "sha1": "cb4c2a0b8ec10d865ab6c41e104d83415042f5f1"
-                    },
-                    "required_dependencies": [
-                        "OZdgwUpA"
-                    ],
-                    "size": 105625,
-                    "date_published": "2025-04-05T23:23:24.503171Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "ATXad13NJ9bJx6Z2",
-            "pakku_links": [
-                "p7m7FNjFxhN4TMTq"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "afk-sit"
-            },
-            "name": {
-                "modrinth": "AFK Sit"
-            },
-            "id": {
-                "modrinth": "aFIdKOKp"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "afk-sit-1.0.1.jar",
-                    "mc_versions": [
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/aFIdKOKp/versions/77SFXORJ/afk-sit-1.0.1.jar",
-                    "id": "77SFXORJ",
-                    "parent_id": "aFIdKOKp",
-                    "hashes": {
-                        "sha512": "24b5c07b4e487579bd6df6182511c4c8b90573e1242f49eea614ef72835d60f8b5dd0aeab19bfefb9ccad8803f68650bc5ed651b0a016bb0ab6b8971952f4b2a",
-                        "sha1": "c43094d32853d4f30241e9982b84b15edbe63648"
-                    },
-                    "required_dependencies": [
-                        "OZdgwUpA"
-                    ],
-                    "size": 73174,
-                    "date_published": "2025-04-06T00:29:32.504477Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "g1xIOCShPS8k6iiH",
             "type": "MOD",
             "side": "SERVER",
@@ -442,7 +329,8 @@
                         "1.21.3",
                         "1.21.4",
                         "1.21.5",
-                        "1.21.6"
+                        "1.21.6",
+                        "1.21.7"
                     ],
                     "loaders": [
                         "fabric"
@@ -707,55 +595,6 @@
             ]
         },
         {
-            "pakku_id": "p7m7FNjFxhN4TMTq",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "detect-afk"
-            },
-            "name": {
-                "modrinth": "Detect AFK Players"
-            },
-            "id": {
-                "modrinth": "OZdgwUpA"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "detect-afk-1.2.1.jar",
-                    "mc_versions": [
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/OZdgwUpA/versions/XqCzI2eC/detect-afk-1.2.1.jar",
-                    "id": "XqCzI2eC",
-                    "parent_id": "OZdgwUpA",
-                    "hashes": {
-                        "sha512": "4e901e6c4a3d8d044f24d97eab2f8df0c46b0dde8b50c5be7141f2c5bd00d63b9fe2c2f8a34d3780cd029fcfc201df44bd60982474a9083fb1f7067ba8aca6ca",
-                        "sha1": "4443c2870a9218cbdb16830a922476029b37d5ca"
-                    },
-                    "required_dependencies": [],
-                    "size": 22476,
-                    "date_published": "2025-04-11T02:34:21.371098Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "2iYg3MfDypvzUmhm",
             "type": "MOD",
             "side": "CLIENT",
@@ -1010,12 +849,8 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "formations-1.0.3-fabric-mc1.21.2.jar",
+                    "file_name": "formations-1.0.3-fabric-mc1.21.6.jar",
                     "mc_versions": [
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
                         "1.21.6",
                         "1.21.7"
                     ],
@@ -1024,16 +859,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tPe4xnPd/versions/1kcjaPDC/formations-1.0.3-fabric-mc1.21.2.jar",
-                    "id": "1kcjaPDC",
+                    "url": "https://cdn.modrinth.com/data/tPe4xnPd/versions/X0dqjVSV/formations-1.0.3-fabric-mc1.21.6.jar",
+                    "id": "X0dqjVSV",
                     "parent_id": "tPe4xnPd",
                     "hashes": {
-                        "sha512": "e0a3223f473b28f15f345606a18dd1ba3ee9e4881f95a7d6e125985fcf7d7b591d74df295cbdd1da58c3bf2ecebc4d9164329881f6d965ab00c9ce02970d5dc1",
-                        "sha1": "fbbf91a0b769c9f3f36c604f6b61edf5833ef179"
+                        "sha512": "b828b136dce37633a0211e7b8e8ab17489fe6ed276ac8a8465504caa21a35fb70d0a6407cf5df374a1c37b949c1c48f23b0ee54f2aa42481be3bbaf53b2e8141",
+                        "sha1": "f9f4ef32f604f599b8ddc1af6f4c2b5d45edb2a6"
                     },
                     "required_dependencies": [],
-                    "size": 281302,
-                    "date_published": "2024-11-22T22:20:26.808584Z"
+                    "size": 285513,
+                    "date_published": "2025-07-12T17:00:52.273177Z"
                 }
             ]
         },
@@ -1339,46 +1174,6 @@
                     "required_dependencies": [],
                     "size": 193177,
                     "date_published": "2025-07-08T20:50:08.649221Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "CJrhWyKRiH35fcKQ",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "invview"
-            },
-            "name": {
-                "modrinth": "Inv View"
-            },
-            "id": {
-                "modrinth": "jrDKjZP7"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "InvView-1.4.16-1.21.5+.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/jrDKjZP7/versions/VD8wa5Wp/InvView-1.4.16-1.21.5+.jar",
-                    "id": "VD8wa5Wp",
-                    "parent_id": "jrDKjZP7",
-                    "hashes": {
-                        "sha512": "5d4b9f7625839f5648a25264cf137f3776a8e875124a31a95a3663c1fbd37fb5c627e8b3280ade44d86bf86145f6ce317222d52bdae91321136f4faa921b9516",
-                        "sha1": "f0b8e61ba3fcd4c6a126ddd255ad5cf85804944d"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 164269,
-                    "date_published": "2025-04-01T21:48:19.278725Z"
                 }
             ]
         },
@@ -1693,7 +1488,8 @@
                         "1.21.3",
                         "1.21.4",
                         "1.21.5",
-                        "1.21.6"
+                        "1.21.6",
+                        "1.21.7"
                     ],
                     "loaders": [
                         "fabric"
@@ -3057,16 +2853,16 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/h98pV3Q4/ViaVersion-5.4.2-SNAPSHOT.jar",
-                    "id": "h98pV3Q4",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/OfDnX6EL/ViaVersion-5.4.2-SNAPSHOT.jar",
+                    "id": "OfDnX6EL",
                     "parent_id": "P1OZGk5p",
                     "hashes": {
-                        "sha512": "f2ac4e89409840e7e06124f91af3080704f74b82a89d06ef6f613b9af68d4301d1087766be0aa6d23278df31be3c403f737c01b5021a2b3c0626cdbd61e73b85",
-                        "sha1": "233a2560c97c5edc51fee2044bbe9b91251fcdc4"
+                        "sha512": "8464ab8d4f263ed1d967855af1c497df13008f77399caf0c78820a9484240004288a4bcd660224d8e700886c7a18684368692d71ff3abcc43e9b5c99fd4f1c48",
+                        "sha1": "dfcf0e0d6f094553e1390e2d66ef2aa522c01924"
                     },
                     "required_dependencies": [],
-                    "size": 5657653,
-                    "date_published": "2025-07-07T19:41:36.959960Z"
+                    "size": 5657106,
+                    "date_published": "2025-07-12T08:31:58.181396Z"
                 }
             ]
         },
