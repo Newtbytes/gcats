@@ -2482,52 +2482,6 @@
             ]
         },
         {
-            "pakku_id": "vBAiiN0g4NFJtfeo",
-            "pakku_links": [
-                "Zhv0xEKDgxcdvscy"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "tt20"
-            },
-            "name": {
-                "modrinth": "TT20 (TPS Fixer)"
-            },
-            "id": {
-                "modrinth": "YS3ZignI"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "tt20-0.7.1+mc1.21.2.jar",
-                    "mc_versions": [
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/YS3ZignI/versions/MjGahcCF/tt20-0.7.1+mc1.21.2.jar",
-                    "id": "MjGahcCF",
-                    "parent_id": "YS3ZignI",
-                    "hashes": {
-                        "sha512": "efd893a1995b8bbd6d0a2b7b669d3ec745f641330906ea49a7f521dc65b968c55d80f374096e593e562e3503698eaa141e169244d9b3c3bd3e3d095f4150ef07",
-                        "sha1": "0e1c092afce22ac9fade02d12f4071751cf7cf7f"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 60299,
-                    "date_published": "2025-01-03T10:29:34.864988Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "zroWRKZBnrlClBRV",
             "type": "MOD",
             "side": "BOTH",
