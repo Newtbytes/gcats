@@ -16,6 +16,9 @@
         },
         "afk-dim-names": {
             "side": "SERVER"
+        },
+        "noisium": {
+            "side": "BOTH"
         }
     }
 }

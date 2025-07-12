@@ -1679,44 +1679,6 @@
             ]
         },
         {
-            "pakku_id": "rJcPKYyNqV4lv4Bs",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "noisium"
-            },
-            "name": {
-                "modrinth": "Noisium"
-            },
-            "id": {
-                "modrinth": "KuNKN7d2"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "noisium-fabric-2.6.0+mc1.21.5.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KuNKN7d2/versions/sUh67T4Y/noisium-fabric-2.6.0+mc1.21.5.jar",
-                    "id": "sUh67T4Y",
-                    "parent_id": "KuNKN7d2",
-                    "hashes": {
-                        "sha512": "4471b6137de7e2109987df8fe62ac836741e68ba3c57303a0f2dc362c0ab8e7aca656d28046e250362316c1144396132a5531dfb12b5a664c68eb294991af938",
-                        "sha1": "78423de1f91ee9f594f447038484c91a83629431"
-                    },
-                    "required_dependencies": [],
-                    "size": 216075,
-                    "date_published": "2025-05-06T17:52:25.031505Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "ZA8vg1h1pTf30v7Q",
             "type": "MOD",
             "side": "SERVER",
