@@ -2,3 +2,4 @@ build/
 **.mrpack
 .venv/
 .vscode/
+pakku.jar
