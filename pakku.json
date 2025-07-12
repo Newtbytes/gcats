@@ -19,6 +19,9 @@
         },
         "noisium": {
             "side": "BOTH"
+        },
+        "no-firework-boosting": {
+            "side": "BOTH"
         }
     }
 }

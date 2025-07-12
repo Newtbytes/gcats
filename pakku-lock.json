@@ -1597,46 +1597,6 @@
             ]
         },
         {
-            "pakku_id": "sNrP9WJPCJAHxfnx",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "no-firework-boosting"
-            },
-            "name": {
-                "modrinth": "No Firework Boosting"
-            },
-            "id": {
-                "modrinth": "xdJ5eVIN"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "NoFireworkBoosting-v1.0.1-mc1.21.2.jar",
-                    "mc_versions": [
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/xdJ5eVIN/versions/mrPn9id4/NoFireworkBoosting-v1.0.1-mc1.21.2.jar",
-                    "id": "mrPn9id4",
-                    "parent_id": "xdJ5eVIN",
-                    "hashes": {
-                        "sha512": "74a03f56c24c93b19065f00e176e7da052944d70f1a55b4af7ae87b16be285fade22ffccd3d333197043135d95f57ea53b8646b0142b5a69821497fc7a6b20b0",
-                        "sha1": "4d10764f8c9881f859bfda56254224830e7ce0d4"
-                    },
-                    "required_dependencies": [],
-                    "size": 6657,
-                    "date_published": "2025-01-23T10:56:44.822326Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "SNkvuFwSCoiJOuNZ",
             "type": "MOD",
             "side": "SERVER",
