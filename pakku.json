@@ -17,6 +17,15 @@
         "afk-dim-names": {
             "side": "SERVER"
         },
+        "explorations": {
+            "side": "SERVER"
+        },
+        "hopo-better-mineshaft": {
+            "side": "SERVER"
+        },
+        "hopo-better-ruined-portals": {
+            "side": "SERVER"
+        },
         "noisium": {
             "side": "BOTH"
         },

@@ -592,45 +592,6 @@
             ]
         },
         {
-            "pakku_id": "VvfTk7qnNa6CyQAQ",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "explorations"
-            },
-            "name": {
-                "modrinth": "Explorations"
-            },
-            "id": {
-                "modrinth": "pcGnjJ39"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "explorations-fabric-1.21.5-1.6.2.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pcGnjJ39/versions/e3PQefJc/explorations-fabric-1.21.5-1.6.2.jar",
-                    "id": "e3PQefJc",
-                    "parent_id": "pcGnjJ39",
-                    "hashes": {
-                        "sha512": "fb86ec3fb1f2a030a9c6d73516e8e223b175b10f6432becc385e3310188e5fcc0d61f514b7ff2df0da6f46745f316ed01c7d01e5634bc5be205c657a85e6015a",
-                        "sha1": "e45a7df730bdae8f30f0a3b165175776e96ca102"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 221041,
-                    "date_published": "2025-05-15T16:08:01.748187Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Zhv0xEKDgxcdvscy",
             "type": "MOD",
             "side": "BOTH",
@@ -939,84 +900,6 @@
                     "required_dependencies": [],
                     "size": 753719,
                     "date_published": "2025-06-17T17:40:37.985689Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MiGRTUyOx8KZDAde",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "hopo-better-mineshaft"
-            },
-            "name": {
-                "modrinth": "Hopo Better Mineshaft"
-            },
-            "id": {
-                "modrinth": "9IxCUYAP"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "HopoBetterMineshaft-[1.21.5]-1.3.1.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9IxCUYAP/versions/MCgkP4Rh/HopoBetterMineshaft-[1.21.5]-1.3.1.jar",
-                    "id": "MCgkP4Rh",
-                    "parent_id": "9IxCUYAP",
-                    "hashes": {
-                        "sha512": "00000064170bf76900c855f2fdd01a4a35e375151788a91047ac5cfbc47c5f3c82809ded407b5889836a54a1bca016cb69ebc5f7545efd9c6f7593c1050d3383",
-                        "sha1": "b116f7c6265f5d1ac9310356fa3dc7de559bd46f"
-                    },
-                    "required_dependencies": [],
-                    "size": 4685506,
-                    "date_published": "2025-03-30T03:34:50.939781Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "bznG5jAmIpTrBbLF",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "hopo-better-ruined-portals"
-            },
-            "name": {
-                "modrinth": "Hopo Better Ruined Portals"
-            },
-            "id": {
-                "modrinth": "hIpLSyga"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "HopoBetterRuinedPortals-[1.21.5]-1.4.6.jar",
-                    "mc_versions": [
-                        "1.21.5"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hIpLSyga/versions/evvyMtKE/HopoBetterRuinedPortals-[1.21.5]-1.4.6.jar",
-                    "id": "evvyMtKE",
-                    "parent_id": "hIpLSyga",
-                    "hashes": {
-                        "sha512": "fc211ad04df5caf9db26ba6cdd550492217dee905e30f0a38f99d52d3c3fa7dbc0cb6cdd829c36328e2c4be4b055bb9aba857bc956ed029e25c990eaae389201",
-                        "sha1": "99aacb35cf25bb44aa2fd812231d7daaa42c9380"
-                    },
-                    "required_dependencies": [],
-                    "size": 472719,
-                    "date_published": "2025-03-30T03:44:19.297380Z"
                 }
             ]
         },
