@@ -6,7 +6,7 @@ resource_pack:
   name: "{{ project_name }}"
   description: "{{ project_description }}"
   load:
-    - resources/resourcepack/VanillaTweaks_MC1.21.x.zip
+    - resources/resourcepack/required/VanillaTweaks_MC1.21.x.zip
     - https://cdn.modrinth.com/data/tPtjib62/versions/DovTdPov/visual_armor_trims_3.1_1.21.5%2B.zip
     - https://cdn.modrinth.com/data/6gN7YVi7/versions/fSRRUZQU/Re-covered.zip
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/2ooqPmZH/Theone%27s%20Eating%20Animation%20Pack%20v1.01.zip

@@ -69,7 +69,7 @@ jobs:
 
       - uses: mcbeet/check-commands@v1
         with:
-          source: resources/datapack/modally_stranded
+          source: resources/datapack/required/modally_stranded
 
   lint-yaml:
     name: Lint YAML
