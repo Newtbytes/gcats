@@ -145,6 +145,49 @@
             ]
         },
         {
+            "pakku_id": "0Ak2nNZuiUi9jTgL",
+            "pakku_links": [
+                "Zhv0xEKDgxcdvscy"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "async"
+            },
+            "name": {
+                "modrinth": "Async"
+            },
+            "id": {
+                "modrinth": "vEC2jm6I"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "async-0.1.7+alpha.5-1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/vEC2jm6I/versions/VkHL8BPX/async-0.1.7+alpha.5-1.21.5.jar",
+                    "id": "VkHL8BPX",
+                    "parent_id": "vEC2jm6I",
+                    "hashes": {
+                        "sha512": "df6594857c17e5b83c55aea4fa320ef7b4766d48d7db2e3d4979a72d5c237ed3c7624b6a4bbaf48d9e79f7d007f64ef4f187bf25d9786bd9949fe8f69625e2e2",
+                        "sha1": "57c4eaeb69d3596051b8f68451231d4f88db3cb6"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 633721,
+                    "date_published": "2025-06-30T12:15:08.882829Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "U0oobiopTlwElp1v",
             "type": "MOD",
             "side": "CLIENT",
