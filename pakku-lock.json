@@ -2210,6 +2210,102 @@
             ]
         },
         {
+            "pakku_id": "v9UlHAYXQYn9Rrw2",
+            "pakku_links": [
+                "6LgDwo9FyUWivnPw"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "viabackwards"
+            },
+            "name": {
+                "modrinth": "ViaBackwards"
+            },
+            "id": {
+                "modrinth": "NpvuJQoq"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "ViaBackwards-5.4.2.jar",
+                    "mc_versions": [
+                        "1.10",
+                        "1.10.1",
+                        "1.10.2",
+                        "1.11",
+                        "1.11.1",
+                        "1.11.2",
+                        "1.12",
+                        "1.12.1",
+                        "1.12.2",
+                        "1.13",
+                        "1.13.1",
+                        "1.13.2",
+                        "1.14",
+                        "1.14.1",
+                        "1.14.2",
+                        "1.14.3",
+                        "1.14.4",
+                        "1.15",
+                        "1.15.1",
+                        "1.15.2",
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "folia",
+                        "paper",
+                        "velocity"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/tdyh8oTV/ViaBackwards-5.4.2.jar",
+                    "id": "tdyh8oTV",
+                    "parent_id": "NpvuJQoq",
+                    "hashes": {
+                        "sha512": "2f453f897f6f91b4a68b64216c5ecc2569417c01ff70c25a1e4679e5996a7ec469234c721aa05029b7ad1248667c3be8bb39db3f24365b93ef729c4f6dae30a9",
+                        "sha1": "dfd87852b47d84e8b4bf4418592161cd75ba51c5"
+                    },
+                    "required_dependencies": [
+                        "P1OZGk5p"
+                    ],
+                    "size": 1357479,
+                    "date_published": "2025-07-23T21:05:53.537288Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "MRG07R0W1N0YUQKX",
             "type": "MOD",
             "side": "BOTH",
