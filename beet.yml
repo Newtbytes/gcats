@@ -2,14 +2,14 @@ name: GCATs
 description: GCATs server resources.
 
 resource_pack:
-  pack_format: 63
+  pack_format: 64
   name: "{{ project_name }}"
   description: "{{ project_description }}"
   load:
     - resources/resourcepack/required/VanillaTweaks_MC1.21.x.zip
     - https://cdn.modrinth.com/data/tPtjib62/versions/DovTdPov/visual_armor_trims_3.1_1.21.5%2B.zip
     - https://cdn.modrinth.com/data/6gN7YVi7/versions/fSRRUZQU/Re-covered.zip
-    - https://cdn.modrinth.com/data/OhzX8kDf/versions/2ooqPmZH/Theone%27s%20Eating%20Animation%20Pack%20v1.01.zip
+    - https://cdn.modrinth.com/data/OhzX8kDf/versions/qw5e9mrm/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/AQvH8uLq/better_flame_particles-v2.2-mc1.14x-1.21x-resourcepack.zip
     - https://github.com/RedSyven/player-locator/raw/fc904f041444621ae243d09228c88f1ac2b3a7a7/RedSyven's%20Player%20Locator%20Resourcepack%201-21-5+.zip
     - https://cdn.modrinth.com/data/zp6touiL/versions/43cYxPZ8/Just-Atlas_RP_v2-1_1-21-5.zip
