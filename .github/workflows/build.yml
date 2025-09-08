@@ -123,7 +123,7 @@ jobs:
         run: |
           curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/${{ env.PAKKU_TAG }}/pakku.jar
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
