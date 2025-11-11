@@ -29,7 +29,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v46.0.5
+        uses: tj-actions/changed-files@v47.0.0
 
   validate:
     name: Validate JSON and YAML files
