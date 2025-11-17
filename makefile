@@ -4,8 +4,8 @@ BEET ?= beet
 
 # default versions
 MC_VERSION ?= 1.21.8
-FABRIC_VERSION ?= 0.16.14
-FABRIC_INSTALLER_VERSION ?= 1.0.3
+FABRIC_VERSION ?= 0.18.0
+FABRIC_INSTALLER_VERSION ?= 1.1.0
 
 # Output:
 # - build/serverpack/{server name}-{version}.zip
