@@ -2,7 +2,9 @@ name: GCATs
 description: GCATs server resources.
 
 resource_pack:
-  pack_format: 69.0
+  pack_format: 69
+  min_format: [69, 0]
+  max_format: [69, 0]
   name: "{{ project_name }}"
   description: "{{ project_description }}"
   load:
