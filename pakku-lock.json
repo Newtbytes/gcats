@@ -310,6 +310,47 @@
             ]
         },
         {
+            "pakku_id": "ustNgm4MPmZJCQkW",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "hybrid-beta"
+            },
+            "name": {
+                "modrinth": "Cascades"
+            },
+            "id": {
+                "modrinth": "Jmx5kJiS"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "hybrid-beta-1.0.5.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Jmx5kJiS/versions/5PjYKpeE/hybrid-beta-1.0.5.jar",
+                    "id": "5PjYKpeE",
+                    "parent_id": "Jmx5kJiS",
+                    "hashes": {
+                        "sha512": "ad83395c9ffae13de9a80ca5482ed41cb6faa7eefa45557100fcd437425d64ef640b4286db720ef1495526b36150a8cac850f346ea93ca71609b83253ac67076",
+                        "sha1": "19429ebf8a8239e28fbaa2b7e4290358008d1ed5"
+                    },
+                    "required_dependencies": [],
+                    "size": 2874519,
+                    "date_published": "2025-11-13T22:18:37.043835Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "L3wif828Y1RY3ZDk",
             "pakku_links": [
                 "Zhv0xEKDgxcdvscy",
