@@ -3,7 +3,7 @@ PAKKU ?= pakku
 BEET ?= beet
 
 # default versions
-MC_VERSION ?= 1.21.8
+MC_VERSION ?= 1.21.11
 FABRIC_VERSION ?= 0.18.0
 FABRIC_INSTALLER_VERSION ?= 1.1.0
 
