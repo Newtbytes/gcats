@@ -49,7 +49,7 @@ jobs:
 
       - name: Download build artifacts
         if: ${{ steps.check_release.outputs.release == 'true' }}
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           path: artifacts
 
