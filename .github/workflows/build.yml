@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  PAKKU_TAG: v1.2.1
+  PAKKU_TAG: v1.3.2
 
 jobs:
   check:
