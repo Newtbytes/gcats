@@ -2,7 +2,6 @@ name: GCATs
 description: GCATs server resources.
 
 resource_pack:
-  pack_format: 69
   min_format: [69, 0]
   max_format: [69, 0]
   name: "{{ project_name }}"
@@ -10,7 +9,11 @@ resource_pack:
   load:
     - resources/resourcepack/required/VanillaTweaks_MC1.21.x.zip
     - https://cdn.modrinth.com/data/tPtjib62/versions/G6ZoMPyA/visual_armor_trims_4.0_1.21.5%2B.zip
-    - https://cdn.modrinth.com/data/6gN7YVi7/versions/q4F6AFtc/Re-covered.zip
+    # This resource pack attempts to add license information to the pack.mcmeta
+    # in a way that is incorrect syntax, at least for mcbeet. I've replaced it
+    # with a patched version
+    # - https://cdn.modrinth.com/data/6gN7YVi7/versions/q4F6AFtc/Re-covered.zip
+    - resources/resourcepack/required/Re-covered/
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/qw5e9mrm/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip
     - https://github.com/RedSyven/player-locator/raw/fc904f041444621ae243d09228c88f1ac2b3a7a7/RedSyven's%20Player%20Locator%20Resourcepack%201-21-5+.zip
