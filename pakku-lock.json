@@ -403,6 +403,44 @@
             ]
         },
         {
+            "pakku_id": "oBA2PFJGYaoJvWTm",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "cloth-config"
+            },
+            "name": {
+                "modrinth": "Cloth Config API"
+            },
+            "id": {
+                "modrinth": "9s6osm5g"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "cloth-config-20.0.149-fabric.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/qMxkrrmq/cloth-config-20.0.149-fabric.jar",
+                    "id": "qMxkrrmq",
+                    "parent_id": "9s6osm5g",
+                    "hashes": {
+                        "sha512": "df1d9e0349dc64fc0859f17b65b67b0d7745a26b4905e87fc148ddebc0285de51a3255848599f0d5ee24f6aab00fbac4849d40bb9052936eaa452d216c7ada62",
+                        "sha1": "c86e380bdac24e4ecdd148558e9d4ddf32c86059"
+                    },
+                    "required_dependencies": [],
+                    "size": 1150288,
+                    "date_published": "2025-10-26T08:07:41.857367Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YSCFMirIZJI6pWu8",
             "pakku_links": [
                 "ytwAeMYoHmqPnRPq"
@@ -989,7 +1027,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.0-b984.jar",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.0-b989.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10"
@@ -998,18 +1036,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/FTRyt29Z/geyser-fabric-Geyser-Fabric-2.9.0-b984.jar",
-                    "id": "FTRyt29Z",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/mrGKfe1i/geyser-fabric-Geyser-Fabric-2.9.0-b989.jar",
+                    "id": "mrGKfe1i",
                     "parent_id": "wKkoqHrH",
                     "hashes": {
-                        "sha512": "cdd08c2563e9c3a004e240efbc0f29b79e28571dc4f784926297e5b22f6b44b306d925eea9628ef3c20499d3873327a0bdc9b07879f999d6465c27bdaba8e50f",
-                        "sha1": "a332754eee7db0d6314c125b2ceea1c128d01495"
+                        "sha512": "c04599dc66fd3056101665e579f877b84c2216f8ce04eb4da1b6db3e7a6b6cbbc8854fb6960df1f57f5725cd3285cf01905fcc33aac9b364ccfd7fe3ff6d660d",
+                        "sha1": "96357b2de25d9d04521eac843fbd82bfe84922c6"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 13633280,
-                    "date_published": "2025-11-16T20:52:49.223294Z"
+                    "size": 12399330,
+                    "date_published": "2025-11-19T21:21:57.946587Z"
                 }
             ]
         },
@@ -1281,25 +1319,26 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "mru-1.0.24+edge+1.21.10-fabric.jar",
+                    "file_name": "mru-1.0.25+edge+1.21.10-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
-                        "1.21.10"
+                        "1.21.10",
+                        "1.21.11-pre1"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/8L7NWA1k/mru-1.0.24+edge+1.21.10-fabric.jar",
-                    "id": "8L7NWA1k",
+                    "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/FGQdTmZR/mru-1.0.25+edge+1.21.10-fabric.jar",
+                    "id": "FGQdTmZR",
                     "parent_id": "SNVQ2c0g",
                     "hashes": {
-                        "sha512": "0519c4203224f81e2940b98d1e98cd01b000ab0c1dac9bb3b14ce8babf64707ffca8b13145477051369e3b24fe0a5602adb5f7f1e4886142a99c9d8108c24da1",
-                        "sha1": "10bba879cdd01ed422a77acee2aec690679fb8b7"
+                        "sha512": "1eaab2f45483bf60104e90c5a10eb69480c0cea1ade3950f7624758caa95c214572d237c653380e89a7220f0f5ad0bcbba8677f53970d3462572e9d6e46fb886",
+                        "sha1": "896e1b355bf55c7dd9e1901e2d00be079d3afd2c"
                     },
                     "required_dependencies": [],
-                    "size": 94710,
-                    "date_published": "2025-10-07T18:57:38.850269Z"
+                    "size": 94781,
+                    "date_published": "2025-11-20T00:37:52.141054Z"
                 }
             ]
         },
@@ -1396,6 +1435,9 @@
         },
         {
             "pakku_id": "Tv2Btkrxg3dX4A1W",
+            "pakku_links": [
+                "oBA2PFJGYaoJvWTm"
+            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -2115,7 +2157,8 @@
                         "25w43a",
                         "25w44a",
                         "25w45a",
-                        "25w46a"
+                        "25w46a",
+                        "1.21.11-pre1"
                     ],
                     "loaders": [
                         "fabric"
@@ -2381,18 +2424,18 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/mOaRXF9l/ViaBackwards-5.5.2-SNAPSHOT.jar",
-                    "id": "mOaRXF9l",
+                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/4Pa3T5fr/ViaBackwards-5.5.2-SNAPSHOT.jar",
+                    "id": "4Pa3T5fr",
                     "parent_id": "NpvuJQoq",
                     "hashes": {
-                        "sha512": "cc43f0093d91eddcbba02c5d5e6cfb4ed5a90b9670b62997e7a0fc58659e2a1bed8ee1ef977d121e4bf3fe45f8b395da61ef37ff45f92e7094ce14ecf0ebd5f7",
-                        "sha1": "41f5981aba2db9f7e449e1eb752f38050967f2b4"
+                        "sha512": "6efb4cc262081dc10d3c4eeda7f7dba4e20a106417ba67e673f6c9ae79a118f0e04b044087afeb281b1be35fcad45d03065135e67dc3a28be22a78a91423aac0",
+                        "sha1": "701748ca411c9de93f070720e1aac69f7cd66edd"
                     },
                     "required_dependencies": [
                         "P1OZGk5p"
                     ],
-                    "size": 1392652,
-                    "date_published": "2025-11-16T18:06:24.893421Z"
+                    "size": 1393013,
+                    "date_published": "2025-11-18T18:36:27.164510Z"
                 }
             ]
         },
