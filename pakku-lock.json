@@ -985,7 +985,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.0-b989.jar",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.1-b997.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10"
@@ -994,18 +994,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/mrGKfe1i/geyser-fabric-Geyser-Fabric-2.9.0-b989.jar",
-                    "id": "mrGKfe1i",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/rGvnzsTC/geyser-fabric-Geyser-Fabric-2.9.1-b997.jar",
+                    "id": "rGvnzsTC",
                     "parent_id": "wKkoqHrH",
                     "hashes": {
-                        "sha512": "c04599dc66fd3056101665e579f877b84c2216f8ce04eb4da1b6db3e7a6b6cbbc8854fb6960df1f57f5725cd3285cf01905fcc33aac9b364ccfd7fe3ff6d660d",
-                        "sha1": "96357b2de25d9d04521eac843fbd82bfe84922c6"
+                        "sha512": "98db753cc58d2571e221b5e31d236e007bbfb01bd041626a219d320451e136643bd2616f913850caf58bcc83531fab8ce18c67d676af64188dba357d3faa9742",
+                        "sha1": "37bd40a7197198246f5fb66af1e4e0d3f3247fd6"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 12399330,
-                    "date_published": "2025-11-19T21:21:57.946587Z"
+                    "size": 12400499,
+                    "date_published": "2025-11-23T20:40:34.729483Z"
                 }
             ]
         },
@@ -1366,7 +1366,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "midnightlib-1.8.3-fabric+1.21.9.jar",
+                    "file_name": "midnightlib-fabric-1.9.1+1.21.10.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10"
@@ -1376,18 +1376,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/7RbEjTSq/midnightlib-1.8.3-fabric+1.21.9.jar",
-                    "id": "7RbEjTSq",
+                    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/EQPKivgz/midnightlib-fabric-1.9.1+1.21.10.jar",
+                    "id": "EQPKivgz",
                     "parent_id": "codAaoxh",
                     "hashes": {
-                        "sha512": "e65ab862d606d91054877bfefc5d49bf8305db0ebd140776b122a802e30628bdcda4c55bed8c46d41af86960897ffdd1d4dbbe97a6480c45b27a39cb67914562",
-                        "sha1": "4264a1296347bf8750676b4b6725afb0db0b4c64"
+                        "sha512": "92bfb30d72b596e06905fbe693be3ccabdb8d1ae0bbee8d0ed401fb33be5667a7459f2451cfa5f660bbaa868a2e19e5b627dbd846448588bb03a8223951f4d74",
+                        "sha1": "3b8eb4ae181c71d157426342a608a55dc878f476"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 63267,
-                    "date_published": "2025-10-03T12:56:08.941263Z"
+                    "size": 58788,
+                    "date_published": "2025-11-23T20:10:53.423443Z"
                 }
             ]
         },
@@ -2116,7 +2116,8 @@
                         "25w44a",
                         "25w45a",
                         "25w46a",
-                        "1.21.11-pre1"
+                        "1.21.11-pre1",
+                        "1.21.11-pre2"
                     ],
                     "loaders": [
                         "fabric"
@@ -2382,18 +2383,18 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/4Pa3T5fr/ViaBackwards-5.5.2-SNAPSHOT.jar",
-                    "id": "4Pa3T5fr",
+                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/34mzkvcO/ViaBackwards-5.5.2-SNAPSHOT.jar",
+                    "id": "34mzkvcO",
                     "parent_id": "NpvuJQoq",
                     "hashes": {
-                        "sha512": "6efb4cc262081dc10d3c4eeda7f7dba4e20a106417ba67e673f6c9ae79a118f0e04b044087afeb281b1be35fcad45d03065135e67dc3a28be22a78a91423aac0",
-                        "sha1": "701748ca411c9de93f070720e1aac69f7cd66edd"
+                        "sha512": "b2e66dc4d41cef00ccd33875861f4181e0bde04096b7d8b363601c8944efeb7eab7a142c02ce4101cb811fc6a0ed622d3180bd6bc9d30bbe2f901013eda04d80",
+                        "sha1": "aac3eb107ed6f54badbaaeda7d269ad9e2a87f3f"
                     },
                     "required_dependencies": [
                         "P1OZGk5p"
                     ],
-                    "size": 1393013,
-                    "date_published": "2025-11-18T18:36:27.164510Z"
+                    "size": 1393942,
+                    "date_published": "2025-11-23T18:49:48.677500Z"
                 }
             ]
         },
@@ -2527,16 +2528,16 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/ujmLAGwe/ViaVersion-5.5.2-SNAPSHOT.jar",
-                    "id": "ujmLAGwe",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/skaaXI1L/ViaVersion-5.5.2-SNAPSHOT.jar",
+                    "id": "skaaXI1L",
                     "parent_id": "P1OZGk5p",
                     "hashes": {
-                        "sha512": "9547483093b97343db82735b23841978c52cf61a2fdb34a88cd924a2e3ea3c340ecb0d549267632448f38f3cb4ce450402df0ef61d7ac2e6a981cc13f969e264",
-                        "sha1": "9e6082071b21f85383d5982d0375df15c05cacd8"
+                        "sha512": "bcd5e64c908911332eb036c97b1011839517f7d63d38d3c40ca678ec31c7dd49f6b4471c18543ca225dd762b3191dc27958e557fb338bf0f5dcdd9a65f0cfe1e",
+                        "sha1": "b97d892a1151a58614b602cde9764e89c37e5d97"
                     },
                     "required_dependencies": [],
-                    "size": 5903943,
-                    "date_published": "2025-11-03T17:57:47.287404Z"
+                    "size": 5904631,
+                    "date_published": "2025-11-23T18:43:55.151716Z"
                 }
             ]
         },
