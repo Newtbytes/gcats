@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Get changed files
         id: changed-files
@@ -45,7 +45,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v4.0.0
@@ -65,7 +65,7 @@ jobs:
       github.ref_name == 'main'
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - uses: mcbeet/check-commands@v1
         with:
@@ -86,7 +86,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: YAML Linter
       uses: ibiqlik/action-yamllint@v3.1.1
