@@ -1,0 +1,3 @@
+[submodule "resources/resourcepack/required/Re-covered"]
+	path = resources/resourcepack/required/Re-covered
+	url = https://github.com/carl-classic/Re-covered.git
