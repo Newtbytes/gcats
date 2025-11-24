@@ -3,16 +3,16 @@ name: Build Server with Pakku
 on:
   push:
     paths:
-      - '**.json'
-      - '**.yml'
-      - '**.yaml'
-      - '**.mcmeta'
-      - '**.mcfunction'
-      - '**.py'
-      - 'requirements.txt'
-      - '.pakku/**'
-      - 'datapacks/**'
-      - '.github/workflows/build.yml'
+      - "**.json"
+      - "**.yml"
+      - "**.yaml"
+      - "**.mcmeta"
+      - "**.mcfunction"
+      - "**.py"
+      - "requirements.txt"
+      - ".pakku/**"
+      - "datapacks/**"
+      - ".github/workflows/build.yml"
   workflow_dispatch:
 
 env:
@@ -59,6 +59,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
 
       - name: Get server name
         id: server_name
@@ -97,11 +99,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
 
       - uses: actions/setup-java@v5
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          distribution: "temurin"
+          java-version: "21"
 
       - name: Cache pakku.jar
         id: cache-pakku-jar
@@ -125,7 +129,7 @@ jobs:
 
       - uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install build requirements
         run: |
@@ -155,6 +159,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
 
       - name: Download pakku.jar
         run: |
@@ -164,8 +170,8 @@ jobs:
 
       - uses: actions/setup-java@v5
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          distribution: "temurin"
+          java-version: "21"
 
       - name: Run tests
         run: |
