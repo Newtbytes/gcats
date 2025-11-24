@@ -1,5 +1,11 @@
-build/
-**.mrpack
-.venv/
+# dev tools
 .vscode/
 pakku.jar
+
+# output fils
+**.mrpack
+build/
+
+# python
+.venv/
+__pycache__/
