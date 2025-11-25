@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -49,7 +49,7 @@ jobs:
 
       - name: Download build artifacts
         if: ${{ steps.check_release.outputs.release == 'true' }}
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: artifacts
 
