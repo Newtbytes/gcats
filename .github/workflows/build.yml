@@ -173,6 +173,15 @@ jobs:
           distribution: "temurin"
           java-version: "21"
 
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+
+      - name: Install build requirements
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Run tests
         run: |
           make test
