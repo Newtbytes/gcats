@@ -1,6 +1,9 @@
 {
     "name": "GCATs",
     "version": "v0.3.1",
+    "overrides": [
+        "resources"
+    ],
     "projects": {
         "invview": {
             "side": "SERVER"
