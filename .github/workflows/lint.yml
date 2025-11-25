@@ -3,13 +3,13 @@ name: Linting & Validation
 on:
   push:
     paths:
-    - '**.yml'
-    - '**.yaml'
-    - '**.json'
-    - '**.py'
-    - 'requirements.txt'
-    - 'datapacks/'
-    - '.github/workflows/lint.yml'
+      - "**.yml"
+      - "**.yaml"
+      - "**.json"
+      - "**.py"
+      - "requirements.txt"
+      - "datapacks/"
+      - ".github/workflows/lint.yml"
 
 permissions:
   contents: read
@@ -69,7 +69,7 @@ jobs:
 
       - uses: mcbeet/check-commands@v1
         with:
-          source: resources/datapack/required/modally_stranded
+          source: datapack/modally_stranded
 
   lint-yaml:
     name: Lint YAML
@@ -85,10 +85,10 @@ jobs:
       github.ref_name == 'main'
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v6
 
-    - name: YAML Linter
-      uses: ibiqlik/action-yamllint@v3.1.1
-      with:
-        config_file: .github/config/lint-yaml.yml
+      - name: YAML Linter
+        uses: ibiqlik/action-yamllint@v3.1.1
+        with:
+          config_file: .github/config/lint-yaml.yml
