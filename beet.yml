@@ -39,4 +39,4 @@ meta:
     data_pack:
       pack.png: server-icon.png
 
-output: build/resources
+output: build
