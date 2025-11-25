@@ -37,6 +37,9 @@
         },
         "no-firework-boosting": {
             "side": "BOTH"
+        },
+        "im-fast": {
+            "side": "BOTH"
         }
     }
 }
