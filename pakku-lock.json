@@ -150,6 +150,51 @@
             ]
         },
         {
+            "pakku_id": "tJ0YF2NR0AIILgQA",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "anvil-restoration"
+            },
+            "name": {
+                "modrinth": "Anvil Restoration"
+            },
+            "id": {
+                "modrinth": "bd8nwTGy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "anvilrestoration-1.21.10-2.5.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/bd8nwTGy/versions/EZpxOAFv/anvilrestoration-1.21.10-2.5.jar",
+                    "id": "EZpxOAFv",
+                    "parent_id": "bd8nwTGy",
+                    "hashes": {
+                        "sha512": "31cc9b347c599ab877be9118e6768919b550e199b76cc68867754a1000ca7a44abddcbbab872bb553b02d4046397b242d9aedf342c4df9646519e5439e9f93ed",
+                        "sha1": "1cba7e667058091ab36631366a3db1c2dcf33088"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 25761,
+                    "date_published": "2025-10-07T22:39:47.051499Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "7bGWLwrVFeEm3NoZ",
             "type": "MOD",
             "side": "SERVER",
@@ -1010,6 +1055,48 @@
             ]
         },
         {
+            "pakku_id": "xY5bWOBgxy1hi45w",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "grind-enchantments"
+            },
+            "name": {
+                "modrinth": "Grind Enchantments"
+            },
+            "id": {
+                "modrinth": "WC4UgDcZ"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "grind-enchantments-4.1.0+1.21.10.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/WC4UgDcZ/versions/eEsnc86t/grind-enchantments-4.1.0+1.21.10.jar",
+                    "id": "eEsnc86t",
+                    "parent_id": "WC4UgDcZ",
+                    "hashes": {
+                        "sha512": "185041bd8321b71c16c4c799bf7b37055f2d31cfa5375aa1d0fadb36d18a7eeb1434c8371e79ed46578663550235a4dcf4127ab49732131ec475969de807285b",
+                        "sha1": "382ad34405c9c67f6a2fa78e2ea32e22881e852b"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 227743,
+                    "date_published": "2025-11-21T15:45:38.802591Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ld6usvp6wzBC4Br4",
             "type": "MOD",
             "side": "CLIENT",
@@ -1432,6 +1519,51 @@
                     ],
                     "size": 349186,
                     "date_published": "2025-10-01T18:00:07.390809Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0Wh3SIphKGmUfASt",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "name-tag-tweaks"
+            },
+            "name": {
+                "modrinth": "Name Tag Tweaks"
+            },
+            "id": {
+                "modrinth": "LrLZEnPl"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "nametagtweaks-1.21.10-4.0.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/LrLZEnPl/versions/7OJRbPyT/nametagtweaks-1.21.10-4.0.jar",
+                    "id": "7OJRbPyT",
+                    "parent_id": "LrLZEnPl",
+                    "hashes": {
+                        "sha512": "6e46561ea2ca1bb9123890540a92629d374b23f943d32a635c4b50ca5a2420290fa31db5ba9c521ae7a9485962dc7783444f2dfe05424aa4321b8e3574db4736",
+                        "sha1": "a1376116ca9a64dfcf6ee6e18a1eaecdad4cc68b"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 41136,
+                    "date_published": "2025-10-07T21:11:41.036365Z"
                 }
             ]
         },
@@ -2137,6 +2269,51 @@
             ]
         },
         {
+            "pakku_id": "55FyUP1KnxdonXWv",
+            "pakku_links": [
+                "r9oUCVZY6KnoVpXs"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "sticky-enchanting-lapis"
+            },
+            "name": {
+                "modrinth": "Sticky Enchanting Lapis"
+            },
+            "id": {
+                "modrinth": "tH1zAs3C"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "stickyenchantinglapis-1.21.10-1.5.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/tH1zAs3C/versions/NvbiZ2KO/stickyenchantinglapis-1.21.10-1.5.jar",
+                    "id": "NvbiZ2KO",
+                    "parent_id": "tH1zAs3C",
+                    "hashes": {
+                        "sha512": "04357f3ce658ea297239717beded5b5274c40be5f4f9e75abbf5661507b79e26ff3aa88f6e5b134ef386a1b365699f34443ab95514857d8e3ec869a7a22c1721",
+                        "sha1": "568f1cff5fffa19a817b79c61b16b7795adfce35"
+                    },
+                    "required_dependencies": [
+                        "e0M1UDsY"
+                    ],
+                    "size": 61481,
+                    "date_published": "2025-10-07T20:22:22.714151Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "XZ65KN0K6LAeTJzg",
             "pakku_links": [
                 "JVGsRYZ8iEyG2CvJ",
@@ -2260,6 +2437,55 @@
                     ],
                     "size": 34450,
                     "date_published": "2025-10-07T20:17:49.391589Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "HjZXrmkoqajaFiFy",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq",
+                "oBA2PFJGYaoJvWTm"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "tax-free-levels"
+            },
+            "name": {
+                "modrinth": "Tax Free Levels"
+            },
+            "id": {
+                "modrinth": "jCBrrLTs"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "TaxFreeLevels-1.4.10-fabric-1.21.5.jar",
+                    "mc_versions": [
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/jCBrrLTs/versions/MnVCluXs/TaxFreeLevels-1.4.10-fabric-1.21.5.jar",
+                    "id": "MnVCluXs",
+                    "parent_id": "jCBrrLTs",
+                    "hashes": {
+                        "sha512": "32c761de986778c7a90d53282c665d4a99f9d30a5b7e287112c58fb64235b78ca33cf0b31a602b418bfdd2ad80e672b79ec83dc974491efb6bac4cc34e1225d8",
+                        "sha1": "35ca058ea94d9380bba0540c0c9cb956b6bcaf69"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "9s6osm5g"
+                    ],
+                    "size": 34668,
+                    "date_published": "2025-03-28T08:20:15.708739Z"
                 }
             ]
         },
