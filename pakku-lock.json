@@ -150,6 +150,47 @@
             ]
         },
         {
+            "pakku_id": "7bGWLwrVFeEm3NoZ",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "audaki-cart-engine"
+            },
+            "name": {
+                "modrinth": "Audaki Cart Engine (Faster Minecarts)"
+            },
+            "id": {
+                "modrinth": "V8qsCwta"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "ACE_mc1.21.6-4.2.1.jar",
+                    "mc_versions": [
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/V8qsCwta/versions/5ioIZRC8/ACE_mc1.21.6-4.2.1.jar",
+                    "id": "5ioIZRC8",
+                    "parent_id": "V8qsCwta",
+                    "hashes": {
+                        "sha512": "d4cff23d9ee7d0a8373caceedd20827b0862927d27f446b3f62026a49c8c17daef437065e135da96f54cf81e2d8f70f477b2331314947cbcd135e3cdfd818376",
+                        "sha1": "fabebcf6bcf212b4ba92d14930d9f8afc9cd5072"
+                    },
+                    "required_dependencies": [],
+                    "size": 33094,
+                    "date_published": "2025-06-28T15:49:49.603902Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "U0oobiopTlwElp1v",
             "type": "MOD",
             "side": "CLIENT",
