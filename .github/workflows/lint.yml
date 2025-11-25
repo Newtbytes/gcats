@@ -3,13 +3,13 @@ name: Linting & Validation
 on:
   push:
     paths:
-    - '**.yml'
-    - '**.yaml'
-    - '**.json'
-    - '**.py'
-    - 'requirements.txt'
-    - 'datapacks/'
-    - '.github/workflows/lint.yml'
+      - "**.yml"
+      - "**.yaml"
+      - "**.json"
+      - "**.py"
+      - "requirements.txt"
+      - "datapacks/"
+      - ".github/workflows/lint.yml"
 
 permissions:
   contents: read
@@ -25,11 +25,11 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v46.0.5
+        uses: tj-actions/changed-files@v47.0.0
 
   validate:
     name: Validate JSON and YAML files
@@ -45,10 +45,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@v3.3.2
+        uses: GrantBirki/json-yaml-validate@v4.0.0
 
   validate-datapack:
     name: Validate Minecraft datapack 'Modally Stranded'
@@ -65,11 +65,11 @@ jobs:
       github.ref_name == 'main'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: mcbeet/check-commands@v1
         with:
-          source: datapacks/modally_stranded
+          source: datapack/modally_stranded
 
   lint-yaml:
     name: Lint YAML
@@ -85,10 +85,10 @@ jobs:
       github.ref_name == 'main'
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v6
 
-    - name: YAML Linter
-      uses: ibiqlik/action-yamllint@v3.1.1
-      with:
-        config_file: .github/config/lint-yaml.yml
+      - name: YAML Linter
+        uses: ibiqlik/action-yamllint@v3.1.1
+        with:
+          config_file: .github/config/lint-yaml.yml
