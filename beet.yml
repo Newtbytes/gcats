@@ -3,21 +3,30 @@ description: GCATs server resources.
 
 resource_pack:
   load:
-    - resources/resourcepack/required/VanillaTweaks_MC1.21.x.zip
+    - resourcepack/VanillaTweaks_MC1.21.x.zip
     - https://cdn.modrinth.com/data/tPtjib62/versions/G6ZoMPyA/visual_armor_trims_4.0_1.21.5%2B.zip
     # This resource pack attempts to add license information to the pack.mcmeta
     # in a way that is incorrect syntax, at least for mcbeet. I've replaced it
     # with a patched version
     # - https://cdn.modrinth.com/data/6gN7YVi7/versions/q4F6AFtc/Re-covered.zip
-    - resources/resourcepack/required/Re-covered/Re-covered/
+    - resourcepack/Re-covered/Re-covered/
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/qw5e9mrm/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip
     - https://cdn.modrinth.com/data/zp6touiL/versions/43cYxPZ8/Just-Atlas_RP_v2-1_1-21-5.zip
 
-  min_format: 69
-  max_format: 69
-  name: "{{ project_name }}"
-  description: "{{ project_description }}"
+  pack_format: 69
+  name: "{{ project_name }}-resourcepack"
+
+data_pack:
+  load:
+    - datapack/anti creeper grief v1.1.14 (MC 1.21-1.21.10).zip
+    - datapack/double shulker shells v1.3.14 (MC 1.21-1.21.10).zip
+    - datapack/more effective tools v1.0.8 (MC 1.21-1.21.10).zip
+    - datapack/VanillaTweaks_c214290_MC1.21-1.21.10.zip
+    - datapack/modally_stranded
+
+  pack_format: 88
+  name: "{{ project_name }}-datapack"
 
 pipeline:
   - beet.contrib.copy_files
@@ -30,4 +39,4 @@ meta:
     data_pack:
       pack.png: server-icon.png
 
-output: build/resourcepack
+output: build/resources
