@@ -2,10 +2,10 @@
 PAKKU ?= pakku
 BEET ?= beet
 
-# default versions
-MC_VERSION ?= 1.21.10
-FABRIC_VERSION ?= 0.18.0
-FABRIC_INSTALLER_VERSION ?= 1.1.0
+# Dynamically extract versions from pakku-lock.json
+MC_VERSION := $(shell jq -r '.mc_versions[0]' pakku-lock.json)
+FABRIC_VERSION := $(shell jq -r '.loaders.fabric' pakku-lock.json)
+FABRIC_INSTALLER_VERSION := 1.1.0
 
 # Output:
 # - build/serverpack/{server name}-{version}.zip
