@@ -2029,6 +2029,53 @@
             ]
         },
         {
+            "pakku_id": "jaPsuzNjgtJPefOo",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "simple-snowy-fix-(forge-fabric)"
+            },
+            "name": {
+                "modrinth": "Simple Snowy Fix (Forge / Fabric)"
+            },
+            "id": {
+                "modrinth": "3WP3HZRG"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "simple_snowy_fix-1.21.1-1.21.10-2.1.5-fabric.jar",
+                    "mc_versions": [
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/3WP3HZRG/versions/vmHoIIPJ/simple_snowy_fix-1.21.1-1.21.10-2.1.5-fabric.jar",
+                    "id": "vmHoIIPJ",
+                    "parent_id": "3WP3HZRG",
+                    "hashes": {
+                        "sha512": "8b9cbc256a48c75703eb585e9b25a1ea796e4f96251734ef1c88ada0f2db837c7a80cefbc22a525cc23565cee6fb9685d7d5a3ce5d081fb435633464125240f9",
+                        "sha1": "2f256f5b47d4782dd9b934b3f8139df17d3a9592"
+                    },
+                    "required_dependencies": [],
+                    "size": 119359,
+                    "date_published": "2025-11-10T00:06:46.808824Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YljJrGxJyaH3yUti",
             "pakku_links": [
                 "RMEKddjcm3IXNKOi"
@@ -2070,6 +2117,51 @@
                     ],
                     "size": 166063,
                     "date_published": "2025-09-30T09:46:05.146604Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "iYPB668J1o0Ch49f",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq",
+                "ZJqEVsxFypy48g2Z"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "snow-under-trees-remastered"
+            },
+            "name": {
+                "modrinth": "Snow Under Trees (Fabric)"
+            },
+            "id": {
+                "modrinth": "XVnUIUAQ"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "SnowUnderTrees-2.7.4+1.21.9.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XVnUIUAQ/versions/zZ2wK01j/SnowUnderTrees-2.7.4+1.21.9.jar",
+                    "id": "zZ2wK01j",
+                    "parent_id": "XVnUIUAQ",
+                    "hashes": {
+                        "sha512": "73204c54ed26f67b376b8d75278852d893e9306899fda8ade806b8db887f0953b3abaad1e08eb556bc51f5a69382ca0ca7e36582fc179a024c8eaed0b1df153c",
+                        "sha1": "bafdb95085b06ff1733abfd3cbcd021fd49e9f13"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "SNVQ2c0g"
+                    ],
+                    "size": 2317360,
+                    "date_published": "2025-10-07T22:29:35.639756Z"
                 }
             ]
         },
