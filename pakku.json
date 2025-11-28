@@ -8,15 +8,6 @@
         "invview": {
             "side": "SERVER"
         },
-        "detect-afk": {
-            "side": "SERVER"
-        },
-        "afk-sit": {
-            "side": "SERVER"
-        },
-        "afk-dim-names": {
-            "side": "SERVER"
-        },
         "explorations": {
             "side": "BOTH"
         },
