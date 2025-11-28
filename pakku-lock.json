@@ -1257,6 +1257,50 @@
             ]
         },
         {
+            "pakku_id": "cJcKnww6buW6UWrU",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "invview"
+            },
+            "name": {
+                "modrinth": "Inv View"
+            },
+            "id": {
+                "modrinth": "jrDKjZP7"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "InvView-1.4.18-1.21.9+.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/jrDKjZP7/versions/OmPLoAVf/InvView-1.4.18-1.21.9+.jar",
+                    "id": "OmPLoAVf",
+                    "parent_id": "jrDKjZP7",
+                    "hashes": {
+                        "sha512": "96ec498d63eee1b41ea06733f31947831278ad7e6b4261a001eb2cb84167575e78990067a83e5ecfdf96e823ba21e8b63a436e73ee39e49eda444583163ce936",
+                        "sha1": "727edd6afe632daa23aa71da2c47ecd3bc12e1af"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 171585,
+                    "date_published": "2025-10-10T00:23:40.014956Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "iSkjkPo6ZtQFdQOT",
             "pakku_links": [
                 "r9oUCVZY6KnoVpXs"
