@@ -8,9 +8,6 @@
         "invview": {
             "side": "SERVER"
         },
-        "explorations": {
-            "side": "BOTH"
-        },
         "noisium": {
             "side": "BOTH"
         },
