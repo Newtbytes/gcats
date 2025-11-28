@@ -1097,6 +1097,84 @@
             ]
         },
         {
+            "pakku_id": "MDAb5Ixg2QYpl409",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "hopo-better-mineshaft"
+            },
+            "name": {
+                "modrinth": "Hopo Better Mineshaft"
+            },
+            "id": {
+                "modrinth": "9IxCUYAP"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "HopoBetterMineshaft-[1.21.9-1.21.10]-1.3.4.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9IxCUYAP/versions/ZEJjgXwO/HopoBetterMineshaft-[1.21.9-1.21.10]-1.3.4.jar",
+                    "id": "ZEJjgXwO",
+                    "parent_id": "9IxCUYAP",
+                    "hashes": {
+                        "sha512": "22375c29c4ff08069a48f4a256c3eb93e837672b19cd24e3fdbca5f89e409a2b31effc5da94eb605d4a79daef9fd64ee4af5e0e31dabc09c23f905bd305113d8",
+                        "sha1": "db37dd9aa39cb6b3243403532e9a7e1e3404cbd6"
+                    },
+                    "required_dependencies": [],
+                    "size": 4689397,
+                    "date_published": "2025-10-20T20:33:37.212845Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ZNngdK2Rc64ph7zI",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "hopo-better-ruined-portals"
+            },
+            "name": {
+                "modrinth": "Hopo Better Ruined Portals"
+            },
+            "id": {
+                "modrinth": "hIpLSyga"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "hopobetterruinedportals-1-21-10-1-4-8.zip",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "datapack"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/hIpLSyga/versions/DLYnIfCA/hopobetterruinedportals-1-21-10-1-4-8.zip",
+                    "id": "DLYnIfCA",
+                    "parent_id": "hIpLSyga",
+                    "hashes": {
+                        "sha512": "cea79f09d3da1f3f3dd851203b11f7dac3ad46d86d5d36e29c118e07e4c60843024e2ed75d13abcd02d109f7158db10f56327825baac2ebb12dc61bd772d63aa",
+                        "sha1": "55023959b884c9c6fc60f57aa37cc7df31ee87bc"
+                    },
+                    "required_dependencies": [],
+                    "size": 472908,
+                    "date_published": "2025-10-14T00:02:28.541672Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ld6usvp6wzBC4Br4",
             "type": "MOD",
             "side": "CLIENT",
