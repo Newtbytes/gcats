@@ -1218,6 +1218,43 @@
             ]
         },
         {
+            "pakku_id": "QuF3PVNGGfZhV8ja",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "im-fast"
+            },
+            "name": {
+                "modrinth": "I'm Fast"
+            },
+            "id": {
+                "modrinth": "PaUMOeP0"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "imfast-FABRIC-1.21.10-1.0.3.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/PaUMOeP0/versions/vY05HS8c/imfast-FABRIC-1.21.10-1.0.3.jar",
+                    "id": "vY05HS8c",
+                    "parent_id": "PaUMOeP0",
+                    "hashes": {
+                        "sha512": "a910d8127a822dc3ca65209eb57fbd825100ac8d40b24fcbc9439f355d0ac2698901b600090364da9aaff5998a3bd06ac361b03f95b19c5d666f1bc8efeafeff",
+                        "sha1": "e5a20b6ed1582e06e684cb3288b23a6a8493492d"
+                    },
+                    "required_dependencies": [],
+                    "size": 3474,
+                    "date_published": "2025-10-28T13:39:22.220609Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ld6usvp6wzBC4Br4",
             "type": "MOD",
             "side": "CLIENT",
