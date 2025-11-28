@@ -1980,6 +1980,43 @@
             ]
         },
         {
+            "pakku_id": "ZD1iB8S0vRvcBuiM",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "sessility"
+            },
+            "name": {
+                "modrinth": "Sessility"
+            },
+            "id": {
+                "modrinth": "G9rHXWug"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "sessility-fabric-mod-0.7.6.jar",
+                    "mc_versions": [
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/G9rHXWug/versions/4UCB1v4G/sessility-fabric-mod-0.7.6.jar",
+                    "id": "4UCB1v4G",
+                    "parent_id": "G9rHXWug",
+                    "hashes": {
+                        "sha512": "caced587a0ddedf20e47b44233d7e43ae291741e723b2c5025ec2f142182dddb31621410010752bfb7de731683641a740bed4444861467440c19c31659f7925a",
+                        "sha1": "df8d4b21086754bb8f37b30330f50b526191c48d"
+                    },
+                    "required_dependencies": [],
+                    "size": 18568,
+                    "date_published": "2025-10-08T01:24:26.039330Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "OTgCrCWe3Q5zeqyq",
             "type": "MOD",
             "side": "BOTH",
