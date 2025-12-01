@@ -21,11 +21,11 @@ build-modpack: build-resources
 	mkdir -p resources/datapack/required/
 
 	cp -r build/GCATs-resourcepack.zip resources/resourcepack/required/GCATs.zip
-	cp -r build/GCATs-datapack/ resources/datapack/required/GCATs
+	cp -r build/GCATs-datapack.zip resources/datapack/required/GCATs.zip
 
 	$(PAKKU) export
 
-	rm -r resources
+	rm -rf resources
 
 # Output:
 # Complete server ready to run/test
@@ -44,7 +44,8 @@ test: build-server
 	cd build/server && echo "stop" | java -jar server.jar nogui
 
 clean:
-	rm -r build
+	rm -rf build
+	rm -rf resources
 
 .PHONY: build-modpack build-server build-resources build test clean
 .DEFAULT_GOAL := build
