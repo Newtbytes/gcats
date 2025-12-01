@@ -251,7 +251,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "BadOptimizations-2.3.4-1.21.10.jar",
+                    "file_name": "BadOptimizations-2.4.0-1.21.10.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -260,16 +260,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/NaycCZfQ/BadOptimizations-2.3.4-1.21.10.jar",
-                    "id": "NaycCZfQ",
+                    "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/oGXA8nrb/BadOptimizations-2.4.0-1.21.10.jar",
+                    "id": "oGXA8nrb",
                     "parent_id": "g96Z4WVZ",
                     "hashes": {
-                        "sha512": "2105b3f8a6ab58a80c60ae675c9b153b2c46eef8f5691b5d1cf6dbe6ea489212b80ecfb6e58e475b132f9dc2634bc6cb9e68a0485ae8ed4c66c49855fa884448",
-                        "sha1": "093c9ba175ad6a179987acdfe37765307946522d"
+                        "sha512": "23de565b1de118f1b940b4bf1042b4b8e0c0cad27f91c25bbcb5f376cc71e2c7b39fd56a179d7802acc658a45e155c744beca382321c0e4bff2ea5dab30c671d",
+                        "sha1": "97c4f6a96a6d3ea511e3556926604e340d2a3a86"
                     },
                     "required_dependencies": [],
-                    "size": 270590,
-                    "date_published": "2025-10-30T22:21:55.408079Z"
+                    "size": 282857,
+                    "date_published": "2025-11-27T22:15:48.554819Z"
                 }
             ]
         },
@@ -1445,7 +1445,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "kleeslabs-fabric-1.21.10-21.10.1.jar",
+                    "file_name": "kleeslabs-fabric-1.21.10-21.10.2.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -1453,19 +1453,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/7uh75ruZ/versions/lhBAd9VY/kleeslabs-fabric-1.21.10-21.10.1.jar",
-                    "id": "lhBAd9VY",
+                    "url": "https://cdn.modrinth.com/data/7uh75ruZ/versions/zEJaI9ga/kleeslabs-fabric-1.21.10-21.10.2.jar",
+                    "id": "zEJaI9ga",
                     "parent_id": "7uh75ruZ",
                     "hashes": {
-                        "sha512": "f62776ba2e81a0faadf3c166346a88725b525421ff705659beff013686f0f14ab3d9020bb39d4a442ee40d4e39c73b24ef56cfec9e5fa9436bc0b8e644c5ec87",
-                        "sha1": "9a5d596a194a73570c362573885159da6aba6222"
+                        "sha512": "c557d1c96b1c4241f0aee2d16091a88636ecfe1294612c84441f99b0f34e0c908653d8c525b30d47009a27711b28f878940312d340259672b7aaf91a3d85a7b4",
+                        "sha1": "151e11f507f6b5116ba7e02f65073b9c08ca3ed4"
                     },
                     "required_dependencies": [
-                        "MBAkmtvl",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "MBAkmtvl"
                     ],
-                    "size": 290685,
-                    "date_published": "2025-10-08T17:57:47.322036Z"
+                    "size": 290959,
+                    "date_published": "2025-11-26T09:11:10.951132Z"
                 }
             ]
         },
@@ -1570,7 +1570,9 @@
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
-                        "1.21.11-pre1"
+                        "1.21.11-pre1",
+                        "1.21.11-pre2",
+                        "1.21.11-pre3"
                     ],
                     "loaders": [
                         "fabric"
@@ -2617,7 +2619,8 @@
                         "25w45a",
                         "25w46a",
                         "1.21.11-pre1",
-                        "1.21.11-pre2"
+                        "1.21.11-pre2",
+                        "1.21.11-pre3"
                     ],
                     "loaders": [
                         "fabric"
