@@ -1,42 +1,7 @@
 {
     "name": "GCATs",
-    "version": "v0.3.0",
+    "version": "v0.3.1",
     "overrides": [
         "resources"
-    ],
-    "projects": {
-        "invview": {
-            "side": "SERVER"
-        },
-        "detect-afk": {
-            "side": "SERVER"
-        },
-        "afk-sit": {
-            "side": "SERVER"
-        },
-        "afk-dim-names": {
-            "side": "SERVER"
-        },
-        "explorations": {
-            "side": "BOTH"
-        },
-        "hopo-better-mineshaft": {
-            "side": "BOTH"
-        },
-        "hopo-better-ruined-portals": {
-            "side": "BOTH"
-        },
-        "snow-under-trees-remastered": {
-            "side": "BOTH"
-        },
-        "simple-snowy-fix-(forge-fabric)": {
-            "side": "BOTH"
-        },
-        "noisium": {
-            "side": "BOTH"
-        },
-        "no-firework-boosting": {
-            "side": "BOTH"
-        }
-    }
+    ]
 }

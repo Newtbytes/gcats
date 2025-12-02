@@ -1,2 +1,2 @@
-requests==2.32.4
-beet==0.111.0
+requests==2.32.5
+beet==0.112.1

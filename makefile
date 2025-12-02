@@ -1,43 +1,48 @@
+include makefile.env
+
 # default pakku/beet commands
 PAKKU ?= pakku
 BEET ?= beet
 
-# default versions
-MC_VERSION ?= 1.21.7
-FABRIC_VERSION ?= 0.16.14
-FABRIC_INSTALLER_VERSION ?= 1.0.3
+# Output:
+# - build/{SERVER_NAME}-resourcepack.zip
+# - build/{SERVER_NAME}-datapack/
+build-resources:
+	$(BEET) --log debug
 
 # Output:
-# - build/serverpack/{server name}-{version}.zip
-# - build/modrinth/{server name}-{version}.mrpack
-build-modpack:
+# - build/serverpack/{SERVER_NAME}-{SERVER_VERSION}.zip
+# - build/modrinth/{SERVER_NAME}-{SERVER_VERSION}.mrpack
+build-modpack: build-resources env
+	mkdir -p resources/resourcepack/required
+	mkdir -p resources/datapack/required/
+
+	cp -r build/${SERVER_NAME}-resourcepack.zip resources/resourcepack/required/${SERVER_NAME}.zip
+	cp -r build/${SERVER_NAME}-datapack.zip resources/datapack/required/${SERVER_NAME}.zip
+
 	$(PAKKU) export
+
+	rm -rf resources
 
 # Output:
 # Complete server ready to run/test
 # - build/server/
-build-server:
-	make build-modpack
+build-server: build-modpack env
+	# move serverpack
 	unzip -o build/serverpack/*.zip -d build/server
 
 	# Download fabric-launcher
 	curl -o build/server/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
 
-# Output:
-# - build/resourcepack/{server name}-{version}-resourcepack.zip
-build-resourcepack:
-	$(BEET) --log debug
+build: build-server
 
-build: build-server build-resourcepack
-
-test:
-	make build-server
-
+test: build-server
 	echo "eula=true" > build/server/eula.txt
 	cd build/server && echo "stop" | java -jar server.jar nogui
 
 clean:
 	rm -rf build
+	rm -rf resources
 
-.PHONY: build-modpack build-server build-resourcepack build test clean
+.PHONY: env build-modpack build-server build-resources build test clean
 .DEFAULT_GOAL := build
