@@ -24,6 +24,8 @@ jobs:
       server_version: ${{ steps.set-env.outputs.server_version }}
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Set environment variables
         id: set-env
         run: ./env.sh
@@ -58,7 +60,7 @@ jobs:
   info:
     runs-on: ubuntu-latest
 
-    needs: [check, env]
+    needs: [check]
 
     outputs:
       changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
