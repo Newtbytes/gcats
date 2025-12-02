@@ -1,3 +1,5 @@
+#! /bin/sh
+
 PAKKU_VERSION := 1.3.2
 
 MC_VERSION := $(shell jq -r '.mc_versions[0]' pakku-lock.json)
