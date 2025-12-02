@@ -1,7 +1,6 @@
 {
     "onlyLoadSpecified": false,
     "loadOrder": [
-        "file/modally_stranded",
-        "file/cascades-source-v1.0.4-1.21.5"
+        "file/gameplay_zones"
     ]
 }

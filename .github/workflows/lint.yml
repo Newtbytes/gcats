@@ -28,7 +28,7 @@ jobs:
         uses: GrantBirki/json-yaml-validate@v4.0.0
 
   validate-datapack:
-    name: Validate Minecraft datapack 'Modally Stranded'
+    name: Validate Minecraft datapack 'Gameplay Zones'
 
     runs-on: ubuntu-latest
 
@@ -39,7 +39,7 @@ jobs:
 
       - uses: mcbeet/check-commands@v1
         with:
-          source: datapack/modally_stranded
+          source: datapack/gameplay_zones
 
   lint-yaml:
     name: Lint YAML
