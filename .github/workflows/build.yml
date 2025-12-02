@@ -100,7 +100,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: pakku.jar
-          key: ${{hashFiles('pakku.jar')}}
+          key: pakku-jar-cache-${{ hashFiles('pakku.jar') }}
 
       - name: Cache pakku
         uses: actions/cache@v4
