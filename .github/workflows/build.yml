@@ -46,39 +46,12 @@ jobs:
             echo "path=pakku-lock.json" >> $GITHUB_OUTPUT
           fi
 
-  info:
-    runs-on: ubuntu-latest
-
-    needs: [check]
-
-    outputs:
-      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
-
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          submodules: true
-
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v47.0.0
-
   build:
     runs-on: ubuntu-latest
-
-    needs: [info]
 
     env:
       PAKKU: java -jar pakku.jar
       BEET: python -m beet
-
-    if: |
-      contains(${{ needs.info.outputs.changed-files }}, 'pakku') ||
-      contains(${{ needs.info.outputs.changed-files }}, 'mod') ||
-      contains(${{ needs.info.outputs.changed-files }}, 'datapack') ||
-      contains(${{ needs.info.outputs.changed-files }}, 'server') ||
-      contains(${{ needs.info.outputs.changed-files }}, 'build') ||
-      github.ref_name == 'main'
 
     steps:
       - uses: actions/checkout@v6
