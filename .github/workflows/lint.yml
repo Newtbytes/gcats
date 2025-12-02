@@ -36,6 +36,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    needs: [info]
+
     if: |
       contains(${{ needs.info.changed-files.outputs.files }}, '.yml') ||
       contains(${{ needs.info.changed-files.outputs.files }}, '.yaml') ||
@@ -55,7 +57,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    needs: [validate]
+    needs: [validate, info]
 
     if: |
       contains(${{ needs.info.changed-files.outputs.files }}, '.mcmeta') ||
