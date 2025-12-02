@@ -87,9 +87,7 @@ jobs:
 
       - name: Load .env variables
         run: |
-          set -a
           source .env
-          set +a
           echo "PAKKU_VERSION=${PAKKU_VERSION}" >> $GITHUB_ENV
           echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
           echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
