@@ -1,4 +1,4 @@
-include .env
+include makefile.env
 
 # default pakku/beet commands
 PAKKU ?= pakku
@@ -13,7 +13,7 @@ build-resources:
 # Output:
 # - build/serverpack/{SERVER_NAME}-{SERVER_VERSION}.zip
 # - build/modrinth/{SERVER_NAME}-{SERVER_VERSION}.mrpack
-build-modpack: build-resources
+build-modpack: build-resources env
 	mkdir -p resources/resourcepack/required
 	mkdir -p resources/datapack/required/
 
@@ -27,7 +27,7 @@ build-modpack: build-resources
 # Output:
 # Complete server ready to run/test
 # - build/server/
-build-server: build-modpack
+build-server: build-modpack env
 	# move serverpack
 	unzip -o build/serverpack/*.zip -d build/server
 
@@ -44,5 +44,5 @@ clean:
 	rm -rf build
 	rm -rf resources
 
-.PHONY: build-modpack build-server build-resources build test clean
+.PHONY: env build-modpack build-server build-resources build test clean
 .DEFAULT_GOAL := build
