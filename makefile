@@ -1,8 +1,8 @@
+include .env
+
 # default pakku/beet commands
 PAKKU ?= pakku
 BEET ?= beet
-
-include .env
 
 # Output:
 # - build/{SERVER_NAME}-resourcepack.zip
