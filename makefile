@@ -2,26 +2,24 @@
 PAKKU ?= pakku
 BEET ?= beet
 
-# Dynamically extract versions from pakku-lock.json
-MC_VERSION := $(shell jq -r '.mc_versions[0]' pakku-lock.json)
-FABRIC_VERSION := $(shell jq -r '.loaders.fabric' pakku-lock.json)
-FABRIC_INSTALLER_VERSION := 1.1.0
+# setup environment variables
+include env.sh
 
 # Output:
-# - build/GCATs-resourcepack.zip
-# - build/GCATs-datapack/
+# - build/{SERVER_NAME}-resourcepack.zip
+# - build/{SERVER_NAME}-datapack/
 build-resources:
 	$(BEET) --log debug
 
 # Output:
-# - build/serverpack/{server name}-{version}.zip
-# - build/modrinth/{server name}-{version}.mrpack
+# - build/serverpack/{SERVER_NAME}-{SERVER_VERSION}.zip
+# - build/modrinth/{SERVER_NAME}-{SERVER_VERSION}.mrpack
 build-modpack: build-resources
 	mkdir -p resources/resourcepack/required
 	mkdir -p resources/datapack/required/
 
-	cp -r build/GCATs-resourcepack.zip resources/resourcepack/required/GCATs.zip
-	cp -r build/GCATs-datapack.zip resources/datapack/required/GCATs.zip
+	cp -r build/${SERVER_NAME}-resourcepack.zip resources/resourcepack/required/${SERVER_NAME}.zip
+	cp -r build/${SERVER_NAME}-datapack.zip resources/datapack/required/${SERVER_NAME}.zip
 
 	$(PAKKU) export
 

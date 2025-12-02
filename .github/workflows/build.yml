@@ -15,10 +15,18 @@ on:
       - ".github/workflows/build.yml"
   workflow_dispatch:
 
-env:
-  PAKKU_TAG: v1.3.2
-
 jobs:
+  env:
+    runs-on: ubuntu-latest
+    outputs:
+      pakku_version: ${{ steps.set-env.outputs.pakku_version }}
+      server_name: ${{ steps.set-env.outputs.server_name }}
+      server_version: ${{ steps.set-env.outputs.server_version }}
+
+    steps:
+      - name: Set environment variables
+        id: set-env
+        run: ./env.sh
   check:
     runs-on: ubuntu-latest
 
@@ -50,31 +58,15 @@ jobs:
   info:
     runs-on: ubuntu-latest
 
-    needs: [check]
+    needs: [check, env]
 
     outputs:
-      server_name: ${{ steps.server_name.outputs.prop }}
-      server_version: ${{ steps.server_version.outputs.prop }}
       changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
 
     steps:
       - uses: actions/checkout@v6
         with:
           submodules: true
-
-      - name: Get server name
-        id: server_name
-        uses: notiz-dev/github-action-json-property@v0.2.0
-        with:
-          path: ${{ needs.check.outputs.pakku }}
-          prop_path: name
-
-      - name: Get server version
-        id: server_version
-        uses: notiz-dev/github-action-json-property@v0.2.0
-        with:
-          path: ${{ needs.check.outputs.pakku }}
-          prop_path: version
 
       - name: Get changed files
         id: changed-files
@@ -83,7 +75,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    needs: [info]
+    needs: [info, env]
 
     env:
       PAKKU: java -jar pakku.jar
@@ -112,7 +104,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: pakku.jar
-          key: pakku-${{ env.PAKKU_TAG }}
+          key: pakku-v${{ needs.env.outputs.pakku_version }}
 
       - name: Cache pakku
         uses: actions/cache@v4
@@ -125,7 +117,7 @@ jobs:
       - name: Download pakku.jar if not cached
         if: steps.cache-pakku-jar.outputs.cache-hit != 'true'
         run: |
-          curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/${{ env.PAKKU_TAG }}/pakku.jar
+          curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ needs.env.outputs.pakku_version }}/pakku.jar
 
       - uses: actions/setup-python@v6
         with:
@@ -143,7 +135,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v5
         with:
-          name: ${{ needs.info.outputs.server_name }}-${{ needs.info.outputs.server_version }}
+          name: ${{ needs.env.outputs.server_name }}-${{ needs.env.outputs.server_version }}
           path: |
             build/modrinth/*.mrpack
             build/serverpack/*.zip
@@ -152,6 +144,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: [build, env]
 
     env:
       PAKKU: java -jar pakku.jar
@@ -165,7 +158,7 @@ jobs:
       - name: Download pakku.jar
         run: |
           if [ ! -f "pakku.jar" ]; then
-            curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/${{ env.PAKKU_TAG }}/pakku.jar
+            curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ needs.env.outputs.pakku_version }}/pakku.jar
           fi
 
       - uses: actions/setup-java@v5
