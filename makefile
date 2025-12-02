@@ -2,8 +2,7 @@
 PAKKU ?= pakku
 BEET ?= beet
 
-# setup environment variables
-include env.sh
+include .env
 
 # Output:
 # - build/{SERVER_NAME}-resourcepack.zip
