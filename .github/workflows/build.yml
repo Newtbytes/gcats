@@ -140,7 +140,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: [build, env]
+    needs: [build]
 
     env:
       PAKKU: java -jar pakku.jar
