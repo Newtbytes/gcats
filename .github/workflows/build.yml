@@ -13,6 +13,8 @@ on:
       - ".pakku/**"
       - "datapacks/**"
       - ".github/workflows/build.yml"
+      - ".env"
+      - "makefile"
   workflow_dispatch:
 
 jobs:
