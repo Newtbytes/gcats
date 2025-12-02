@@ -110,7 +110,7 @@ jobs:
           path: |
             build/modrinth/*.mrpack
             build/serverpack/*.zip
-            build/resourcepack/*.zip
+            build/${{ env.SERVER_NAME }}-resourcepack.zip
           if-no-files-found: error
 
   test:
