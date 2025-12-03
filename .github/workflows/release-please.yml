@@ -76,10 +76,13 @@ jobs:
           make build
 
       - name: Upload artifacts to release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ needs.release.outputs.tag_name }} \
-          build/modrinth/*.mrpack \
-          build/serverpack/*.zip \
-          build/${{ env.SERVER_NAME }}-resourcepack.zip \
-          --clobber
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          tag_name: ${{ needs.release.outputs.tag_name }}
+          name: Release ${{ needs.release.outputs.tag_name }}
+          generate_release_notes: false
+          files: |
+            build/modrinth/*.mrpack
+            build/serverpack/*.zip
+            build/${{ env.SERVER_NAME }}-resourcepack.zip
