@@ -103,16 +103,6 @@ jobs:
         run: |
           make build
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v5
-        with:
-          name: ${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}
-          path: |
-            build/modrinth/*.mrpack
-            build/serverpack/*.zip
-            build/${{ env.SERVER_NAME }}-resourcepack.zip
-          if-no-files-found: error
-
   test:
     runs-on: ubuntu-latest
     needs: [build]
