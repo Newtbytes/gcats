@@ -45,6 +45,10 @@ jobs:
 
     if: ${{ needs.release.outputs.release_created == 'true' }}
 
+    env:
+      PAKKU: java -jar pakku.jar
+      BEET: python -m beet
+
     steps:
       - uses: actions/checkout@v6
         with:
@@ -57,7 +61,12 @@ jobs:
           echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
           echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
 
-      - name: Download pakku.jar if not cached
+      - uses: actions/setup-java@v5
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - name: Download pakku.jar
         run: |
           curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ env.PAKKU_VERSION }}/pakku.jar
 
