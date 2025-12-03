@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      release-created: ${{ steps.release.outputs.release_created }}
-      tag-name: ${{ steps.release.outputs.tag_name }}
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
 
     steps:
       - name: Checkout code
@@ -44,7 +44,7 @@ jobs:
 
     needs: [release]
 
-    if: ${{ needs.release.outputs.release-created == 'true' }}
+    if: ${{ needs.release.outputs.release_created == 'true' }}
 
     steps:
       - uses: actions/checkout@v6
@@ -78,7 +78,7 @@ jobs:
       - name: Upload artifacts to release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ needs.release.outputs.tag-name }} \
+        run: gh release upload ${{ needs.release.outputs.tag_name }} \
           build/modrinth/*.mrpack \
           build/serverpack/*.zip \
           build/${{ env.SERVER_NAME }}-resourcepack.zip \
