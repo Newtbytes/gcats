@@ -15,6 +15,9 @@ def make_cascades_source(ctx: beet.Context):
                 worldgen.Dimension,
                 worldgen.DimensionType,
                 worldgen.WorldgenStructure,
+                worldgen.WorldgenConfiguredFeature,
+                worldgen.WorldgenPlacedFeature,
+                worldgen.WorldgenBiomeTag,
                 beet.Advancement,
             ]:
                 namespace.pop(ty)
