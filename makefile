@@ -36,6 +36,10 @@ build-server: build-modpack env
 
 build: build-server
 
+run: build-server
+	cd build/server && echo "eula=true" > eula.txt
+	cd build/server && java -jar server.jar nogui
+
 test: build-server
 	echo "eula=true" > build/server/eula.txt
 	cd build/server && echo "stop" | java -jar server.jar nogui
@@ -44,5 +48,5 @@ clean:
 	rm -rf build
 	rm -rf resources
 
-.PHONY: env build-modpack build-server build-resources build test clean
+.PHONY: env build-modpack build-server build-resources build run test clean
 .DEFAULT_GOAL := build
