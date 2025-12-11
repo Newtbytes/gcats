@@ -36,6 +36,8 @@ class Color:
         self.g = floor_mean(self.g, other.g)
         self.b = floor_mean(self.b, other.b)
 
+        return True
+
     def into(self) -> int:
         return int.from_bytes([self.r, self.g, self.b])
 
@@ -45,14 +47,15 @@ class GrassColorModifier(Enum):
     DARK_FOREST = 2
     SWAMP = 3
 
-    def from_str(val: str) -> "GrassColorModifier":
+    @classmethod
+    def from_str(cls, val: str) -> "GrassColorModifier":
         match val:
             case "none":
-                return GrassColorModifier.NONE
+                return cls.NONE
             case "dark_forest":
-                return GrassColorModifier.DARK_FOREST
+                return cls.DARK_FOREST
             case "swamp":
-                return GrassColorModifier.SWAMP
+                return cls.SWAMP
             case _:
                 raise ValueError
 
@@ -83,12 +86,13 @@ class TemperatureModifier(Enum):
     NONE = 1
     FROZEN = 2
 
-    def from_str(val: str) -> "TemperatureModifier":
+    @classmethod
+    def from_str(cls, val: str) -> "TemperatureModifier":
         match val:
             case "none":
-                return TemperatureModifier.NONE
+                return cls.NONE
             case "frozen":
-                return TemperatureModifier.FROZEN
+                return cls.FROZEN
             case _:
                 raise ValueError
 
@@ -138,6 +142,8 @@ class FeatureStep(beet.SupportsMerge):
                 )
 
         self.features = [f["value"] for f in self.features if not f["delete"]]
+
+        return True
 
     def diff(self, other: "FeatureStep") -> dict[int, list]:
         changes = defaultdict(list)
@@ -219,6 +225,8 @@ class FeatureStepList(beet.SupportsMerge):
         for i in range(length):
             self[i].merge(other[i])
 
+        return True
+
     def __getitem__(self, i: int) -> FeatureStep:
         return self.steps[i]
 
@@ -228,7 +236,7 @@ class FeatureStepList(beet.SupportsMerge):
     def __len__(self):
         return len(self.steps)
 
-    def into(self) -> list[FeatureStep]:
+    def into(self) -> list[list[str]]:
         return [step.into() for step in self.steps]
 
 
@@ -309,11 +317,13 @@ def merge_data(a: dict, b: dict):
     data_into(a)
 
 
-def merge_biome(self: worldgen.WorldgenBiome, other: worldgen.WorldgenBiome):
+def merge_biome(self: worldgen.WorldgenBiome, other: worldgen.WorldgenBiome) -> bool:
     convert_types(self.data)
     convert_types(other.data)
 
     merge_data(self.data, other.data)
+
+    return True
 
 
 worldgen.WorldgenBiome.merge = merge_biome
