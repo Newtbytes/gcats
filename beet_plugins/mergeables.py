@@ -160,6 +160,11 @@ class FeatureStep(beet.SupportsMerge):
                 other_i += 1
                 continue
 
+            if other_i >= len(other):
+                changes[self_i].append((list.pop,))
+                self_i += 1
+                continue
+
             previous_same = self[self_i - 1] == other[other_i - 1]
             current_same = self[self_i] == other[other_i]
             next_same = False
