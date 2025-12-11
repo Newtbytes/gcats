@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.0](https://github.com/Newtbytes/gcats/compare/v0.3.2...v0.4.0) (2025-12-11)
+
+
+### Features
+
+* Implement run target ([00759d8](https://github.com/Newtbytes/gcats/commit/00759d85cf6f71fc168baf921a7a2df037699eb7))
+* **worldgen:** Reimplement Cascades ([#98](https://github.com/Newtbytes/gcats/issues/98)) ([00c8f7b](https://github.com/Newtbytes/gcats/commit/00c8f7bb0238366ff00d796c16e18e0f91f01a60))
+* **worldgen:** Reimplement Cascades with biome generation changes removed for compatibility with other worldgen mods ([00c8f7b](https://github.com/Newtbytes/gcats/commit/00c8f7bb0238366ff00d796c16e18e0f91f01a60))
+
+
+### Bug Fixes
+
+* **assets:** Simplify use of pack_format thanks to fix in mcbeet ([83a48cb](https://github.com/Newtbytes/gcats/commit/83a48cb686b6e1c2a67f02ae6dcc7e9035d75bb4))
+* **ci:** Pakku is not setup correctly when releasing ([a2284e3](https://github.com/Newtbytes/gcats/commit/a2284e3eab8ded62d5c2076a168384ed76a5fc3f))
+
 ## [0.3.2](https://github.com/Newtbytes/gcats/compare/v0.3.1...v0.3.2) (2025-12-03)
 
 
