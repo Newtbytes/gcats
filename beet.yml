@@ -1,3 +1,6 @@
+require:
+  - datapack.cascades
+
 name: GCATs
 description: GCATs server resources.
 
