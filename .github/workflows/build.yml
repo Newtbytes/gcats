@@ -143,4 +143,5 @@ jobs:
 
       - name: Run tests
         run: |
-          make test
+          make build
+          pytest
