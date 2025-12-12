@@ -2,6 +2,8 @@ from collections import defaultdict
 from dataclasses import dataclass
 from enum import Enum
 
+import difflib
+
 import beet
 import beet.contrib.worldgen as worldgen
 
@@ -116,76 +118,23 @@ class FeatureStep(beet.SupportsMerge):
         if self == other:
             return False
 
-        changes = self.diff(other)
+        for feature_diff in list(difflib.ndiff(self.features, other.features)):
+            if feature_diff.startswith("-"):
+                feature = feature_diff.removeprefix("-").strip()
 
-        self.features = [dict(value=f, delete=False) for f in self.features]
+                if feature.startswith("minecraft:"):
+                    self.features.remove(feature)
 
-        for i, ops in changes.items():
-            for op in ops:
-                fn = op[0]
-                args = op[1:] if len(op) > 1 else tuple()
+            elif feature_diff.startswith("+"):
+                feature = feature_diff.removeprefix("+").strip()
 
-                if fn is list.insert:
-                    fn(self.features, i, dict(value=args[0], delete=False))
-                elif fn is list.append:
-                    fn(self.features, dict(value=args[0], delete=False))
-
-                self[i]["delete"] = fn is list.pop and self[i]["value"].startswith(
-                    "minecraft:"
-                )
-
-        self.features = [f["value"] for f in self.features if not f["delete"]]
+                # find the feature we should insert this new feature after
+                for i in range(other.features.index(feature) - 1, -1, -1):
+                    if other[i] in self:
+                        self.features.insert(self.features.index(other[i]) + 1, feature)
+                        break
 
         return True
-
-    def diff(self, other: "FeatureStep") -> dict[int, list]:
-        changes = defaultdict(list)
-
-        self_i = 0
-        other_i = 0
-        while True:
-            if self_i >= len(self) and other_i >= len(other):
-                break
-
-            if self_i >= len(self):
-                changes[self_i].append((list.insert, other[other_i]))
-                self_i += 1
-                other_i += 1
-                continue
-
-            if other_i >= len(other):
-                changes[self_i].append((list.pop,))
-                self_i += 1
-                continue
-
-            previous_same = self[self_i - 1] == other[other_i - 1]
-            current_same = self[self_i] == other[other_i]
-            next_same = False
-
-            if self_i + 1 < len(self) and other_i + 1 < len(other):
-                next_same = self[self_i + 1] == other[other_i + 1]
-
-            if current_same:
-                self_i += 1
-                other_i += 1
-                continue
-
-            if not current_same:
-                if (
-                    self_i + 1 < len(self)
-                    and previous_same
-                    and other[other_i] == self[self_i + 1]
-                ) or self[self_i] not in other:
-                    changes[self_i].append((list.pop,))
-                    self_i += 1
-                    continue
-
-                if previous_same or not next_same:
-                    changes[self_i] = [(list.insert, other[other_i])] + changes[self_i]
-                    other_i += 1
-                    continue
-
-        return changes
 
     def __contains__(self, feature: str):
         return feature in self.features
