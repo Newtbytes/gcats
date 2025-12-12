@@ -93,63 +93,6 @@
             ]
         },
         {
-            "pakku_id": "9dYvejuZQ7s5YT3n",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "amplified-nether"
-            },
-            "name": {
-                "modrinth": "Amplified Nether"
-            },
-            "id": {
-                "modrinth": "wXiGiyGX"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "Amplified_Nether_1.21.x_v1.2.11.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/wXiGiyGX/versions/wjOKbxcn/Amplified_Nether_1.21.x_v1.2.11.jar",
-                    "id": "wjOKbxcn",
-                    "parent_id": "wXiGiyGX",
-                    "hashes": {
-                        "sha512": "d0a3f1aabcb08ee6402b511d616c80cbe848478d0e0b6a694e837ac51b0e2791f5a1d7339eefad52973627cc46bb2f762f8469088633e33805677bb3468858eb",
-                        "sha1": "7786aab32597cb2f0c2ccbeb106d780f160e7028"
-                    },
-                    "required_dependencies": [],
-                    "size": 100529,
-                    "date_published": "2025-10-07T17:04:59.697858Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "tJ0YF2NR0AIILgQA",
             "pakku_links": [
                 "r9oUCVZY6KnoVpXs"
@@ -993,63 +936,6 @@
                     ],
                     "size": 873370,
                     "date_published": "2025-07-20T19:08:09.175732Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "BJ7RdQOHbaZ9AmLZ",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "geophilic"
-            },
-            "name": {
-                "modrinth": "Geophilic"
-            },
-            "id": {
-                "modrinth": "hl5OLM95"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "Geophilic v3.4.4 f15-88.mod.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hl5OLM95/versions/kaxg8ywB/Geophilic v3.4.4 f15-88.mod.jar",
-                    "id": "kaxg8ywB",
-                    "parent_id": "hl5OLM95",
-                    "hashes": {
-                        "sha512": "1c7a424e0491a1e3d3dedc2a867cf10b8b0582b89b4a813a372a3a89ca89978610eb330305bc2ac041fb64c47fe5109cc35db79c8e711204e64cf5197db202fb",
-                        "sha1": "744c89e81b2312edfd842253a5b5980b0a011ebd"
-                    },
-                    "required_dependencies": [],
-                    "size": 713996,
-                    "date_published": "2025-10-05T21:15:18.581509Z"
                 }
             ]
         },
