@@ -40,13 +40,9 @@ run: build-server
 	cd build/server && echo "eula=true" > eula.txt
 	cd build/server && java -jar server.jar nogui
 
-test: build-server
-	echo "eula=true" > build/server/eula.txt
-	cd build/server && echo "stop" | java -jar server.jar nogui
-
 clean:
 	rm -rf build
 	rm -rf resources
 
-.PHONY: env build-modpack build-server build-resources build run test clean
+.PHONY: env build-modpack build-server build-resources build run clean
 .DEFAULT_GOAL := build
