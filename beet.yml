@@ -26,6 +26,7 @@ resource_pack:
 
 data_pack:
   load:
+    - https://cdn.modrinth.com/data/Jmx5kJiS/versions/zCun0Pkf/cascades-v1.0.5-1.21.9-1.21.10.zip
     - https://cdn.modrinth.com/data/hl5OLM95/versions/NocMg9CU/Geophilic%20v3.4.4%20f15-88.dp.zip
     - https://cdn.modrinth.com/data/8oi3bsk5/versions/RFNry3l0/Terralith_1.21.5_v2.5.13.zip
     - https://cdn.modrinth.com/data/wXiGiyGX/versions/68re3WvL/Amplified_Nether_1.21_v1.2.11.zip
