@@ -5,9 +5,7 @@ from enum import Enum
 import beet
 import beet.contrib.worldgen as worldgen
 
-
-def mean(a, b):
-    return (a + b) / 2
+from .utils import mean
 
 
 def floor_mean(a: int, b: int) -> int:
