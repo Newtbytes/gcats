@@ -266,7 +266,7 @@ class MergeableFloat:
 
 biome_type_map = {
     "temperature": MergeableFloat,
-    "temperature_modifier": TemperatureModifier,
+    "temperature_modifier": TemperatureModifier.from_str,
     "downfall": MergeableFloat,
     "water_color": Color,
     "foliage_color": Color,
