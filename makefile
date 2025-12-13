@@ -40,6 +40,9 @@ run: build-server
 	cd build/server && echo "eula=true" > eula.txt
 	cd build/server && java -jar server.jar nogui
 
+test: build-server
+	pytest
+
 clean:
 	rm -rf build
 	rm -rf resources
