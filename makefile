@@ -44,9 +44,12 @@ update:
 	$(PAKKU) update -a
 	python scripts/list_mods.py pakku-lock.json README.md
 
+test: build-server
+	pytest
+
 clean:
 	rm -rf build
 	rm -rf resources
 
-.PHONY: env build-modpack build-server build-resources build run clean
+.PHONY: env build-modpack build-server build-resources build run update test clean
 .DEFAULT_GOAL := build
