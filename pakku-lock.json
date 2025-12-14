@@ -1037,44 +1037,6 @@
             ]
         },
         {
-            "pakku_id": "ZNngdK2Rc64ph7zI",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "hopo-better-ruined-portals"
-            },
-            "name": {
-                "modrinth": "Hopo Better Ruined Portals"
-            },
-            "id": {
-                "modrinth": "hIpLSyga"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "hopobetterruinedportals-1-21-10-1-4-8.zip",
-                    "mc_versions": [
-                        "1.21.9",
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "datapack"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hIpLSyga/versions/DLYnIfCA/hopobetterruinedportals-1-21-10-1-4-8.zip",
-                    "id": "DLYnIfCA",
-                    "parent_id": "hIpLSyga",
-                    "hashes": {
-                        "sha512": "cea79f09d3da1f3f3dd851203b11f7dac3ad46d86d5d36e29c118e07e4c60843024e2ed75d13abcd02d109f7158db10f56327825baac2ebb12dc61bd772d63aa",
-                        "sha1": "55023959b884c9c6fc60f57aa37cc7df31ee87bc"
-                    },
-                    "required_dependencies": [],
-                    "size": 472908,
-                    "date_published": "2025-10-14T00:02:28.541672Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "QuF3PVNGGfZhV8ja",
             "type": "MOD",
             "side": "SERVER",
