@@ -3027,7 +3027,8 @@
                 "ytwAeMYoHmqPnRPq",
                 "G61qa8QTWptY5Uz0",
                 "HxerSskATKMKicZu",
-                "u0njp58keuEkG1cE"
+                "u0njp58keuEkG1cE",
+                "kM4ZU84eOeViwtRO"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -3602,7 +3603,7 @@
             ]
         },
         {
-            "pakku_id": "u0njp58keuEkG1cE",
+            "pakku_id": "kM4ZU84eOeViwtRO",
             "pakku_links": [
                 "ytwAeMYoHmqPnRPq"
             ],
@@ -3640,6 +3641,46 @@
                     ],
                     "size": 1126948,
                     "date_published": "2026-01-09T16:34:37.468996Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "eyOXQHmdP7meoxNh",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "filament"
+            },
+            "name": {
+                "modrinth": "filament"
+            },
+            "id": {
+                "modrinth": "yANxwqSX"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "filament-1.3.22+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yANxwqSX/versions/Lu08IKJy/filament-1.3.22+1.21.11.jar",
+                    "id": "Lu08IKJy",
+                    "parent_id": "yANxwqSX",
+                    "hashes": {
+                        "sha512": "522f0b1a1e56b06224f49c7c84b1ed7906eaa233e4cc4cd7b320c56dda6d4ef29631d87805b7a86e7babaeaae9dc03044ba496fcb359a03cd42e555e68a98805",
+                        "sha1": "d6c621dec740a6774ce12dcb6ef2fce0ca0213d1"
+                    },
+                    "required_dependencies": [],
+                    "size": 3074197,
+                    "date_published": "2026-01-05T06:24:27.637342Z"
                 }
             ]
         },
