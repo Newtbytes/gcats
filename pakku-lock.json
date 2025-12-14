@@ -2033,6 +2033,54 @@
             ]
         },
         {
+            "pakku_id": "IGWzlzrKApBetwRv",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "biome-dither"
+            },
+            "name": {
+                "modrinth": "Pufferfish's Biome Dither"
+            },
+            "id": {
+                "modrinth": "xlybdB0E"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "puffish_biome_dither-1.0.0-1.21-fabric.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/xlybdB0E/versions/AP4T3D4E/puffish_biome_dither-1.0.0-1.21-fabric.jar",
+                    "id": "AP4T3D4E",
+                    "parent_id": "xlybdB0E",
+                    "hashes": {
+                        "sha512": "69c627464a0b66ecfc35905b47a157ec2e156df83b6661134f2a22ae787a19a8cf341af30539dafd108a7d4baf1aee7be7cc76a35850bb0ef279a7f6529944f7",
+                        "sha1": "b788259bd01fef199024381cf2fce18934bbd251"
+                    },
+                    "required_dependencies": [],
+                    "size": 4567,
+                    "date_published": "2025-09-13T11:57:05.267557Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5hAWMGQ1EX9S7NkU",
             "pakku_links": [
                 "ytwAeMYoHmqPnRPq",
