@@ -1,5 +1,5 @@
 {
-    "action_bar_messages": true,
+    "action_bar_messages": false,
     "use_sleep_percentage": false,
     "tick_game_time": false,
     "tick_block_entities": false,
