@@ -2079,6 +2079,44 @@
             ]
         },
         {
+            "pakku_id": "LszPmcS2rEVmjlo3",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "polymer"
+            },
+            "name": {
+                "modrinth": "Polymer"
+            },
+            "id": {
+                "modrinth": "xGdtZczs"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "polymer-bundled-0.15.2+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/xGdtZczs/versions/wugBT1fU/polymer-bundled-0.15.2+1.21.11.jar",
+                    "id": "wugBT1fU",
+                    "parent_id": "xGdtZczs",
+                    "hashes": {
+                        "sha512": "9c205ab398c324ee4dc376269d8aa5df64d11766b6418952a64d2df94f096e665f63eae0c4f0c66e22d03c6ff6767550d1777c28485340131e6556091199062a",
+                        "sha1": "d6fb4141f437d565bd9a6a218c0742f28a0bc5ba"
+                    },
+                    "required_dependencies": [],
+                    "size": 1485870,
+                    "date_published": "2026-02-01T19:00:35.423826Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "IGWzlzrKApBetwRv",
             "type": "MOD",
             "side": "SERVER",
@@ -3557,31 +3595,28 @@
                     "required_dependencies": [
                         "e0M1UDsY"
                     ],
-                    "size": 24349,
-                    "date_published": "2025-12-10T21:38:56.766540Z"
+                    "size": 21861,
+                    "date_published": "2025-10-07T20:04:03.780071Z"
                 }
             ]
         },
         {
-            "pakku_id": "eyOXQHmdP7meoxNh",
-            "pakku_links": [
-                "ytwAeMYoHmqPnRPq"
-            ],
+            "pakku_id": "S3AkepkhIDKJ7XE0",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "SERVER",
             "slug": {
-                "modrinth": "yacl"
+                "modrinth": "filament"
             },
             "name": {
-                "modrinth": "YetAnotherConfigLib (YACL)"
+                "modrinth": "filament"
             },
             "id": {
-                "modrinth": "1eAoo2KR"
+                "modrinth": "yANxwqSX"
             },
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+                    "file_name": "filament-1.3.22+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3589,18 +3624,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/pHWDw3Vc/yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
-                    "id": "pHWDw3Vc",
-                    "parent_id": "1eAoo2KR",
+                    "url": "https://cdn.modrinth.com/data/yANxwqSX/versions/Lu08IKJy/filament-1.3.22+1.21.11.jar",
+                    "id": "Lu08IKJy",
+                    "parent_id": "yANxwqSX",
                     "hashes": {
-                        "sha512": "392db7d471030cca27483ecf58c626a14cd73d71a18afe6d4173c6b030948b8a925b36e708d4cc2c897dfa3f20a7f23b999fc18aa6d36c156da29037601153ac",
-                        "sha1": "f99cda70903f16dd6927a276150b2762b4d5ab66"
+                        "sha512": "522f0b1a1e56b06224f49c7c84b1ed7906eaa233e4cc4cd7b320c56dda6d4ef29631d87805b7a86e7babaeaae9dc03044ba496fcb359a03cd42e555e68a98805",
+                        "sha1": "d6c621dec740a6774ce12dcb6ef2fce0ca0213d1"
                     },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 1126948,
-                    "date_published": "2026-01-09T16:34:37.468996Z"
+                    "required_dependencies": [],
+                    "size": 3074197,
+                    "date_published": "2026-01-05T06:24:27.637342Z"
                 }
             ]
         }
