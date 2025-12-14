@@ -489,6 +489,50 @@
             ]
         },
         {
+            "pakku_id": "Y6i6ccy90CjDj2vi",
+            "pakku_links": [
+                "m3nGIGMaW87d6cxY"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "clifftree"
+            },
+            "name": {
+                "modrinth": "CliffTree"
+            },
+            "id": {
+                "modrinth": "59ypHk8x"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "clifftree-3.1.2-1.21.9.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/59ypHk8x/versions/6lSNi5nt/clifftree-3.1.2-1.21.9.jar",
+                    "id": "6lSNi5nt",
+                    "parent_id": "59ypHk8x",
+                    "hashes": {
+                        "sha512": "c7a951a1bc1b2cf69e405e2f16ed6b7c3b2f5b0e77ab313b75430435d0ffde6ce12e28bb4c1d74e95db0fefd350d71d0bc63c2e614d4fe7b1b44e63520ac8a07",
+                        "sha1": "d324339063df400749a7a13d10668f52d2fd7e7e"
+                    },
+                    "required_dependencies": [
+                        "XaDC71GB"
+                    ],
+                    "size": 1265300,
+                    "date_published": "2025-12-11T03:25:09.371067Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "34TPJ6MSvD7FDcnJ",
             "pakku_links": [
                 "8mNP37JcdbeSBLIe",
@@ -1452,6 +1496,44 @@
                     "required_dependencies": [],
                     "size": 835455,
                     "date_published": "2025-11-13T22:32:36.019258Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "m3nGIGMaW87d6cxY",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "lithostitched"
+            },
+            "name": {
+                "modrinth": "Lithostitched"
+            },
+            "id": {
+                "modrinth": "XaDC71GB"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "lithostitched-1.5.2-fabric-1.21.9.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/wOA5KvR7/lithostitched-1.5.2-fabric-1.21.9.jar",
+                    "id": "wOA5KvR7",
+                    "parent_id": "XaDC71GB",
+                    "hashes": {
+                        "sha512": "99a34f59cbbbc4c5f609d51977c9b7de78a027e6386aab1119d0af0a727c1e99d53f028814f802b10b65b30980f88c5702e7b7c7044d12d2473edfd69765c535",
+                        "sha1": "a566316fa98e480598546955ba208967ceb4e10c"
+                    },
+                    "required_dependencies": [],
+                    "size": 558852,
+                    "date_published": "2025-12-09T01:26:04.324050Z"
                 }
             ]
         },
