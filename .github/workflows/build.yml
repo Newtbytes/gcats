@@ -72,13 +72,13 @@ jobs:
 
       - name: Cache pakku.jar
         id: cache-pakku-jar
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: pakku.jar
           key: pakku-jar-cache-${{ hashFiles('pakku.jar') }}
 
       - name: Cache pakku
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         id: cache-pakku
         with:
           path: build/.cache
