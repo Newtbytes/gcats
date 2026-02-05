@@ -109,6 +109,29 @@ class ProjectInfo(ToMarkdown):
         return f"***{self.name.strip()}***: " + self.url.to_md()
 
 
+def fmt_row(*values: str) -> str:
+    return f"| {' | '.join(values)} |"
+
+
+def fmt_table_header(*headers: str) -> str:
+    out = fmt_row(*headers) + "\n"
+    out += fmt_row(*["-------------" for _ in range(len(headers))])
+    return out
+
+
+def fmt_project_table(projects: list[ProjectInfo]) -> str:
+    out = fmt_table_header("Name", "Side", "URL") + "\n"
+
+    out += "\n".join(
+        [
+            fmt_row(project.name, project.side.to_md(), project.url.to_md())
+            for project in projects
+        ]
+    )
+
+    return out
+
+
 def fmt_modlist(projects: list[ProjectInfo]):
     def sectionize(projects: list[ProjectInfo]) -> dict[ProjectType, ProjectInfo]:
         sections = defaultdict(list)
@@ -129,8 +152,7 @@ def fmt_modlist(projects: list[ProjectInfo]):
         out.append(section_to_md(section))
         out.append("")
 
-        for project in projects:
-            out.append(project.to_md())
+        out.append(fmt_project_table(projects))
 
     return "\n".join(out)
 
