@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from collections import defaultdict
 from enum import StrEnum
 
+from typing import Any, Callable
 from urllib.parse import urlparse, urljoin, ParseResult as URL
 import json
 
@@ -44,7 +45,7 @@ class ProjectSide(StrEnum):
     BOTH = "both"
 
     def to_md(self) -> str:
-        return self.value.capitalize()
+        return f"{self.value.capitalize()}{'-side' if not self == ProjectSide.BOTH else ''}"
 
 
 class ProjectType(StrEnum):
@@ -120,46 +121,58 @@ def fmt_table_header(*headers: str) -> str:
 
 
 def fmt_project_table(projects: list[ProjectInfo]) -> str:
-    out = fmt_table_header("Name", "Side", "URL") + "\n"
+    out = fmt_table_header("Name", "URL") + "\n"
 
     out += "\n".join(
-        [
-            fmt_row(project.name, project.side.to_md(), project.url.to_md())
-            for project in projects
-        ]
+        [fmt_row(project.name, project.url.to_md()) for project in projects]
     )
 
     return out
 
 
 def fmt_modlist(projects: list[ProjectInfo]):
-    def sectionize(projects: list[ProjectInfo]) -> dict[ProjectType, ProjectInfo]:
-        sections = defaultdict(list)
+    def group_by_field(
+        projects: list[ProjectInfo], key: Callable[[ProjectInfo], Any]
+    ) -> dict[Any, list[ProjectInfo]]:
+        grouped = defaultdict(list)
 
         for project in projects:
-            sections[project.ty].append(project)
+            grouped[key(project)].append(project)
 
-        return sections
+        return grouped
 
-    def section_to_md(section: ProjectType) -> str:
-        return f"# {section.value.replace('resourcepack', 'resource pack').title()}s"
+    def first_header(
+        s: str,
+    ) -> str:
+        return f"# {s}"
+
+    def second_header(
+        s: str,
+    ) -> str:
+        return f"## {s}"
 
     out = []
 
-    sections = sectionize(projects)
+    sections = {
+        ty: group_by_field(prjs, lambda prj: prj.side)
+        for ty, prjs in group_by_field(projects, lambda prj: prj.ty).items()
+    }
 
-    for section, projects in sections.items():
-        out.append(section_to_md(section))
-        out.append("")
+    for ty, project_of_ty in sections.items():
+        ty: ProjectType
+        project_of_ty: dict[ProjectSide, list[ProjectInfo]]
 
-        out.append(fmt_project_table(projects))
+        out.append(first_header(f"*{str(ty).capitalize()}s*"))
+        for side, projects in project_of_ty.items():
+            out.append(second_header(side.to_md()))
+            out.append(fmt_project_table(projects))
 
     return "\n".join(out)
 
 
 def replace_modlist(doc: str, replacement: str):
     modlist_pat = re.compile(
-        r"^# Mods\b[\s\S]*?(?=^# |\Z)",
+        r"^# \*?Mods\*?\b[\s\S]*?(?=^# |\Z)",
         flags=re.MULTILINE,
     )
 
