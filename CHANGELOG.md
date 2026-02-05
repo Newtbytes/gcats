@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.4.0](https://github.com/Newtbytes/gcats/compare/v0.3.2...v0.4.0) (2026-02-05)
+
+
+### Features
+
+* **ci:** Add mod descriptions ([417f17a](https://github.com/Newtbytes/gcats/commit/417f17aa9ff9c152770790e9596baf2cc9d00ce3))
+* **ci:** Format modlist as table ([8fc4688](https://github.com/Newtbytes/gcats/commit/8fc468892ad6cbfabf3d50543e0d9f33749c23c1))
+* **ci:** Group mods by side ([80cf7e3](https://github.com/Newtbytes/gcats/commit/80cf7e3310d954bda64bfe05f8e6e133f1a27f6d))
+* **ci:** Implement auto-updating modlist in README ([007814e](https://github.com/Newtbytes/gcats/commit/007814e02432fe3d0c715da3604c15c30202b41f))
+* **ci:** implement markdown AST ([4edae5f](https://github.com/Newtbytes/gcats/commit/4edae5f4e97290539cf01f369920988396c988c2))
+* Implement run target ([00759d8](https://github.com/Newtbytes/gcats/commit/00759d85cf6f71fc168baf921a7a2df037699eb7))
+* **mods:** remove formations mods ([5a12701](https://github.com/Newtbytes/gcats/commit/5a12701326651c9c8b3602482d2432988d02a847))
+* **mods:** remove Hopo Better Ruined Portals ([d605373](https://github.com/Newtbytes/gcats/commit/d605373edf63e6b82c1c42c7b1750cea4c87a32f))
+* **worldgen:** Add mod CliffTree ([2202d4b](https://github.com/Newtbytes/gcats/commit/2202d4bdbd229ded55e78b29a83e5d67c11e2194))
+* **worldgen:** Add mod Climate Rivers ([d9f84ec](https://github.com/Newtbytes/gcats/commit/d9f84ecebaa1756da944ba5b5378a8102409e764))
+* **worldgen:** Add mod Pufferfish's Biome Dither ([16fd8f5](https://github.com/Newtbytes/gcats/commit/16fd8f50a9a04a8b925a7256fd6ab738de05dcee))
+* **worldgen:** Add mod Revamped Shipwrecks ([3a61573](https://github.com/Newtbytes/gcats/commit/3a615739028ddefe9c5782fa18a3bd787ecb76d7))
+* **worldgen:** Reimplement Cascades ([#98](https://github.com/Newtbytes/gcats/issues/98)) ([00c8f7b](https://github.com/Newtbytes/gcats/commit/00c8f7bb0238366ff00d796c16e18e0f91f01a60))
+* **worldgen:** Reimplement Cascades with biome generation changes removed for compatibility with other worldgen mods ([00c8f7b](https://github.com/Newtbytes/gcats/commit/00c8f7bb0238366ff00d796c16e18e0f91f01a60))
+* **worldgen:** tweak structure spawning for some modded structures with structurify ([c795b04](https://github.com/Newtbytes/gcats/commit/c795b04c74c37145eaf6638d888c1e9065fd9292))
+
+
+### Bug Fixes
+
+* **assets:** Simplify use of pack_format thanks to fix in mcbeet ([83a48cb](https://github.com/Newtbytes/gcats/commit/83a48cb686b6e1c2a67f02ae6dcc7e9035d75bb4))
+* **ci:** Fix collapse_double_lines ([b2f3fff](https://github.com/Newtbytes/gcats/commit/b2f3fff00ae8abf288f6373a462208c09d3ae8f1))
+* **ci:** Fix modlist pattern ([48e8f41](https://github.com/Newtbytes/gcats/commit/48e8f4127f7414e358990f79cb34da79e15ecf53))
+* **ci:** Install requirements for README update script ([193f5f4](https://github.com/Newtbytes/gcats/commit/193f5f4298f77e24f7d952f284aa696fbaeb76d3))
+* **ci:** Pakku is not setup correctly when releasing ([a2284e3](https://github.com/Newtbytes/gcats/commit/a2284e3eab8ded62d5c2076a168384ed76a5fc3f))
+
 ## [0.3.2](https://github.com/Newtbytes/gcats/compare/v0.3.1...v0.3.2) (2025-12-03)
 
 
