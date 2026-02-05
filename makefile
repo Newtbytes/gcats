@@ -44,6 +44,10 @@ test: build-server
 	echo "eula=true" > build/server/eula.txt
 	cd build/server && echo "stop" | java -jar server.jar nogui
 
+update:
+	$(PAKKU) update -a
+	python scripts/list_mods.py pakku-lock.json README.md
+
 clean:
 	rm -rf build
 	rm -rf resources
