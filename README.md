@@ -15,30 +15,33 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | Audaki Cart Engine (Faster Minecarts) | 🤩 Fast Minecart! Configurable Speed. Balanced for Vanilla/Survival. 100% glitch-free and compatible with all Redstone. Works high-speed with slopes/inclines/curves. Only vanilla track/carts needed. Can be added and removed at any time. SMP or Server-Side. | [https://modrinth.com/project/V8qsCwta](https://modrinth.com/project/V8qsCwta) |
 | Better Respawn | This mod adds a mechanic that lets you respawn near your death location. | [https://modrinth.com/project/ZUQINcGy](https://modrinth.com/project/ZUQINcGy) |
 | Better Safe Bed | This mod solves the issue of being unable to sleep even when you are safe, due to a random mob lurking in the cave beneath your base. | [https://modrinth.com/project/aUp4r9hY](https://modrinth.com/project/aUp4r9hY) |
+| Biolith | A biome placement mod focusing on configurability and consistent distribution of modded biomes | [https://modrinth.com/project/iGEl6Crx](https://modrinth.com/project/iGEl6Crx) |
 | Cliff Face | A performance-friendly way of generating stone cliff faces for steep surfaces. Supports Terralith, Biomes 'O Plenty & more! | [https://modrinth.com/project/TIAnANoy](https://modrinth.com/project/TIAnANoy) |
+| CliffTree | A vanilla-styled worldgen overhaul, with new biomes and touches to existing ones. Short for "Cliff under a Tree" | [https://modrinth.com/project/59ypHk8x](https://modrinth.com/project/59ypHk8x) |
+| Climate Rivers | Make your rivers stop looking like mistakes – and start flowing with style. | [https://modrinth.com/project/DzZWws4q](https://modrinth.com/project/DzZWws4q) |
 | Compact Help Command | 🗜 Modifies the /help command to show all information, be colourful and have multiple pages. | [https://modrinth.com/project/XdiGl7ZL](https://modrinth.com/project/XdiGl7ZL) |
 | First Join Message | 💬 Sends players who join a world for the first time a configurable message. | [https://modrinth.com/project/Ppny3rjF](https://modrinth.com/project/Ppny3rjF) |
 | Floodgate | Hybrid mode mod to allow for connections from Geyser to join online mode servers. | [https://modrinth.com/project/bWrNNfkb](https://modrinth.com/project/bWrNNfkb) |
-| Formations (Structure Library) | Formations adds utilities for structure datapacks! | [https://modrinth.com/project/tPe4xnPd](https://modrinth.com/project/tPe4xnPd) |
-| Formations Nether | Formations Nether adds plenty of new structures to the nether! | [https://modrinth.com/project/cGvQGRls](https://modrinth.com/project/cGvQGRls) |
-| Formations Overworld | Formations Overworld adds plenty of new structures to the overworld! | [https://modrinth.com/project/KX1XC0Oo](https://modrinth.com/project/KX1XC0Oo) |
 | Geophilic | A subtle-ish overhaul of vanilla Overworld biomes! Reworked! | [https://modrinth.com/project/hl5OLM95](https://modrinth.com/project/hl5OLM95) |
 | Geyser | A bridge/proxy allowing you to connect to Minecraft: Java Edition servers with Minecraft: Bedrock Edition. | [https://modrinth.com/project/wKkoqHrH](https://modrinth.com/project/wKkoqHrH) |
 | Grind Enchantments | Disenchant and transfer enchantments using a grindstone. | [https://modrinth.com/project/WC4UgDcZ](https://modrinth.com/project/WC4UgDcZ) |
-| Hopo Better Ruined Portals | Improve how the portals look in your world | [https://modrinth.com/project/hIpLSyga](https://modrinth.com/project/hIpLSyga) |
 | I'm Fast | A mod to remove minecraft moved too quickly! and moved wrongly (speed limits) | [https://modrinth.com/project/PaUMOeP0](https://modrinth.com/project/PaUMOeP0) |
 | Inv View | Allows you to open and manipulate the inventories and ender chests of online and offline players. Server Side | [https://modrinth.com/project/jrDKjZP7](https://modrinth.com/project/jrDKjZP7) |
 | Just Mob Heads | 🗿 Adds a configurable chance for mobs to drop their head, using vanilla resources only. | [https://modrinth.com/project/jzTUm9hE](https://modrinth.com/project/jzTUm9hE) |
 | Just Player Heads | 🗿 Allows the collection of player heads via command or death event. | [https://modrinth.com/project/YdVBZMNR](https://modrinth.com/project/YdVBZMNR) |
 | KleeSlabs | Break only the half of a double slab that you're looking at. | [https://modrinth.com/project/7uh75ruZ](https://modrinth.com/project/7uh75ruZ) |
+| Lithostitched | Library mod with new configurability and compatibility enhancements for worldgen | [https://modrinth.com/project/XaDC71GB](https://modrinth.com/project/XaDC71GB) |
 | Luna's Keep Inventory | A keep inventory mod/data-pack with customization in mind! | [https://modrinth.com/project/iwQb9r2B](https://modrinth.com/project/iwQb9r2B) |
 | MC-258859 | Improves visuals of Snowy Slopes, Frozen Peaks, Jagged Peaks, Terralith & more by fixing what Minecraft classifies as a 'slope' | [https://modrinth.com/project/gzfqBTYf](https://modrinth.com/project/gzfqBTYf) |
+| Mod Menu | Adds a mod menu to view the list of mods you have installed. | [https://modrinth.com/project/mOgUt4GM](https://modrinth.com/project/mOgUt4GM) |
 | Name Tag Tweaks | 📛 Adds nametag crafting recipe, command, and named entities drop their tag on death. | [https://modrinth.com/project/LrLZEnPl](https://modrinth.com/project/LrLZEnPl) |
 | NetherPortalFix | Ensures correct destinations when travelling back and forth through Nether Portals in Multiplayer. | [https://modrinth.com/project/nPZr02ET](https://modrinth.com/project/nPZr02ET) |
 | No Hostiles Around Campfire | 🔥 Prevents hostile mob spawns and burns them around the campfire in a configurable radius. | [https://modrinth.com/project/EJqeyaVz](https://modrinth.com/project/EJqeyaVz) |
 | NoisiumForked | Optimises worldgen performance for a better gameplay experience. | [https://modrinth.com/project/hasdd01q](https://modrinth.com/project/hasdd01q) |
 | Nullscape | Transforms the boring Vanilla end into an alien dimension with the most surreal terrain imaginable. Topped with a couple of new biomes to add to the experience, whilst keeping the end desolate. | [https://modrinth.com/project/LPjGiSO4](https://modrinth.com/project/LPjGiSO4) |
 | OfflineCommands | Run commands on offline players | [https://modrinth.com/project/rkgXkDl7](https://modrinth.com/project/rkgXkDl7) |
+| Pufferfish's Biome Dither | Adds dithering on the biome borders to the game. | [https://modrinth.com/project/xlybdB0E](https://modrinth.com/project/xlybdB0E) |
+| Revamped Shipwrecks | Shipwreck structures redesigned with jigsaw degradation stages, hundreds of unique combinations! | [https://modrinth.com/project/ZnZ8uqXN](https://modrinth.com/project/ZnZ8uqXN) |
 | Sessility | AFK utilities for servers: Recolor AFK players in tab list, exclude AFK players from the sleeping requirement, broadcast messages when players go AFK, and more. | [https://modrinth.com/project/G9rHXWug](https://modrinth.com/project/G9rHXWug) |
 | Simple Snowy Fix (Forge / Fabric) | Fixes incorrect snow generation on tree leaves MC-119599 | [https://modrinth.com/project/3WP3HZRG](https://modrinth.com/project/3WP3HZRG) |
 | SleepWarp (Updated) | Accelerates time when sleeping instead of skipping directly to day. Fork of SleepWarp updated to latest versions. | [https://modrinth.com/project/DlSXkZVT](https://modrinth.com/project/DlSXkZVT) |
@@ -70,19 +73,24 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | Explorations | adds more vanilla style structures to the game | [https://modrinth.com/project/pcGnjJ39](https://modrinth.com/project/pcGnjJ39) |
 | Fabric API | Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain. | [https://modrinth.com/project/P7dR8mSH](https://modrinth.com/project/P7dR8mSH) |
 | FerriteCore | Memory usage optimizations | [https://modrinth.com/project/uXXizFIs](https://modrinth.com/project/uXXizFIs) |
+| Forge Config API Port | NeoForge's & Forge's config systems provided to other modding ecosystems. Designed for a multiloader architecture. | [https://modrinth.com/project/ohNO6lps](https://modrinth.com/project/ohNO6lps) |
 | Hopo Better Mineshaft | More and better mineshafts to explore | [https://modrinth.com/project/9IxCUYAP](https://modrinth.com/project/9IxCUYAP) |
 | Lithium | No-compromises game logic optimization mod. Well suited for clients and servers of all kinds. Now available for Fabric and NeoForge! | [https://modrinth.com/project/gvQqBUqZ](https://modrinth.com/project/gvQqBUqZ) |
 | M.R.U | A library mod used by IMB11's mods to function. | [https://modrinth.com/project/SNVQ2c0g](https://modrinth.com/project/SNVQ2c0g) |
 | MidnightLib | Common library providing a lightweight configuration system | [https://modrinth.com/project/codAaoxh](https://modrinth.com/project/codAaoxh) |
 | No Chat Reports | Makes chat unreportable (where possible) | [https://modrinth.com/project/qQyHxfxd](https://modrinth.com/project/qQyHxfxd) |
+| Puzzles Lib | Why it's called Puzzles, you ask? That's the puzzle! | [https://modrinth.com/project/QAGBst4M](https://modrinth.com/project/QAGBst4M) |
 | Resourceful Config | Resourceful Config is a mod that allows for developers to make cross-platform configs | [https://modrinth.com/project/M1953qlQ](https://modrinth.com/project/M1953qlQ) |
 | ScalableLux | A Fabric mod based on Starlight that improves the performance of light updates in Minecraft. | [https://modrinth.com/project/Ps1zyz6x](https://modrinth.com/project/Ps1zyz6x) |
 | ServerCore | A mod that aims to optimize the minecraft server. | [https://modrinth.com/project/4WWQxlQP](https://modrinth.com/project/4WWQxlQP) |
 | Simple Resource Loader | Simple global / modpack resource pack and data pack loader. No configuration, just few folders. | [https://modrinth.com/project/5e65FGXQ](https://modrinth.com/project/5e65FGXQ) |
 | StackDeobfuscator | Remaps logged stacktraces to readable mappings | [https://modrinth.com/project/NusMqsjF](https://modrinth.com/project/NusMqsjF) |
 | Sticky Enchanting Lapis | 📖🔷 Allows lapis lazuli to remain in the enchanting table and be shared among players. | [https://modrinth.com/project/tH1zAs3C](https://modrinth.com/project/tH1zAs3C) |
+| Structurify | A lightweight configuration mod that makes it easy and accessible to customize everything related to structures, eliminating the hassle of creating multiple datapacks. | [https://modrinth.com/project/yz7AM2zx](https://modrinth.com/project/yz7AM2zx) |
 | Tax Free Levels | Flattens the ever-increasing anvil and enchantment costs and makes renaming items always cost 1 level | [https://modrinth.com/project/jCBrrLTs](https://modrinth.com/project/jCBrrLTs) |
+| Text Placeholder API | Placeholder and Text manipulation library for your Minecraft mods. | [https://modrinth.com/project/eXts2L7r](https://modrinth.com/project/eXts2L7r) |
 | Very Many Players (Fabric) | A Fabric mod designed to improve server performance at high playercounts. | [https://modrinth.com/project/wnEe9KBa](https://modrinth.com/project/wnEe9KBa) |
 | ViaBackwards | Allow older Java Edition clients to connect to newer servers. | [https://modrinth.com/project/NpvuJQoq](https://modrinth.com/project/NpvuJQoq) |
 | ViaFabric | Allows to connect to older servers with older versions | [https://modrinth.com/project/YlKdE5VK](https://modrinth.com/project/YlKdE5VK) |
 | ViaVersion | Allow newer Java Edition clients to connect to older servers. | [https://modrinth.com/project/P1OZGk5p](https://modrinth.com/project/P1OZGk5p) |
+| YetAnotherConfigLib (YACL) | A builder-based configuration library for Minecraft! | [https://modrinth.com/project/1eAoo2KR](https://modrinth.com/project/1eAoo2KR) |
