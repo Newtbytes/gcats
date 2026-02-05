@@ -1,0 +1,8 @@
+{
+    "removals": [
+        {
+            "dimension": "minecraft:overworld",
+            "biome": "clifftree:inferno"
+        }
+    ]
+}
