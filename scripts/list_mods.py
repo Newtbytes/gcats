@@ -10,10 +10,7 @@ from typing import Any, Callable
 from urllib.parse import urlparse, urljoin, ParseResult as URL
 import json
 
-
-class ToMarkdown:
-    def to_md(self) -> str:
-        raise NotImplementedError
+import md
 
 
 class ProjectProvider(StrEnum):
@@ -27,7 +24,7 @@ class ProjectProvider(StrEnum):
             case ProjectProvider.CURSEFORGE:
                 return urlparse("https://curseforge.com")
 
-    def to_md(self) -> str:
+    def to_md(self) -> md.Node:
         title = ""
 
         match self:
@@ -36,7 +33,7 @@ class ProjectProvider(StrEnum):
             case _:
                 title = self.value.title()
 
-        return f"*{title}*"
+        return md.Italics(md.Text(title))
 
 
 class ProjectSide(StrEnum):
@@ -44,8 +41,10 @@ class ProjectSide(StrEnum):
     CLIENT = "client"
     BOTH = "both"
 
-    def to_md(self) -> str:
-        return f"{self.value.capitalize()}{'-side' if not self == ProjectSide.BOTH else ''}"
+    def to_md(self) -> md.Node:
+        return md.Text(
+            f"{self.value.capitalize()}{'-side' if not self == ProjectSide.BOTH else ''}"
+        )
 
 
 class ProjectType(StrEnum):
@@ -53,15 +52,15 @@ class ProjectType(StrEnum):
     DATAPACK = "datapack"
     RESOURCEPACK = "resourcepack"
 
-    def to_md(self) -> str:
-        md = self.value.replace("pack", " pack")
-        md = md.title()
+    def to_md(self) -> md.Node:
+        out = self.value.replace("pack", " pack")
+        out = out.title()
 
-        return f"*{md}*"
+        return md.Italics(md.Text(out))
 
 
 @dataclass
-class ProjectURL(ToMarkdown):
+class ProjectURL(md.ToMarkdown):
     provider: ProjectProvider
     project_id: str
 
@@ -75,7 +74,7 @@ class ProjectURL(ToMarkdown):
 
         return cls(ProjectProvider(provider), id)
 
-    def to_url(self):
+    def to_url(self) -> str:
         url = self.provider.to_url()
 
         match self.provider:
@@ -86,12 +85,12 @@ class ProjectURL(ToMarkdown):
 
         return url.geturl()
 
-    def to_md(self) -> str:
-        return f"[{self.to_url()}]({self.to_url()})"
+    def to_md(self) -> md.Node:
+        return md.URL(md.Text(self.to_url()))
 
 
 @dataclass
-class ProjectInfo(ToMarkdown):
+class ProjectInfo(md.ToMarkdown):
     name: str
     ty: ProjectType
     side: ProjectSide
@@ -106,31 +105,17 @@ class ProjectInfo(ToMarkdown):
             url=ProjectURL.from_dict(data["id"]),
         )
 
-    def to_md(self) -> str:
-        return f"***{self.name.strip()}***: " + self.url.to_md()
+    def to_md(self) -> md.Node:
+        return md.Text(
+            [
+                md.Bold(md.Italics(md.Text(self.name.strip()))),
+                md.Text(": "),
+                self.url.to_md(),
+            ]
+        )
 
 
-def fmt_row(*values: str) -> str:
-    return f"| {' | '.join(values)} |"
-
-
-def fmt_table_header(*headers: str) -> str:
-    out = fmt_row(*headers) + "\n"
-    out += fmt_row(*["-------------" for _ in range(len(headers))])
-    return out
-
-
-def fmt_project_table(projects: list[ProjectInfo]) -> str:
-    out = fmt_table_header("Name", "URL") + "\n"
-
-    out += "\n".join(
-        [fmt_row(project.name, project.url.to_md()) for project in projects]
-    )
-
-    return out
-
-
-def fmt_modlist(projects: list[ProjectInfo]):
+def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
     def group_by_field(
         projects: list[ProjectInfo], key: Callable[[ProjectInfo], Any]
     ) -> dict[Any, list[ProjectInfo]]:
@@ -141,17 +126,7 @@ def fmt_modlist(projects: list[ProjectInfo]):
 
         return grouped
 
-    def first_header(
-        s: str,
-    ) -> str:
-        return f"# {s}"
-
-    def second_header(
-        s: str,
-    ) -> str:
-        return f"## {s}"
-
-    out = []
+    out = md.Document([])
 
     sections = {
         ty: group_by_field(prjs, lambda prj: prj.side)
@@ -162,12 +137,17 @@ def fmt_modlist(projects: list[ProjectInfo]):
         ty: ProjectType
         project_of_ty: dict[ProjectSide, list[ProjectInfo]]
 
-        out.append(first_header(f"*{str(ty).capitalize()}s*"))
+        out.add(md.Heading(md.Italics(f"{str(ty).capitalize()}s"), 1))
         for side, projects in project_of_ty.items():
-            out.append(second_header(side.to_md()))
-            out.append(fmt_project_table(projects))
+            out.add(md.Heading(side.to_md(), 2))
+            out.add(
+                md.Table(
+                    md.Row([md.Text("Name"), md.Text("URL")]),
+                    [md.Row([md.Text(prj.name), prj.url.to_md()]) for prj in projects],
+                )
+            )
 
-    return "\n".join(out)
+    return out
 
 
 def replace_modlist(doc: str, replacement: str):
@@ -191,7 +171,7 @@ def main():
         ProjectInfo.from_dict(project_data) for project_data in lock_file["projects"]
     ]
 
-    modlist = fmt_modlist(projects)
+    modlist = str(fmt_modlist(projects))
 
     print(modlist)
 

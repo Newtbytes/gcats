@@ -3,7 +3,10 @@
 The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Vanilla+ server compatible with vanilla clients that aims to add game design focused and Mojang-like features in order to improve the gameplay experience.
 
 # *Mods*
+
+
 ## Server-side
+
 | Name | URL |
 | ------------- | ------------- |
 |  Interdimensional Map Markers | [https://modrinth.com/project/oiCuHwqj](https://modrinth.com/project/oiCuHwqj) |
@@ -46,14 +49,18 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | TNT Breaks Bedrock | [https://modrinth.com/project/eU2O6Xp1](https://modrinth.com/project/eU2O6Xp1) |
 | Wabi-Sabi Structures | [https://modrinth.com/project/Vr3O6THr](https://modrinth.com/project/Vr3O6THr) |
 | What Durability? | [https://modrinth.com/project/lKY2kyjj](https://modrinth.com/project/lKY2kyjj) |
+
 ## Client-side
+
 | Name | URL |
 | ------------- | ------------- |
 | BadOptimizations | [https://modrinth.com/project/g96Z4WVZ](https://modrinth.com/project/g96Z4WVZ) |
 | ImmediatelyFast | [https://modrinth.com/project/5ZwdcRci](https://modrinth.com/project/5ZwdcRci) |
 | More Culling | [https://modrinth.com/project/51shyZVL](https://modrinth.com/project/51shyZVL) |
 | Sodium | [https://modrinth.com/project/AANobbMI](https://modrinth.com/project/AANobbMI) |
+
 ## Both
+
 | Name | URL |
 | ------------- | ------------- |
 | Balm | [https://modrinth.com/project/MBAkmtvl](https://modrinth.com/project/MBAkmtvl) |
@@ -79,4 +86,3 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | Very Many Players (Fabric) | [https://modrinth.com/project/wnEe9KBa](https://modrinth.com/project/wnEe9KBa) |
 | ViaBackwards | [https://modrinth.com/project/NpvuJQoq](https://modrinth.com/project/NpvuJQoq) |
 | ViaFabric | [https://modrinth.com/project/YlKdE5VK](https://modrinth.com/project/YlKdE5VK) |
-| ViaVersion | [https://modrinth.com/project/P1OZGk5p](https://modrinth.com/project/P1OZGk5p) |
