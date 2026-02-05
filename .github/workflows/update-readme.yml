@@ -1,0 +1,21 @@
+name: Update the modlist in the README
+
+on:
+  push:
+    paths:
+      - pakku.json
+      - pakku-lock.json
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Update README.md
+        run: python scripts/list_mods.py pakku-lock.json README.md
+
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: Update modlist in README.md
