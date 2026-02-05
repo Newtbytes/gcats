@@ -152,7 +152,7 @@ def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
 
 def replace_modlist(doc: str, replacement: str):
     modlist_pat = re.compile(
-        r"^# \*?Mods\*?\b[\s\S]*?(?=^# |\Z)",
+        r"^#+ \*?Mods\*?\b[\s\S]*?(?=^# |\Z)",
         flags=re.MULTILINE,
     )
 
