@@ -4,7 +4,6 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 
 # *Mods*
 
-
 ## Server-side
 
 | Name | URL |
@@ -86,3 +85,4 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | Very Many Players (Fabric) | [https://modrinth.com/project/wnEe9KBa](https://modrinth.com/project/wnEe9KBa) |
 | ViaBackwards | [https://modrinth.com/project/NpvuJQoq](https://modrinth.com/project/NpvuJQoq) |
 | ViaFabric | [https://modrinth.com/project/YlKdE5VK](https://modrinth.com/project/YlKdE5VK) |
+| ViaVersion | [https://modrinth.com/project/P1OZGk5p](https://modrinth.com/project/P1OZGk5p) |

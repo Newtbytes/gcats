@@ -35,19 +35,15 @@ class Line(Node):
 
 
 def collapse_double_lines(lines: Iterator[Line]) -> Iterator[Line]:
-    while True:
-        try:
-            line_1 = next(lines)
-            line_2 = next(lines)
+    lines_buffer = list(lines)  # Convert to list for random access
 
-            if line_1 == Line.empty() and line_2 == Line.empty():
-                yield Line.empty()
-            else:
-                yield line_1
-                yield line_2
+    for i, curr_line in enumerate(lines_buffer):
+        next_line = lines_buffer[i + 1] if i < len(lines_buffer) - 1 else None
 
-        except StopIteration:
-            break
+        if curr_line == Line.empty() and next_line == Line.empty():
+            continue
+        else:
+            yield curr_line
 
 
 @dataclass
@@ -166,9 +162,8 @@ class Document(Node):
         self.lines = list(lines)
 
     def process(self):
-        before = deepcopy(self.lines)
-
-        for _ in range(10):
+        for _ in range(100):
+            before = deepcopy(self.lines)
             self._process_step()
 
             if before == self.lines:
