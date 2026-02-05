@@ -13,6 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
       - name: Update README.md
         run: python scripts/list_mods.py pakku-lock.json README.md
 
