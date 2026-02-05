@@ -137,9 +137,9 @@ def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
         ty: ProjectType
         project_of_ty: dict[ProjectSide, list[ProjectInfo]]
 
-        out.add(md.Heading(md.Italics(f"{str(ty).capitalize()}s"), 1))
+        out.add(md.Heading(md.Italics(f"{str(ty).capitalize()}s"), 2))
         for side, projects in project_of_ty.items():
-            out.add(md.Heading(side.to_md(), 2))
+            out.add(md.Heading(side.to_md(), 3))
             out.add(
                 md.Table(
                     md.Row([md.Text("Name"), md.Text("URL")]),

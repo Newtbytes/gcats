@@ -2,9 +2,9 @@
 
 The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Vanilla+ server compatible with vanilla clients that aims to add game design focused and Mojang-like features in order to improve the gameplay experience.
 
-# *Mods*
+## *Mods*
 
-## Server-side
+### Server-side
 
 | Name | URL |
 | ------------- | ------------- |
@@ -49,7 +49,7 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | Wabi-Sabi Structures | [https://modrinth.com/project/Vr3O6THr](https://modrinth.com/project/Vr3O6THr) |
 | What Durability? | [https://modrinth.com/project/lKY2kyjj](https://modrinth.com/project/lKY2kyjj) |
 
-## Client-side
+### Client-side
 
 | Name | URL |
 | ------------- | ------------- |
@@ -58,7 +58,7 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | More Culling | [https://modrinth.com/project/51shyZVL](https://modrinth.com/project/51shyZVL) |
 | Sodium | [https://modrinth.com/project/AANobbMI](https://modrinth.com/project/AANobbMI) |
 
-## Both
+### Both
 
 | Name | URL |
 | ------------- | ------------- |
