@@ -6,11 +6,24 @@ from dataclasses import dataclass
 from collections import defaultdict
 from enum import StrEnum
 
-from typing import Any, Callable
+from typing import Any, Callable, Optional
 from urllib.parse import urlparse, urljoin, ParseResult as URL
 import json
 
+import backoff
+import requests
+from joblib import Memory
+
 import md
+
+
+memory = Memory("cache")
+
+
+@memory.cache
+@backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
+def get_url(*args, **kwargs):
+    return requests.get(*args, **kwargs)
 
 
 class ProjectProvider(StrEnum):
@@ -23,6 +36,13 @@ class ProjectProvider(StrEnum):
                 return urlparse("https://modrinth.com")
             case ProjectProvider.CURSEFORGE:
                 return urlparse("https://curseforge.com")
+
+    def to_api_url(self):
+        match self:
+            case ProjectProvider.MODRINTH:
+                return urlparse("https://api.modrinth.com/v2/")
+            case _:
+                raise NotImplementedError
 
     def to_md(self) -> md.Node:
         title = ""
@@ -114,6 +134,20 @@ class ProjectInfo(md.ToMarkdown):
             ]
         )
 
+    @property
+    def _data(self) -> dict | Any:
+        match self.url.provider:
+            case ProjectProvider.MODRINTH:
+                base = self.url.provider.to_api_url()
+                url = urljoin(base.geturl(), f"project/{self.url.project_id}")
+                return get_url(url).json()
+            case _:
+                raise NotImplementedError
+
+    @property
+    def description(self) -> Optional[str]:
+        return self._data["description"]
+
 
 def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
     def group_by_field(
@@ -142,8 +176,17 @@ def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
             out.add(md.Heading(side.to_md(), 3))
             out.add(
                 md.Table(
-                    md.Row([md.Text("Name"), md.Text("URL")]),
-                    [md.Row([md.Text(prj.name), prj.url.to_md()]) for prj in projects],
+                    md.Row([md.Text("Name"), md.Text("Description"), md.Text("URL")]),
+                    [
+                        md.Row(
+                            [
+                                md.Text(prj.name),
+                                md.Text(prj.description if prj.description else ""),
+                                prj.url.to_md(),
+                            ]
+                        )
+                        for prj in projects
+                    ],
                 )
             )
 
