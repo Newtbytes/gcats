@@ -9,3 +9,6 @@ build/
 # python
 .venv/
 __pycache__/
+
+# secrets (ssshhhhh)
+secrets.env
