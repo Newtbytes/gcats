@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.0](https://github.com/Newtbytes/gcats/compare/v0.4.0...v0.5.0) (2026-02-06)
+
+
+### Features
+
+* **dev:** Add `update` target to makefile ([5c31112](https://github.com/Newtbytes/gcats/commit/5c31112d112898e5d2fd6ff8112145d953bdfd23))
+* **test:** Implement testing with pytest ([2045aed](https://github.com/Newtbytes/gcats/commit/2045aed48bc6fbed89c9f2a6a5f0e4edd5db914e))
+* **test:** Implement testing with pytest ([9a411a2](https://github.com/Newtbytes/gcats/commit/9a411a24435b16d9d100aecbef470f4824d48b84))
+
 ## [0.4.0](https://github.com/Newtbytes/gcats/compare/v0.3.2...v0.4.0) (2026-02-05)
 
 
