@@ -26,12 +26,16 @@ class ExarotonServer(Filesystem):
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def mkdir(self, fn: str):
+        print(fn)
+
         url = str(URL(self.base) / "servers" / self.id / "files" / "data" / fn)
 
         requests.put(url, headers={"Content-Type": "inode/directory"})
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def write(self, src: str, dst: str):
+        print(dst)
+
         url = str(URL(self.base) / "servers" / self.id / "files" / "data" / dst)
 
         if os.path.isdir(src):
