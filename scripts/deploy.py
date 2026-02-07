@@ -1,5 +1,8 @@
+from dataclasses import dataclass
+
 import sys
 import os.path
+from typing import Optional
 
 import requests
 import backoff
@@ -13,10 +16,45 @@ def fatal_code(e):
 
 requester = backoff.on_exception(
     backoff.expo,
-    requests.exceptions.RequestException,
+    (
+        requests.exceptions.RequestException,
+        requests.exceptions.Timeout,
+        TimeoutError,
+    ),
     max_time=300,
     giveup=fatal_code,
 )
+
+
+# directories that should be fullied synchronized
+# e.g. if the deployment server has a file that isn't in the folder being deployed, it is removed
+# for the mods folder for example, this prevents old versions of mods being kept
+FULL_SYNC_DIRS = ["mods"]
+
+
+@dataclass
+class ExarotonFileInfo:
+    path: str
+    name: str
+    isTextFile: bool
+    isConfigFile: bool
+    isDirectory: bool
+    isLog: bool
+    isReadable: bool
+    isWritable: bool
+    size: int
+    children: Optional[list["ExarotonFileInfo"]]
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "ExarotonFileInfo":
+        assert data["isDirectory"] or (
+            not data["isDirectory"] and data["children"] is None
+        )
+
+        if data["children"] is not None:
+            data["children"] = [cls.from_dict(c) for c in data["children"]]
+
+        return cls(**data)
 
 
 class ExarotonServer:
@@ -49,20 +87,36 @@ class ExarotonServer:
         print(f"+ {path}")
 
     @requester
-    def file_info(self, path: str) -> dict:
+    def file_info(self, path: str) -> Optional[ExarotonFileInfo]:
         url = self.files_info_uri(path)
 
         resp = requests.get(url, headers=self.headers, timeout=10)
         resp.raise_for_status()
 
-        return resp.json()
+        content = resp.json()
+
+        if content["error"] is not None:
+            raise FileNotFoundError(content["error"])
+
+        return ExarotonFileInfo.from_dict(content["data"]) if content["data"] else None
+
+    def listdir(self, path: str) -> list[ExarotonFileInfo]:
+        match self.file_info(path):
+            case None:
+                return []
+            case info:
+                return [c for c in info.children] if info.children else []
 
     def isdir(self, path: str) -> bool:
-        return self.file_info(path)["isDirectory"]
+        match self.file_info(path):
+            case None:
+                return False
+            case info:
+                return info.isDirectory
 
     def exists(self, path: str) -> bool:
         try:
-            return self.file_info(path)["success"]
+            return self.file_info(path) is not None
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 404:
                 return False
@@ -123,7 +177,20 @@ def collect_files(root: str, collect_directories=True) -> list[str]:
 
 # explicitly not abstract right now since there's no need
 def write_folder(fs: ExarotonServer, src: str, dst: str):
-    for fn in collect_files(src, collect_directories=False):
+    files = collect_files(src, collect_directories=False)
+    server_files = fs.listdir(dst) if fs.exists(dst) else []
+    server_files_names = [f.name for f in server_files]
+
+    if dst in FULL_SYNC_DIRS:
+        for file_info in server_files:
+            if file_info.name not in files:
+                fs.remove(file_info.path)
+
+    for fn in files:
+        if fn in server_files_names and fn.endswith(".jar"):
+            print(f"  {fn}")
+            continue
+
         fs.write(os.path.join(src, fn), os.path.join(dst, fn))
 
 
@@ -145,7 +212,6 @@ def main():
         dir = os.path.join(server_dir, subdir)
 
         if os.path.isdir(dir):
-            deploy_tgt.remove(subdir)
             write_folder(deploy_tgt, dir, subdir)
 
 
