@@ -2,12 +2,11 @@ from abc import ABC, abstractmethod
 
 import sys
 import os.path
-from urllib.parse import urljoin
 
 import requests
 import backoff
-
 from dotenv import load_dotenv
+from yarl import URL
 
 
 class Filesystem(ABC):
@@ -27,13 +26,13 @@ class ExarotonServer(Filesystem):
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def mkdir(self, fn: str):
-        url = urljoin(self.base, f"/servers/{self.id}/files/data/{fn}")
+        url = str(URL(self.base) / "servers" / self.id / "files" / "data" / fn)
 
         requests.put(url, headers={"Content-Type": "inode/directory"})
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def write(self, src: str, dst: str):
-        url = urljoin(self.base, f"/servers/{self.id}/files/data/{dst}")
+        url = str(URL(self.base) / "servers" / self.id / "files" / "data" / dst)
 
         if os.path.isdir(src):
             headers = {"Content-Type": "inode/directory"}
@@ -63,7 +62,7 @@ def collect_files(path: str) -> list[str]:
 # explicitly not abstract right now since there's no need
 def write_folder(fs: ExarotonServer, src: str, dst: str):
     for fn in collect_files(src):
-        fs.write(src, os.path.join(dst, fn))
+        fs.write(os.path.join(src, fn), os.path.join(dst, fn))
 
 
 def main():
@@ -80,11 +79,11 @@ def main():
 
     server_dir = sys.argv[1]
 
-    for dir in os.listdir(server_dir):
-        if not os.path.isdir(dir):
-            continue
+    for subdir in os.listdir(server_dir):
+        dir = os.path.join(server_dir, subdir)
 
-        deploy_tgt.write(os.path.join(server_dir, dir), dir)
+        if os.path.isdir(dir):
+            write_folder(deploy_tgt, dir, subdir)
 
 
 if __name__ == "__main__":
