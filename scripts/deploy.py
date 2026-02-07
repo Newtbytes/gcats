@@ -1,5 +1,3 @@
-from abc import ABC, abstractmethod
-
 import sys
 import os.path
 
@@ -9,12 +7,19 @@ from dotenv import load_dotenv
 from yarl import URL
 
 
-class Filesystem(ABC):
-    @abstractmethod
-    def write(self, fn: str, data): ...
+def fatal_code(e):
+    return 400 <= e.response.status_code < 500
 
 
-class ExarotonServer(Filesystem):
+requester = backoff.on_exception(
+    backoff.expo,
+    requests.exceptions.RequestException,
+    max_time=300,
+    giveup=fatal_code,
+)
+
+
+class ExarotonServer:
     def __init__(
         self, id: str, token: str, base="https://api.exaroton.com/v1/"
     ) -> None:
@@ -24,20 +29,62 @@ class ExarotonServer(Filesystem):
         self.base = URL(base)
         self.headers = {"Authorization": f"Bearer {token}"}
 
-    @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
-    def mkdir(self, fn: str):
-        print(fn)
+    def files_data_uri(self, path: str) -> str:
+        return str(self.base / "servers" / self.id / "files" / "data" / path)
 
-        url = str(self.base / "servers" / self.id / "files" / "data" / fn)
+    def files_info_uri(self, path: str) -> str:
+        return str(self.base / "servers" / self.id / "files" / "info" / path)
+
+    @requester
+    def mkdir(self, path: str):
+        url = self.files_data_uri(path)
+
+        parent = os.path.dirname(path)
+        if parent and not self.exists(parent):
+            self.mkdir(parent)
 
         headers = {"Content-Type": "inode/directory", **self.headers}
         requests.put(url, headers=headers, timeout=10).raise_for_status()
 
-    @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
-    def write(self, src: str, dst: str):
-        print(dst)
+        print(f"+ {path}")
 
-        url = str(self.base / "servers" / self.id / "files" / "data" / dst)
+    @requester
+    def file_info(self, path: str) -> dict:
+        url = self.files_info_uri(path)
+
+        resp = requests.get(url, headers=self.headers, timeout=10)
+        resp.raise_for_status()
+
+        return resp.json()
+
+    def isdir(self, path: str) -> bool:
+        return self.file_info(path)["isDirectory"]
+
+    def exists(self, path: str) -> bool:
+        try:
+            return self.file_info(path)["success"]
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 404:
+                return False
+            else:
+                raise e
+
+    @requester
+    def remove(self, path: str):
+        url = self.files_data_uri(path)
+
+        if self.exists(path):
+            requests.delete(url, headers=self.headers, timeout=10).raise_for_status()
+
+        print(f"- {path}")
+
+    @requester
+    def write(self, src: str, dst: str):
+        url = self.files_data_uri(dst)
+
+        dst_dir = os.path.dirname(dst)
+        if dst_dir and not self.exists(dst_dir):
+            self.mkdir(dst_dir)
 
         if os.path.isdir(src):
             headers = {"Content-Type": "inode/directory", **self.headers}
@@ -47,6 +94,8 @@ class ExarotonServer(Filesystem):
                 requests.put(
                     url, data=f, headers=self.headers, timeout=10
                 ).raise_for_status()
+
+        print(f"+ {dst}")
 
 
 def collect_files(root: str, collect_directories=True) -> list[str]:
@@ -96,6 +145,7 @@ def main():
         dir = os.path.join(server_dir, subdir)
 
         if os.path.isdir(dir):
+            deploy_tgt.remove(subdir)
             write_folder(deploy_tgt, dir, subdir)
 
 
