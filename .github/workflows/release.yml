@@ -79,9 +79,10 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run build
+      - name: Run build & tests
         run: |
           make build
+          make test
 
       - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
@@ -94,3 +95,9 @@ jobs:
             build/modrinth/*.mrpack
             build/serverpack/*.zip
             build/${{ env.SERVER_NAME }}-resourcepack.zip
+
+      - name: Deploy server
+        env:
+          EXAROTON_TOKEN: secrets.EXAROTON_TOKEN
+          EXAROTON_SERVER_ID: secrets.EXAROTON_SERVER_ID
+        run: python scripts/deploy.py build/server
