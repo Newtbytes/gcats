@@ -21,14 +21,14 @@ class ExarotonServer(Filesystem):
         super().__init__()
 
         self.id = id
-        self.base = base
+        self.base = URL(base)
         self.headers = {"Authorization": f"Bearer {token}"}
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def mkdir(self, fn: str):
         print(fn)
 
-        url = str(URL(self.base) / "servers" / self.id / "files" / "data" / fn)
+        url = str(self.base / "servers" / self.id / "files" / "data" / fn)
 
         headers = {"Content-Type": "inode/directory", **self.headers}
         requests.put(url, headers=headers, timeout=10).raise_for_status()
@@ -37,7 +37,7 @@ class ExarotonServer(Filesystem):
     def write(self, src: str, dst: str):
         print(dst)
 
-        url = str(URL(self.base) / "servers" / self.id / "files" / "data" / dst)
+        url = str(self.base / "servers" / self.id / "files" / "data" / dst)
 
         if os.path.isdir(src):
             headers = {"Content-Type": "inode/directory", **self.headers}
