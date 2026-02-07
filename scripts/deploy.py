@@ -46,7 +46,7 @@ class ExarotonServer(Filesystem):
                 requests.put(url, data=f)
 
 
-def collect_files(path: str) -> list[str]:
+def collect_files(root: str, collect_directories=True) -> list[str]:
     """
     Return all files in a directory, recursively.
     Returned filenames are relative to the input directory.
@@ -54,18 +54,24 @@ def collect_files(path: str) -> list[str]:
 
     files = []
 
-    for subpath in os.listdir(path):
-        if os.path.isdir(subpath):
-            files += [os.path.join(subpath, fn) for fn in collect_files(subpath)]
+    for subpath in os.listdir(root):
+        path = os.path.join(root, subpath)
 
-        files.append(subpath)
+        if os.path.isdir(path):
+            files += [
+                os.path.join(subpath, fn)
+                for fn in collect_files(path, collect_directories)
+            ]
+
+        if not os.path.isdir(path) or collect_directories:
+            files.append(subpath)
 
     return files
 
 
 # explicitly not abstract right now since there's no need
 def write_folder(fs: ExarotonServer, src: str, dst: str):
-    for fn in collect_files(src):
+    for fn in collect_files(src, collect_directories=False):
         fs.write(os.path.join(src, fn), os.path.join(dst, fn))
 
 
