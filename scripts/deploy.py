@@ -16,13 +16,13 @@ class Filesystem(ABC):
 
 class ExarotonServer(Filesystem):
     def __init__(
-        self, id: str, token: str, base="https://api.exaroton.com/v2/"
+        self, id: str, token: str, base="https://api.exaroton.com/v1/"
     ) -> None:
         super().__init__()
 
         self.id = id
-        self.token = token
         self.base = base
+        self.headers = {"Authorization": f"Bearer {token}"}
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def mkdir(self, fn: str):
@@ -30,7 +30,8 @@ class ExarotonServer(Filesystem):
 
         url = str(URL(self.base) / "servers" / self.id / "files" / "data" / fn)
 
-        requests.put(url, headers={"Content-Type": "inode/directory"})
+        headers = {"Content-Type": "inode/directory", **self.headers}
+        requests.put(url, headers=headers, timeout=10).raise_for_status()
 
     @backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
     def write(self, src: str, dst: str):
@@ -39,11 +40,13 @@ class ExarotonServer(Filesystem):
         url = str(URL(self.base) / "servers" / self.id / "files" / "data" / dst)
 
         if os.path.isdir(src):
-            headers = {"Content-Type": "inode/directory"}
-            requests.put(url, headers=headers)
+            headers = {"Content-Type": "inode/directory", **self.headers}
+            requests.put(url, headers=headers, timeout=10).raise_for_status()
         else:
             with open(src, "rb") as f:
-                requests.put(url, data=f)
+                requests.put(
+                    url, data=f, headers=self.headers, timeout=10
+                ).raise_for_status()
 
 
 def collect_files(root: str, collect_directories=True) -> list[str]:
