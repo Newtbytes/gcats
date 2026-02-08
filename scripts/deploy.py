@@ -9,6 +9,7 @@ import backoff
 from dotenv import load_dotenv
 from joblib import Parallel, delayed
 from yarl import URL
+import json
 
 
 def fatal_code(e):
@@ -71,11 +72,34 @@ class ExarotonServer:
         self.base = URL(base)
         self.headers = {"Authorization": f"Bearer {token}"}
 
+    @property
+    def server_uri(self) -> URL:
+        return self.base / "servers" / self.id
+
+    @property
+    def files_uri(self) -> URL:
+        return self.server_uri / "files"
+
     def files_data_uri(self, path: str) -> str:
-        return str(self.base / "servers" / self.id / "files" / "data" / path)
+        return str(self.files_uri / "data" / path)
 
     def files_info_uri(self, path: str) -> str:
-        return str(self.base / "servers" / self.id / "files" / "info" / path)
+        return str(self.files_uri / "info" / path)
+
+    @property
+    @requester
+    def version(self) -> str:
+        url = str(self.server_uri)
+
+        resp = requests.get(url, headers=self.headers, timeout=10)
+        resp.raise_for_status()
+
+        content = resp.json()
+
+        if content["error"] is not None:
+            raise Exception(content["error"])
+
+        return content["data"]["software"]["version"]
 
     @requester
     def mkdir(self, path: str):
@@ -212,6 +236,7 @@ def main():
         print(f"    python {os.path.basename(__file__)} SERVER_DIR")
         return
 
+    load_dotenv(".env")
     load_dotenv("secrets.env")
 
     deploy_tgt = ExarotonServer(
@@ -219,6 +244,16 @@ def main():
     )
 
     server_dir = sys.argv[1]
+
+    lockfile = json.load(open(os.getenv("PAKKU_LOCK_FN", "")))
+
+    supported_versions = [
+        f"{ver} ({lockfile['loaders']['fabric']})" for ver in lockfile["mc_versions"]
+    ]
+    if deploy_tgt.version not in supported_versions:
+        print(
+            f"WARNING: Server version {deploy_tgt.version} not in lockfile versions {supported_versions}"
+        )
 
     for subdir in os.listdir(server_dir):
         dir = os.path.join(server_dir, subdir)
