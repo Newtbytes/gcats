@@ -236,7 +236,6 @@ def main():
         print(f"    python {os.path.basename(__file__)} SERVER_DIR")
         return
 
-    load_dotenv(".env")
     load_dotenv("secrets.env")
 
     deploy_tgt = ExarotonServer(
@@ -245,7 +244,7 @@ def main():
 
     server_dir = sys.argv[1]
 
-    lockfile = json.load(open(os.getenv("PAKKU_LOCK_FN", "")))
+    lockfile = json.load(open("pakku-lock.json"))
 
     supported_versions = [
         f"{ver} ({lockfile['loaders']['fabric']})" for ver in lockfile["mc_versions"]
