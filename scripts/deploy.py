@@ -21,7 +21,7 @@ requester = backoff.on_exception(
         requests.exceptions.Timeout,
         TimeoutError,
     ),
-    max_time=300,
+    max_time=500,
     giveup=fatal_code,
 )
 
