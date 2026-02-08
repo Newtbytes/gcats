@@ -153,7 +153,7 @@ jobs:
       - uses: actions/download-artifact@v7
         with:
           name: serverpack-${{ env.SERVER_VERSION }}
-          path: ${{ env.GITHUB_WORKSPACE }}/build/serverpack/
+          path: build/serverpack/
 
       - name: Display structure of downloaded files
         run: ls -R build/serverpack/
