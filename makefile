@@ -22,7 +22,7 @@ SERVER = build/server/
 resources $(RESOURCEPACK) $(DATAPACK): $(RESOURCES_SOURCES)
 	$(BEET) --log debug
 
-$(SERVERPACK) $(MODRINTH_MODPACK): $(DATAPACK) $(RESOURCEPACK)
+$(SERVERPACK) $(MODRINTH_MODPACK): $(RESOURCEPACK) $(DATAPACK) $(PAKKU_SOURCES)
 	mkdir -p resources/resourcepack/required
 	mkdir -p resources/datapack/required/
 
