@@ -5,6 +5,7 @@ PAKKU ?= pakku
 BEET ?= beet
 
 BUILD_DIR = build
+SERVER_DIR = $(BUILD_DIR)/server
 
 DATAPACK_SOURCES = $(wildcard datapack/**/*)
 RESOURCEPACK_SOURCES = $(wildcard resourcepack/**/*)
@@ -17,7 +18,6 @@ RESOURCEPACK = $(BUILD_DIR)/${SERVER_NAME}-resourcepack.zip
 DATAPACK = $(BUILD_DIR)/${SERVER_NAME}-datapack.zip
 MODRINTH_MODPACK = $(BUILD_DIR)/modrinth/${SERVER_NAME}-${SERVER_VERSION}.mrpack
 SERVERPACK = $(BUILD_DIR)/serverpack/${SERVER_NAME}-${SERVER_VERSION}.zip
-SERVER = build/server/
 
 resources $(RESOURCEPACK) $(DATAPACK): $(RESOURCES_SOURCES)
 	$(BEET) --log debug
@@ -33,24 +33,27 @@ $(SERVERPACK) $(MODRINTH_MODPACK): $(RESOURCEPACK) $(DATAPACK) $(PAKKU_SOURCES)
 
 	rm -rf resources
 
-server $(SERVER) $(SERVER)/server.jar: $(SERVERPACK)
+$(SERVER_DIR):
+	mkdir -p $(SERVER_DIR)
+
+$(SERVER_DIR)/server.jar: $(SERVER_DIR)
+	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
+
+server: $(SERVERPACK) $(SERVER_DIR)/server.jar
 	# move serverpack
-	unzip -o build/serverpack/*.zip -d $(SERVER)
+	unzip -o build/serverpack/*.zip -d $(SERVER_DIR)
 
-	# Download fabric-launcher
-	curl -o $(SERVER)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
+all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK) $(DATAPACK)
 
-all: $(SERVER) $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK) $(DATAPACK)
-
-run: $(SERVER)/server.jar
-	cd $(SERVER) && echo "eula=true" > eula.txt
-	cd $(SERVER) && java -jar server.jar nogui
+run: $(SERVER_DIR)/server.jar
+	cd $(SERVER_DIR) && echo "eula=true" > eula.txt
+	cd $(SERVER_DIR) && java -jar server.jar nogui
 
 update:
 	$(PAKKU) update -a
 	python scripts/list_mods.py pakku-lock.json README.md
 
-test: $(SERVER)
+test: server
 	pytest
 
 clean:

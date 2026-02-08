@@ -117,6 +117,11 @@ jobs:
         run: |
           make all
 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: serverpack-${{ env.SERVER_VERSION }}
+          path: build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
+
   test:
     runs-on: ubuntu-latest
     needs: [build]
@@ -130,31 +135,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Load .env variables
-        run: |
-          source .env
-          echo "PAKKU_VERSION=${PAKKU_VERSION}" >> $GITHUB_ENV
-
-      - name: Cache build directory
-        uses: actions/cache@v5
-        id: cache-build
-        with:
-          path: build
-          key: build-cache-${{ hashFiles(
-            'pakku.json',
-            'pakku-lock.json',
-            'requirements.txt',
-            'datapack/**',
-            'resourcepack/**',
-            '.pakku/**') }}
-          restore-keys: build-cache-
-
-      - name: Download pakku.jar
-        run: |
-          if [ ! -f "pakku.jar" ]; then
-            curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ env.PAKKU_VERSION }}/pakku.jar
-          fi
-
       - uses: actions/setup-java@v5
         with:
           distribution: "temurin"
@@ -163,6 +143,20 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.14"
+
+      - name: Load .env variables
+        run: |
+          source .env
+          echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
+          echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: serverpack-${{ env.SERVER_VERSION }}
+          path: ${{ env.GITHUB_WORKSPACE }}/build/serverpack/
+
+      - name: Display structure of downloaded files
+        run: ls -R build/serverpack/
 
       - name: Install build requirements
         run: |
