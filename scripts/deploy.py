@@ -7,10 +7,14 @@ from typing import Optional
 import requests
 import backoff
 from dotenv import load_dotenv
+from joblib import Parallel, delayed
 from yarl import URL
 
 
 def fatal_code(e):
+    # Retry on 429 (rate limit); fail immediately on 4xx client errors
+    if e.response.status_code == 429:
+        return False
     return 400 <= e.response.status_code < 500
 
 
@@ -175,6 +179,17 @@ def collect_files(root: str, collect_directories=True) -> list[str]:
     return files
 
 
+def _write_file_task(
+    fs: ExarotonServer, src: str, dst: str, fn: str, server_files_names: list[str]
+):
+    """Helper function for parallelized file writing."""
+    if fn in server_files_names and fn.endswith(".jar"):
+        print(f"  {fn}")
+        return
+
+    fs.write(os.path.join(src, fn), os.path.join(dst, fn))
+
+
 # explicitly not abstract right now since there's no need
 def write_folder(fs: ExarotonServer, src: str, dst: str):
     files = collect_files(src, collect_directories=False)
@@ -186,12 +201,9 @@ def write_folder(fs: ExarotonServer, src: str, dst: str):
             if file_info.name not in files:
                 fs.remove(file_info.path)
 
-    for fn in files:
-        if fn in server_files_names and fn.endswith(".jar"):
-            print(f"  {fn}")
-            continue
-
-        fs.write(os.path.join(src, fn), os.path.join(dst, fn))
+    Parallel(n_jobs=4)(
+        delayed(_write_file_task)(fs, src, dst, fn, server_files_names) for fn in files
+    )
 
 
 def main():
