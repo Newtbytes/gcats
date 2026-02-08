@@ -58,3 +58,4 @@ clean:
 
 .PHONY: server resources build run update test clean
 .DEFAULT_GOAL := all
+.DELETE_ON_ERROR:
