@@ -43,7 +43,7 @@ jobs:
 
     needs: [release]
 
-    if: ${{ needs.release.outputs.release_created == 'true' }}
+    if: ${{ needs.release.outputs.release_created }}
 
     env:
       PAKKU: java -jar pakku.jar
@@ -84,18 +84,15 @@ jobs:
 
       - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
-        if: github.ref_type == 'tag'
         with:
           tag_name: ${{ needs.release.outputs.tag_name }}
-          name: Release ${{ needs.release.outputs.tag_name }}
-          generate_release_notes: false
           files: |
-            build/modrinth/*.mrpack
-            build/serverpack/*.zip
+            build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
+            build/modrinth/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.mrpack
             build/${{ env.SERVER_NAME }}-resourcepack.zip
 
       - name: Deploy server
         env:
-          EXAROTON_TOKEN: secrets.EXAROTON_TOKEN
-          EXAROTON_SERVER_ID: secrets.EXAROTON_SERVER_ID
+          EXAROTON_TOKEN: ${{ secrets.EXAROTON_TOKEN }}
+          EXAROTON_SERVER_ID: ${{ secrets.EXAROTON_SERVER_ID }}
         run: python scripts/deploy.py build/server
