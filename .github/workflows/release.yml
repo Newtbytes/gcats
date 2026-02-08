@@ -93,6 +93,6 @@ jobs:
 
       - name: Deploy server
         env:
-          EXAROTON_TOKEN: secrets.EXAROTON_TOKEN
-          EXAROTON_SERVER_ID: secrets.EXAROTON_SERVER_ID
+          EXAROTON_TOKEN: ${{ secrets.EXAROTON_TOKEN }}
+          EXAROTON_SERVER_ID: ${{ secrets.EXAROTON_SERVER_ID }}
         run: python scripts/deploy.py build/server
