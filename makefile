@@ -10,7 +10,7 @@ DATAPACK_SOURCES = $(wildcard datapack/**/*)
 RESOURCEPACK_SOURCES = $(wildcard resourcepack/**/*)
 RESOURCES_SOURCES = $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES)
 
-PAKKU_SOURCES = pakku.json pakku-lock.json
+PAKKU_SOURCES = pakku.json pakku-lock.json $(wildcard .pakku/**/*)
 MODPACK_SOURCES = $(RESOURCES_SOURCES) $(PAKKU_SOURCES)
 
 RESOURCEPACK = $(BUILD_DIR)/${SERVER_NAME}-resourcepack.zip
