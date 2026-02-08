@@ -83,12 +83,13 @@ jobs:
         run: make build test
 
       - name: Upload artifacts to release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload ${{ needs.release.outputs.tag_name }} build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
-          gh release upload ${{ needs.release.outputs.tag_name }} build/modrinth/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.mrpack
-          gh release upload ${{ needs.release.outputs.tag_name }} build/${{ env.SERVER_NAME }}-resourcepack.zip
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.release.outputs.tag_name }}
+          files: |
+            build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
+            build/modrinth/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.mrpack
+            build/${{ env.SERVER_NAME }}-resourcepack.zip
 
       - name: Deploy server
         env:
