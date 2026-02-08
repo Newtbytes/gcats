@@ -51,7 +51,7 @@ jobs:
 
       - name: Run build
         run: |
-          make build-resources
+          make resources
 
       - run: unzip -q build/GCATs-datapack.zip -d build/GCATs-datapack
       - run: unzip -q build/GCATs-resourcepack.zip -d build/GCATs-resourcepack

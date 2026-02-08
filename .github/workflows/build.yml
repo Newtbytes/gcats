@@ -101,7 +101,7 @@ jobs:
 
       - name: Run build
         run: |
-          make build
+          make all
 
   test:
     runs-on: ubuntu-latest

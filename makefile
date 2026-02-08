@@ -1,8 +1,8 @@
 include makefile.env
 
 # default pakku/beet commands
-PAKKU = pakku
-BEET = beet
+PAKKU ?= pakku
+BEET ?= beet
 
 BUILD_DIR = build
 
@@ -19,7 +19,7 @@ MODRINTH_MODPACK = $(BUILD_DIR)/modrinth/${SERVER_NAME}-${SERVER_VERSION}.mrpack
 SERVERPACK = $(BUILD_DIR)/serverpack/${SERVER_NAME}-${SERVER_VERSION}.zip
 SERVER = build/server/
 
-$(RESOURCEPACK) $(DATAPACK): $(RESOURCES_SOURCES)
+resources $(RESOURCEPACK) $(DATAPACK): $(RESOURCES_SOURCES)
 	$(BEET) --log debug
 
 $(SERVERPACK) $(MODRINTH_MODPACK): $(DATAPACK) $(RESOURCEPACK)
@@ -33,7 +33,7 @@ $(SERVERPACK) $(MODRINTH_MODPACK): $(DATAPACK) $(RESOURCEPACK)
 
 	rm -rf resources
 
-$(SERVER) $(SERVER)/server.jar: $(SERVERPACK)
+server $(SERVER) $(SERVER)/server.jar: $(SERVERPACK)
 	# move serverpack
 	unzip -o build/serverpack/*.zip -d $(SERVER)
 
@@ -50,11 +50,11 @@ update:
 	$(PAKKU) update -a
 	python scripts/list_mods.py pakku-lock.json README.md
 
-test: build-server
+test: $(SERVER)
 	pytest
 
 clean:
 	rm -rf $(BUILD_DIR) resources
 
-.PHONY: build-server build-resources build run update test clean
+.PHONY: server resources build run update test clean
 .DEFAULT_GOAL := all

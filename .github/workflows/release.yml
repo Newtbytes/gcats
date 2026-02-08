@@ -80,7 +80,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run build & tests
-        run: make build test
+        run: make all test
 
       - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
