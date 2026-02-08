@@ -117,7 +117,7 @@ jobs:
         run: |
           make all
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v6
         with:
           name: serverpack-${{ env.SERVER_VERSION }}
           path: build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
@@ -150,7 +150,7 @@ jobs:
           echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
           echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v7
         with:
           name: serverpack-${{ env.SERVER_VERSION }}
           path: ${{ env.GITHUB_WORKSPACE }}/build/serverpack/
