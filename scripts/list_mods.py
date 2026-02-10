@@ -10,18 +10,18 @@ from typing import Any, Callable, Optional
 from urllib.parse import urlparse, urljoin, ParseResult as URL
 import json
 
-import backoff
 import requests
 from joblib import Memory
 
 import md
+from utils import requester
 
 
 memory = Memory("cache")
 
 
 @memory.cache
-@backoff.on_exception(backoff.expo, requests.exceptions.RequestException)
+@requester
 def get_url(*args, **kwargs):
     return requests.get(*args, **kwargs)
 
