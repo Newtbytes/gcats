@@ -13,6 +13,13 @@
           "path": "pakku.json",
           "jsonpath": "$.version"
         }
+      ],
+      "exclude-paths": [
+        ".github",
+        "scripts",
+        "test",
+        "makefile",
+        "requirements.txt",
       ]
     }
   },
