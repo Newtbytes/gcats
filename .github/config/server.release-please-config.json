@@ -1,6 +1,7 @@
 {
   "packages": {
     ".": {
+      "package-name": "GCATs",
       "changelog-path": "CHANGELOG.md",
       "release-type": "simple",
       "bump-minor-pre-major": true,
