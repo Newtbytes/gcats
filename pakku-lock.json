@@ -829,7 +829,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fabric-language-kotlin-1.13.8+kotlin.2.3.0.jar",
+                    "file_name": "fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
                     "mc_versions": [
                         "1.14",
                         "1.14.1",
@@ -879,16 +879,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/N6D3uiZF/fabric-language-kotlin-1.13.8+kotlin.2.3.0.jar",
-                    "id": "N6D3uiZF",
+                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/ViT4gucI/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
+                    "id": "ViT4gucI",
                     "parent_id": "Ha28R6CL",
                     "hashes": {
-                        "sha512": "90bf59f810ea62363bdd7b2ce85a6268b7db67d6d4ce5ae6555204bc7eff0446a6e17d60ef51ad41bf85e92ca430043a8f7c21157cbaee9279733304605cc4d0",
-                        "sha1": "05fe02fe61232c4ddea4059e8103281424d5a2bd"
+                        "sha512": "498672ee88cf703685026e74f82a85e30d980c62a1c8cc14744cb73add09a857db8d585b405e19f558ec490613642750eb00e09d8ef5a3c9578bc52b53568d51",
+                        "sha1": "20b2200961e11994595ebb2d5f6624f232d13751"
                     },
                     "required_dependencies": [],
-                    "size": 7618852,
-                    "date_published": "2025-12-16T16:56:52.260887Z"
+                    "size": 7642216,
+                    "date_published": "2026-02-06T09:24:24.664865Z"
                 }
             ]
         },
@@ -1131,7 +1131,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.2-b1058.jar",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.3-b1071.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1139,18 +1139,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/FWtZDSv1/geyser-fabric-Geyser-Fabric-2.9.2-b1058.jar",
-                    "id": "FWtZDSv1",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/4CSWYlIC/geyser-fabric-Geyser-Fabric-2.9.3-b1071.jar",
+                    "id": "4CSWYlIC",
                     "parent_id": "wKkoqHrH",
                     "hashes": {
-                        "sha512": "9c5874c2228e0fd1aefdfb8f1760d717fe543b273bdbabefc42f5bdfc2a2dcd06e21d6be0ccc554a88faed696077eeba1576a9cfc3e6cd8e2368b1d8a86aa012",
-                        "sha1": "868cdb7cb5b26f284236cbbfb8608da06eaf2a07"
+                        "sha512": "347f11aae97b372e4c7859613f69e54b6802ba8625cea8c828ae25cc8b10ef5b4765bf73d7a31da0ae4aad509c6950e657a1e2f5788dc382527ad7eede24c474",
+                        "sha1": "26adc69f2b8d04ea5377286a530ce174e65c3a61"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 12027780,
-                    "date_published": "2026-02-05T21:12:44.040460Z"
+                    "size": 12460590,
+                    "date_published": "2026-02-10T23:04:04.670524Z"
                 }
             ]
         },
@@ -1509,7 +1509,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "lithium-fabric-0.21.2+mc1.21.11.jar",
+                    "file_name": "lithium-fabric-0.21.3+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1518,16 +1518,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/gl30uZvp/lithium-fabric-0.21.2+mc1.21.11.jar",
-                    "id": "gl30uZvp",
+                    "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/qvNsoO3l/lithium-fabric-0.21.3+mc1.21.11.jar",
+                    "id": "qvNsoO3l",
                     "parent_id": "gvQqBUqZ",
                     "hashes": {
-                        "sha512": "94625510013e0daaf1c2e2b6d8a463c932ff6220f91ba5b0cd5f868658215f046d94d07b3465660f576c4dc27a5aa183dfbdc1c9303f11894b5b25a1dc6c3bb6",
-                        "sha1": "c1f8f61d4b2fac28ab083a927c6b1338598255ed"
+                        "sha512": "2883739303f0bb602d3797cc601ed86ce6833e5ec313ddce675f3d6af3ee6a40b9b0a06dafe39d308d919669325e95c0aafd08d78c97acd976efde899c7810fd",
+                        "sha1": "7733e091bebe5f68aaa4e13cfb6f1eaf3a192379"
                     },
                     "required_dependencies": [],
-                    "size": 858481,
-                    "date_published": "2025-12-24T17:51:37.407231Z"
+                    "size": 888874,
+                    "date_published": "2026-02-07T01:19:41.863308Z"
                 }
             ]
         },
@@ -2146,7 +2146,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "PuzzlesLib-v21.11.6-mc1.21.11-Fabric.jar",
+                    "file_name": "PuzzlesLib-v21.11.10-mc1.21.11-Fabric.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2154,19 +2154,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/7L1WGsjw/PuzzlesLib-v21.11.6-mc1.21.11-Fabric.jar",
-                    "id": "7L1WGsjw",
+                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/qoxLMKD1/PuzzlesLib-v21.11.10-mc1.21.11-Fabric.jar",
+                    "id": "qoxLMKD1",
                     "parent_id": "QAGBst4M",
                     "hashes": {
-                        "sha512": "2e555c6537b6d0cecaa8947e3c94935cd87a6eae4243bc92beb122a8d039ba9d735645b0d69e083f7875403e3139b1c21d36b8db0aa5a07c3b361fa61a835811",
-                        "sha1": "7c4c680c8de451c2e36e6a062364aac1d48c5d38"
+                        "sha512": "e9cbb033c1c5a6dedea037049e0df3e27461741814989825382ad78a47516ffbe32b40c9724201b1a263b60507270486eb1a83c631a0ca39aa967488180497f6",
+                        "sha1": "c9aae4ab7a137ad9ca824072ca094c352598912a"
                     },
                     "required_dependencies": [
                         "ohNO6lps",
                         "P7dR8mSH"
                     ],
-                    "size": 1060802,
-                    "date_published": "2026-01-09T11:42:21.966851Z"
+                    "size": 1121211,
+                    "date_published": "2026-02-09T12:27:12.769143Z"
                 }
             ]
         },
