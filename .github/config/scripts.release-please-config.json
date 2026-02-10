@@ -1,7 +1,7 @@
 {
   "packages": {
     ".": {
-      "package-name": "Dev Scripts",
+      "package-name": "dev-scripts",
       "release-type": "simple",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
