@@ -29,8 +29,8 @@ jobs:
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
-          config-file: .github/config/release-please-config.json
-          manifest-file: .github/config/.release-please-manifest.json
+          config-file: .github/config/server.release-please-config.json
+          manifest-file: .github/config/server.release-please-manifest.json
 
       - name: Print release outputs
         continue-on-error: true
