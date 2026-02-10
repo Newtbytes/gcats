@@ -85,6 +85,22 @@ jobs:
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
           restore-keys: pakku-cache-
 
+      - name: Cache build directory
+        uses: actions/cache@v5
+        id: cache-build
+        with:
+          path: build
+          key: build-cache-${{ hashFiles(
+            'pakku.json',
+            'pakku-lock.json',
+            'makefile',
+            'beet.yml',
+            'requirements.txt',
+            'datapack/**',
+            'resourcepack/**',
+            '.pakku/**') }}
+          restore-keys: build-cache-
+
       - name: Download pakku.jar if not cached
         if: steps.cache-pakku-jar.outputs.cache-hit != 'true'
         run: |
@@ -101,7 +117,22 @@ jobs:
 
       - name: Run build
         run: |
-          make build
+          make all
+
+      - name: Display structure of build directory
+        run: ls -R build/
+
+      - name: Upload mrpack artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: mrpack-${{ env.SERVER_VERSION }}
+          path: build/**/*.mrpack
+
+      - name: Upload zip artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: zip-${{ env.SERVER_VERSION }}
+          path: build/**/*.zip
 
   test:
     runs-on: ubuntu-latest
@@ -116,17 +147,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Load .env variables
-        run: |
-          source .env
-          echo "PAKKU_VERSION=${PAKKU_VERSION}" >> $GITHUB_ENV
-
-      - name: Download pakku.jar
-        run: |
-          if [ ! -f "pakku.jar" ]; then
-            curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ env.PAKKU_VERSION }}/pakku.jar
-          fi
-
       - uses: actions/setup-java@v5
         with:
           distribution: "temurin"
@@ -135,6 +155,21 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.14"
+
+      - name: Load .env variables
+        run: |
+          source .env
+          echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
+          echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
+
+      - name: Download zip artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: zip-${{ env.SERVER_VERSION }}
+          path: build/
+
+      - name: Display structure of downloaded files
+        run: ls -R build/
 
       - name: Install build requirements
         run: |
