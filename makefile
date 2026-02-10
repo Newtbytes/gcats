@@ -7,12 +7,17 @@ BEET ?= beet
 BUILD_DIR = build
 SERVER_DIR = $(BUILD_DIR)/server
 
+SERVER_ICON := server-icon.png
 DATAPACK_SOURCES := $(wildcard datapack/**/*)
 RESOURCEPACK_SOURCES := $(wildcard resourcepack/**/*)
-RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES)
+RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES) beet.yml SERVER_ICON
 
 PAKKU_SOURCES := pakku.json pakku-lock.json $(wildcard .pakku/**/*)
+# TODO: add SERVER_ICON here if it ever is use in the modpack export
 MODPACK_SOURCES := $(RESOURCES_SOURCES) $(PAKKU_SOURCES)
+
+SCRIPTS_SOURCES := $(wildcard scripts/**/*.py) requirements.txt
+TESTS_SOURCES := $(wildcard tests/**/*.py) requirements.txt
 
 RESOURCES_DATAPACK_DIR := resources/datapack/required
 RESOURCES_DATAPACK := $(RESOURCES_DATAPACK_DIR)/${SERVER_NAME}.zip
@@ -48,11 +53,11 @@ all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
 run: server
 	cd $(SERVER_DIR) && java -jar server.jar nogui
 
-update:
+update: SCRIPTS_SOURCES PAKKU_SOURCES
 	$(PAKKU) update -a
 	python scripts/list_mods.py pakku-lock.json README.md
 
-test: server
+test: server TESTS_SOURCES
 	pytest
 
 clean:
