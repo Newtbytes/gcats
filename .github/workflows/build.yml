@@ -93,6 +93,8 @@ jobs:
           key: build-cache-${{ hashFiles(
             'pakku.json',
             'pakku-lock.json',
+            'makefile',
+            'beet.yml',
             'requirements.txt',
             'datapack/**',
             'resourcepack/**',
@@ -117,10 +119,20 @@ jobs:
         run: |
           make all
 
-      - uses: actions/upload-artifact@v6
+      - name: Display structure of build directory
+        run: ls -R build/
+
+      - name: Upload mrpack artifacts
+        uses: actions/upload-artifact@v6
         with:
-          name: serverpack-${{ env.SERVER_VERSION }}
-          path: build/serverpack/${{ env.SERVER_NAME }}-${{ env.SERVER_VERSION }}.zip
+          name: mrpack-${{ env.SERVER_VERSION }}
+          path: build/**/*.mrpack
+
+      - name: Upload zip artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: zip-${{ env.SERVER_VERSION }}
+          path: build/**/*.zip
 
   test:
     runs-on: ubuntu-latest
@@ -150,13 +162,14 @@ jobs:
           echo "SERVER_NAME=${SERVER_NAME}" >> $GITHUB_ENV
           echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
 
-      - uses: actions/download-artifact@v7
+      - name: Download zip artifacts
+        uses: actions/download-artifact@v7
         with:
-          name: serverpack-${{ env.SERVER_VERSION }}
-          path: build/serverpack/
+          name: zip-${{ env.SERVER_VERSION }}
+          path: build/
 
       - name: Display structure of downloaded files
-        run: ls -R build/serverpack/
+        run: ls -R build/
 
       - name: Install build requirements
         run: |
