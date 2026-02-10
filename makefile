@@ -1,56 +1,49 @@
 include makefile.env
 
 # default pakku/beet commands
+PAKKU ?= pakku
 BEET ?= beet
-
-PAKKU = pakku.jar
 
 BUILD_DIR = build
 SERVER_DIR = $(BUILD_DIR)/server
 
-DATAPACK_SOURCES = $(wildcard datapack/**/*)
-RESOURCEPACK_SOURCES = $(wildcard resourcepack/**/*)
-RESOURCES_SOURCES = $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES)
+DATAPACK_SOURCES := $(wildcard datapack/**/*)
+RESOURCEPACK_SOURCES := $(wildcard resourcepack/**/*)
+RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES)
 
-PAKKU_SOURCES = pakku.json pakku-lock.json $(wildcard .pakku/**/*)
-MODPACK_SOURCES = $(RESOURCES_SOURCES) $(PAKKU_SOURCES)
+PAKKU_SOURCES := pakku.json pakku-lock.json $(wildcard .pakku/**/*)
+MODPACK_SOURCES := $(RESOURCES_SOURCES) $(PAKKU_SOURCES)
 
-RESOURCES_DATAPACK_DIR = resources/datapack/required
-RESOURCES_DATAPACK = $(RESOURCES_DATAPACK_DIR)/${SERVER_NAME}.zip
+RESOURCES_DATAPACK_DIR := resources/datapack/required
+RESOURCES_DATAPACK := $(RESOURCES_DATAPACK_DIR)/${SERVER_NAME}.zip
 
-RESOURCEPACK = $(BUILD_DIR)/${SERVER_NAME}-resourcepack.zip
-DATAPACK = $(BUILD_DIR)/${SERVER_NAME}-datapack.zip
-MODRINTH_MODPACK = $(BUILD_DIR)/modrinth/${SERVER_NAME}-${SERVER_VERSION}.mrpack
-SERVERPACK = $(BUILD_DIR)/serverpack/${SERVER_NAME}-${SERVER_VERSION}.zip
+RESOURCEPACK := $(BUILD_DIR)/${SERVER_NAME}-resourcepack.zip
+DATAPACK := $(BUILD_DIR)/${SERVER_NAME}-datapack.zip
+MODRINTH_MODPACK := $(BUILD_DIR)/modrinth/${SERVER_NAME}-${SERVER_VERSION}.mrpack
+SERVERPACK := $(BUILD_DIR)/serverpack/${SERVER_NAME}-${SERVER_VERSION}.zip
 
-resources: $(RESOURCES_SOURCES)
+resources $(DATAPACK) $(RESOURCEPACK): $(RESOURCES_SOURCES)
 	$(BEET) --log debug
 
 $(RESOURCES_DATAPACK_DIR) $(SERVER_DIR):
 	mkdir -p $@
 
-$(RESOURCES_DATAPACK) : $(RESOURCES_DATAPACK_DIR) resources
-	mv $(DATAPACK) $@
+$(RESOURCES_DATAPACK) : $(RESOURCES_DATAPACK_DIR) $(DATAPACK)
+	cp $(DATAPACK) $@
 
-$(PAKKU):
-	curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${PAKKU_VERSION}/pakku.jar
+$(SERVERPACK) $(MODRINTH_MODPACK): $(PAKKU_SOURCES) | $(RESOURCES_DATAPACK)
+	$(PAKKU) export
 
-$(SERVERPACK) $(MODRINTH_MODPACK): $(RESOURCES_DATAPACK) $(PAKKU_SOURCES) $(PAKKU)
-	java -jar $(PAKKU) export
-
-$(SERVER_DIR)/server.jar: $(SERVER_DIR)
-	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
-
-server: $(SERVERPACK) $(SERVER_DIR)/server.jar
-	# move serverpack
+$(SERVER_DIR)/server.jar: $(SERVERPACK) | $(SERVER_DIR)
 	unzip -o $(SERVERPACK) -d $(SERVER_DIR)
+	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
 
 all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
 
-$(SERVER_DIR)/eula.txt: $(SERVER_DIR)
+$(SERVER_DIR)/eula.txt: | $(SERVER_DIR)
 	cd $(SERVER_DIR) && echo "eula=true" > eula.txt
 
-run: server $(SERVER_DIR)/eula.txt
+run: $(SERVER_DIR)/server.jar $(SERVER_DIR)/eula.txt
 	cd $(SERVER_DIR) && java -jar server.jar nogui
 
 update:
