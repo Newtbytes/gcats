@@ -10,7 +10,7 @@ SERVER_DIR = $(BUILD_DIR)/server
 SERVER_ICON := server-icon.png
 DATAPACK_SOURCES := $(wildcard datapack/**/*)
 RESOURCEPACK_SOURCES := $(wildcard resourcepack/**/*)
-RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES) beet.yml SERVER_ICON
+RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES) beet.yml $(SERVER_ICON)
 
 PAKKU_SOURCES := pakku.json pakku-lock.json $(wildcard .pakku/**/*)
 # TODO: add SERVER_ICON here if it ever is use in the modpack export
