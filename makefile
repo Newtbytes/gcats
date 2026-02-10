@@ -53,11 +53,11 @@ all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
 run: server
 	cd $(SERVER_DIR) && java -jar server.jar nogui
 
-update: SCRIPTS_SOURCES PAKKU_SOURCES
+update: $(SCRIPTS_SOURCES) $(PAKKU_SOURCES)
 	$(PAKKU) update -a
 	python scripts/list_mods.py pakku-lock.json README.md
 
-test: server TESTS_SOURCES
+test: server $(TESTS_SOURCES)
 	pytest
 
 clean:
