@@ -96,3 +96,4 @@ No client mods required! | [https://modrinth.com/project/yANxwqSX](https://modri
 | ViaBackwards | Allow older Java Edition clients to connect to newer servers. | [https://modrinth.com/project/NpvuJQoq](https://modrinth.com/project/NpvuJQoq) |
 | ViaFabric | Allows to connect to older servers with older versions | [https://modrinth.com/project/YlKdE5VK](https://modrinth.com/project/YlKdE5VK) |
 | ViaVersion | Allow newer Java Edition clients to connect to older servers. | [https://modrinth.com/project/P1OZGk5p](https://modrinth.com/project/P1OZGk5p) |
+| YetAnotherConfigLib (YACL) | A builder-based configuration library for Minecraft! | [https://modrinth.com/project/1eAoo2KR](https://modrinth.com/project/1eAoo2KR) |
