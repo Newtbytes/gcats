@@ -38,12 +38,14 @@ $(SERVER_DIR)/server.jar: $(SERVERPACK) | $(SERVER_DIR)
 	unzip -o $(SERVERPACK) -d $(SERVER_DIR)
 	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
 
-all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
-
 $(SERVER_DIR)/eula.txt: | $(SERVER_DIR)
 	cd $(SERVER_DIR) && echo "eula=true" > eula.txt
 
-run: $(SERVER_DIR)/server.jar $(SERVER_DIR)/eula.txt
+server: $(SERVER_DIR)/server.jar $(SERVER_DIR)/eula.txt
+
+all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
+
+run: server
 	cd $(SERVER_DIR) && java -jar server.jar nogui
 
 update:
@@ -56,7 +58,7 @@ test: server
 clean:
 	rm -rf $(BUILD_DIR) resources
 
-.PHONY: server resources build run update test clean
+.PHONY: resources server all run update test clean
 .DEFAULT_GOAL := all
 .DELETE_ON_ERROR:
 .INTERMEDIATE: $(RESOURCES_RESOURCEPACK) $(RESOURCES_DATAPACK)
