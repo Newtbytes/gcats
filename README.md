@@ -38,6 +38,7 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | NoisiumForked | Optimises worldgen performance for a better gameplay experience. | [https://modrinth.com/project/hasdd01q](https://modrinth.com/project/hasdd01q) |
 | Nullscape | Transforms the boring Vanilla end into an alien dimension with the most surreal terrain imaginable. Topped with a couple of new biomes to add to the experience, whilst keeping the end desolate. | [https://modrinth.com/project/LPjGiSO4](https://modrinth.com/project/LPjGiSO4) |
 | OfflineCommands | Run commands on offline players | [https://modrinth.com/project/rkgXkDl7](https://modrinth.com/project/rkgXkDl7) |
+| Polymer | Library for creating better server side content! | [https://modrinth.com/project/xGdtZczs](https://modrinth.com/project/xGdtZczs) |
 | Pufferfish's Biome Dither | Adds dithering on the biome borders to the game. | [https://modrinth.com/project/xlybdB0E](https://modrinth.com/project/xlybdB0E) |
 | Revamped Shipwrecks | Shipwreck structures redesigned with jigsaw degradation stages, hundreds of unique combinations! | [https://modrinth.com/project/ZnZ8uqXN](https://modrinth.com/project/ZnZ8uqXN) |
 | Save Point | A partial keep inventory: Spawn points save your current items and restore them upon death | [https://modrinth.com/project/b844W4IS](https://modrinth.com/project/b844W4IS) |
@@ -50,6 +51,8 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | TNT Breaks Bedrock | 🧨 Allows TNT to break bedrock, easy access to the nether roof! | [https://modrinth.com/project/eU2O6Xp1](https://modrinth.com/project/eU2O6Xp1) |
 | Wabi-Sabi Structures | A collection of unique, quality structures based on the Wabi-Sabi philosophy | [https://modrinth.com/project/Vr3O6THr](https://modrinth.com/project/Vr3O6THr) |
 | What Durability? | ❌ Removes all durability from items, allowing infinite uses. Similar to Terraria and Stardew Valley. | [https://modrinth.com/project/lKY2kyjj](https://modrinth.com/project/lKY2kyjj) |
+| filament | Data driven Items, Blocks, Decorations and Mobs for Fabric based servers.
+No client mods required! | [https://modrinth.com/project/yANxwqSX](https://modrinth.com/project/yANxwqSX) |
 
 ### Client-side
 
@@ -93,4 +96,3 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | ViaBackwards | Allow older Java Edition clients to connect to newer servers. | [https://modrinth.com/project/NpvuJQoq](https://modrinth.com/project/NpvuJQoq) |
 | ViaFabric | Allows to connect to older servers with older versions | [https://modrinth.com/project/YlKdE5VK](https://modrinth.com/project/YlKdE5VK) |
 | ViaVersion | Allow newer Java Edition clients to connect to older servers. | [https://modrinth.com/project/P1OZGk5p](https://modrinth.com/project/P1OZGk5p) |
-| YetAnotherConfigLib (YACL) | A builder-based configuration library for Minecraft! | [https://modrinth.com/project/1eAoo2KR](https://modrinth.com/project/1eAoo2KR) |
