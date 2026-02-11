@@ -7,7 +7,7 @@
   "include_mod_assets": [],
   "_c6": "Included resource packs from zips!",
   "include_zips": [
-    "resources/resourcepack/required/GCATs.zip"
+    "resources/resourcepack/required/GCATs-resourcepack.zip"
   ],
   "_c7": "Path used for creation of default resourcepack!",
   "resource_pack_location": "polymer/resource_pack.zip",
