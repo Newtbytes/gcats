@@ -1,0 +1,17 @@
+id: mynamespace:pebbles
+
+vanillaItem: minecraft:paper
+blockModelType: vines_block
+
+properties:
+  blockBase: minecraft:ladder
+  destroyTime: 1
+  transparent: true
+  solid: false
+  collision: false
+  pushReaction: destroy
+
+behaviour:
+  flammable:
+    burn: 5
+    spread: 20
