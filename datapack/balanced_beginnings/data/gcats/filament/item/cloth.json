@@ -1,0 +1,12 @@
+{
+  "id": "gcats:cloth",
+  "translations": {
+    "en_us": "Cloth"
+  },
+  "vanillaItem": "minecraft:paper",
+  "itemResource": {
+    "models": {
+      "default": "minecraft:custom/misc/cloth"
+    }
+  }
+}
