@@ -1,8 +1,5 @@
 {
     "pack": {
-        "description": "Balanced Beginnings datapack for GCATs",
-        "pack_format": 75,
-        "max_format": 75,
-        "min_format": 75
+        "description": "Balanced Beginnings datapack for GCATs"
     }
 }
