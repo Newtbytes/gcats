@@ -12,6 +12,7 @@ resource_pack:
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/4if0gBBN/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip
     - https://cdn.modrinth.com/data/zp6touiL/versions/43cYxPZ8/Just-Atlas_RP_v2-1_1-21-5.zip
+    - https://cdn.modrinth.com/data/HtIrK6OV/versions/Po1Q2Pe5/Dimanic%20Beds.zip
     - resourcepack/remove-too-expensive
 
   zipped: true
