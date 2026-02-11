@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "/#",
+    "#/"
+  ],
+  "key": {
+    "#": "#minecraft:wool",
+    "/": "minecraft:string"
+  },
+  "result": {
+    "count": 4,
+    "id": "gcats:cloth"
+  }
+}
