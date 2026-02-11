@@ -5,7 +5,7 @@
     "key": {
         "#": "gcats:cloth",
         "X": "#minecraft:planks",
-        "O": "minecraft:white_wool"
+        "O": "minecraft:red_wool"
     },
     "pattern": [
         "##O",
@@ -13,6 +13,6 @@
     ],
     "result": {
         "count": 1,
-        "id": "minecraft:white_bed"
+        "id": "minecraft:red_bed"
     }
 }
