@@ -53,6 +53,8 @@ The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Van
 | What Durability? | ❌ Removes all durability from items, allowing infinite uses. Similar to Terraria and Stardew Valley. | [https://modrinth.com/project/lKY2kyjj](https://modrinth.com/project/lKY2kyjj) |
 | filament | Data driven Items, Blocks, Decorations and Mobs for Fabric based servers.
 No client mods required! | [https://modrinth.com/project/yANxwqSX](https://modrinth.com/project/yANxwqSX) |
+| filament | Data driven Items, Blocks, Decorations and Mobs for Fabric based servers.
+No client mods required! | [https://modrinth.com/project/yANxwqSX](https://modrinth.com/project/yANxwqSX) |
 
 ### Client-side
 
