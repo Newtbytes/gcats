@@ -1,0 +1,35 @@
+# Patch for bed recipes
+
+# Results in something like the following:
+
+# {
+#     "type": "minecraft:crafting_shaped",
+#     "category": "misc",
+#     "group": "bed",
+#     "key": {
+#       "#": "minecraft:black_wool",
+#       "X": "#minecraft:planks",
+#       "O": "gcats:cloth",
+#     },
+#     "pattern": [
+#         "OO#",
+#         "XXX"
+#     ],
+#     "result": {
+#         "count": 1,
+#         "id": "minecraft:black_bed"
+#     }
+# }
+
+- op: test
+  path: /type
+  value: minecraft:crafting_shaped
+
+- op: add
+  path: /key
+  value:
+    "O": gcats:cloth
+
+- op: replace
+  path: /pattern/0
+  value: "OO#"

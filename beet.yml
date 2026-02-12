@@ -1,6 +1,8 @@
 require:
   - datapack.cascades
   - beet.contrib.unknown_files
+  - beet.contrib.auto_yaml
+  - beet.contrib.format_json
 
 name: GCATs
 description: GCATs server resources.
@@ -43,6 +45,8 @@ pipeline:
   - beet.contrib.auto_yaml
   - beet.contrib.vanilla.load_vanilla
   - beet_plugins.patches.add_entry_replacement_to_loot_tables
+  - beet_plugins.patches.json_patch
+  - beet.contrib.format_json
 
 meta:
   copy_files:
@@ -53,6 +57,7 @@ meta:
   load_vanilla:
     match:
       loot_table: "*"
+      recipe: "*_bed"
   add_entry_replacement_to_loot_tables:
     source: minecraft:rotten_flesh
     target: gcats:cloth
