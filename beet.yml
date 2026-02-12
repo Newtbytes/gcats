@@ -39,10 +39,10 @@ data_pack:
   pack_format: 94
 
 pipeline:
-  - beet.contrib.vanilla.load_vanilla
   - beet.contrib.copy_files
   - beet.contrib.auto_yaml
-  - beet_plugins.rewrite
+  - beet.contrib.vanilla.load_vanilla
+  - beet_plugins.patches.add_cloth_to_loot_tables
 
 meta:
   copy_files:

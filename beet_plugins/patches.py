@@ -2,7 +2,7 @@ import beet
 from copy import deepcopy
 
 
-def beet_default(ctx: beet.Context):
+def add_cloth_to_loot_tables(ctx: beet.Context):
     tables_to_remove = []
 
     for key, table in ctx.data.loot_tables.items():
