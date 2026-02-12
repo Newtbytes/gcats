@@ -39,8 +39,10 @@ data_pack:
   pack_format: 94
 
 pipeline:
+  - beet.contrib.vanilla.load_vanilla
   - beet.contrib.copy_files
   - beet.contrib.auto_yaml
+  - beet_plugins.rewrite
 
 meta:
   copy_files:
@@ -48,5 +50,8 @@ meta:
       pack.png: server-icon.png
     data_pack:
       pack.png: server-icon.png
+  load_vanilla:
+    match:
+      loot_table: "*"
 
 output: build
