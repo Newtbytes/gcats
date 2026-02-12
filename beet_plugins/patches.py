@@ -3,7 +3,7 @@ from copy import deepcopy
 
 
 @beet.configurable
-def add_entry_to_loot_tables(ctx: beet.Context, ops: dict):
+def add_entry_replacement_to_loot_tables(ctx: beet.Context, ops: dict):
     tables_to_remove = []
 
     for key, table in ctx.data.loot_tables.items():

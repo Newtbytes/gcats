@@ -42,7 +42,7 @@ pipeline:
   - beet.contrib.copy_files
   - beet.contrib.auto_yaml
   - beet.contrib.vanilla.load_vanilla
-  - beet_plugins.patches.add_entry_to_loot_tables
+  - beet_plugins.patches.add_entry_replacement_to_loot_tables
 
 meta:
   copy_files:
@@ -53,7 +53,7 @@ meta:
   load_vanilla:
     match:
       loot_table: "*"
-  add_entry_to_loot_tables:
+  add_entry_replacement_to_loot_tables:
     source: minecraft:rotten_flesh
     target: gcats:cloth
     skip:
