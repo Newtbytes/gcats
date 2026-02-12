@@ -1,10 +1,18 @@
 id: gcats:rope
 
-vanillaItem: minecraft:paper
+translation:
+  en_us: Rope
+
+vanillaItem: minecraft:twisting_vines
 blockModelType: vines_block
 
+blockResource:
+  parent: minecraft:block/twisting_vines
+  models:
+    default: minecraft:custom/block/rope
+
 properties:
-  blockBase: minecraft:ladder
+  blockBase: minecraft:scaffolding
   destroyTime: 1
   transparent: true
   solid: false
