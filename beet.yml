@@ -34,7 +34,7 @@ data_pack:
     - datapack/clifftree-tweaks
     - datapack/balanced_beginnings
 
-  zipped: false
+  zipped: true
 
   name: "{{ project_name }}-datapack"
   description: "{{ project_description }}"
