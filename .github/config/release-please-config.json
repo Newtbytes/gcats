@@ -35,7 +35,15 @@
         },
         {
           "type": "revert",
-          "section": "Reverts"
+          "section": "Removals"
+        },
+        {
+          "type": "remove",
+          "section": "Removals"
+        },
+        {
+          "type": "rm",
+          "section": "Removals"
         },
         {
           "type": "docs",
