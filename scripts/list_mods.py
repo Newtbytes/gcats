@@ -148,6 +148,10 @@ class ProjectInfo(md.ToMarkdown):
     def description(self) -> Optional[str]:
         return self._data["description"]
 
+    @property
+    def icon_url(self) -> Optional[str]:
+        return self._data["icon_url"]
+
 
 def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
     def group_by_field(
@@ -176,10 +180,18 @@ def fmt_modlist(projects: list[ProjectInfo]) -> md.Document:
             out.add(md.Heading(side.to_md(), 3))
             out.add(
                 md.Table(
-                    md.Row([md.Text("Name"), md.Text("Description"), md.Text("URL")]),
+                    md.Row(
+                        [
+                            md.Text("Icon"),
+                            md.Text("Name"),
+                            md.Text("Description"),
+                            md.Text("URL"),
+                        ]
+                    ),
                     [
                         md.Row(
                             [
+                                md.Image(md.Text(prj.icon_url if prj.icon_url else "")),
                                 md.Text(prj.name),
                                 md.Text(prj.description if prj.description else ""),
                                 prj.url.to_md(),

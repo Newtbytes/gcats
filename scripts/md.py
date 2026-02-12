@@ -108,6 +108,21 @@ class URL(Node):
 
 
 @dataclass
+class Image(Node):
+    url: Text | ParsedURL
+    alt_text: Optional[Node] = field(default=None)
+
+    def __str__(self) -> str:
+        alt_text = self.alt_text if self.alt_text is not None else ""
+
+        url = self.url
+        if isinstance(url, ParsedURL):
+            url = url.geturl()
+
+        return f"![{alt_text}]({url})"
+
+
+@dataclass
 class Row(Node):
     values: list[Node]
 
