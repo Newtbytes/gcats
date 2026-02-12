@@ -11,11 +11,11 @@
       "changelog-sections": [
         {
           "type": "feat",
-          "section": "Features"
+          "section": "Additions"
         },
         {
           "type": "feature",
-          "section": "Features"
+          "section": "Additions"
         },
         {
           "type": "change",
