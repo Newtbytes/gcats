@@ -1,6 +1,6 @@
 # GCATs
 
-The modpack for the **GCATS** server for *Minecraft: Java Edition*, a modded Vanilla+ server compatible with vanilla clients that aims to add game design focused and Mojang-like features in order to improve the gameplay experience.
+The modpack for the **GCATs** server for *Minecraft: Java Edition*, a modded Vanilla+ server compatible with vanilla clients that aims to add game design focused and Mojang-like features in order to improve the gameplay experience.
 
 ## *Mods*
 
