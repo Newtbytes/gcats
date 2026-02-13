@@ -26,9 +26,8 @@
   value: minecraft:crafting_shaped
 
 - op: add
-  path: /key
-  value:
-    "O": gcats:cloth
+  path: /key/O
+  value: gcats:cloth
 
 - op: replace
   path: /pattern/0
