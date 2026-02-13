@@ -6,7 +6,7 @@
     "reputation_discount": 0.05,
     "wants": {
         "count": 32.0,
-        "id": "minecraft:cloth"
+        "id": "gcats:cloth"
     },
     "xp": 2.0
 }
