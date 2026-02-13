@@ -1131,7 +1131,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.3-b1071.jar",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.3-b1072.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1139,18 +1139,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/4CSWYlIC/geyser-fabric-Geyser-Fabric-2.9.3-b1071.jar",
-                    "id": "4CSWYlIC",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/CqU0NAU9/geyser-fabric-Geyser-Fabric-2.9.3-b1072.jar",
+                    "id": "CqU0NAU9",
                     "parent_id": "wKkoqHrH",
                     "hashes": {
-                        "sha512": "347f11aae97b372e4c7859613f69e54b6802ba8625cea8c828ae25cc8b10ef5b4765bf73d7a31da0ae4aad509c6950e657a1e2f5788dc382527ad7eede24c474",
-                        "sha1": "26adc69f2b8d04ea5377286a530ce174e65c3a61"
+                        "sha512": "c00899c95ddf48d39aa2df0b8025582170bc682d1a624b825416b12c9c4a0133479193b6abd6a0a03ae06aefe4199687ad465da092f89b102e32a8064b1f292d",
+                        "sha1": "17a370e76166eb5ec9f93dcfa953d75304c7e3ee"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 12460590,
-                    "date_published": "2026-02-10T23:04:04.670524Z"
+                    "size": 12460694,
+                    "date_published": "2026-02-12T00:20:33.122964Z"
                 }
             ]
         },
@@ -2146,7 +2146,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "PuzzlesLib-v21.11.10-mc1.21.11-Fabric.jar",
+                    "file_name": "PuzzlesLib-v21.11.11-mc1.21.11-Fabric.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2154,19 +2154,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/qoxLMKD1/PuzzlesLib-v21.11.10-mc1.21.11-Fabric.jar",
-                    "id": "qoxLMKD1",
+                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/O1SlsQzW/PuzzlesLib-v21.11.11-mc1.21.11-Fabric.jar",
+                    "id": "O1SlsQzW",
                     "parent_id": "QAGBst4M",
                     "hashes": {
-                        "sha512": "e9cbb033c1c5a6dedea037049e0df3e27461741814989825382ad78a47516ffbe32b40c9724201b1a263b60507270486eb1a83c631a0ca39aa967488180497f6",
-                        "sha1": "c9aae4ab7a137ad9ca824072ca094c352598912a"
+                        "sha512": "055feb02f50ef4622595a5670b4c477f0ad1cbe43241e7629746a5732d161d42cd08d736d3d326e07b90fe56758bdb44772b26d99dc6efdd813e7e0eebcc4085",
+                        "sha1": "d3921f83227eeb0382b3661fdec677bee9cb0f20"
                     },
                     "required_dependencies": [
                         "ohNO6lps",
                         "P7dR8mSH"
                     ],
-                    "size": 1121211,
-                    "date_published": "2026-02-09T12:27:12.769143Z"
+                    "size": 1122576,
+                    "date_published": "2026-02-12T08:21:28.141170Z"
                 }
             ]
         },
@@ -3464,16 +3464,16 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/gQIwgy28/ViaVersion-5.7.2-SNAPSHOT.jar",
-                    "id": "gQIwgy28",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/LMYOsxAz/ViaVersion-5.7.2-SNAPSHOT.jar",
+                    "id": "LMYOsxAz",
                     "parent_id": "P1OZGk5p",
                     "hashes": {
-                        "sha512": "a38dcbfc407cfcfe13cbfecbce9c2119ae334d568016dfd77ecb79b3d5cc77dbcd9c1317d9e7c278f40d397d160fc8b1ff8a9198a710ebc99f5871adfe049d12",
-                        "sha1": "a57189284494234f33fec235e72368893501e8d7"
+                        "sha512": "72c3e35f8a41fef023a49abcdfc0dbbc1dc83f07e3c9b7e1473fe5ee315d20110b569b95ec4e786aea63c0e59c70cff8a25e4ae6d2173e14a54edc6a454b84dd",
+                        "sha1": "80385ef054af711b58c7007989fce190d6b2b055"
                     },
                     "required_dependencies": [],
-                    "size": 5993546,
-                    "date_published": "2026-02-02T15:18:15.278187Z"
+                    "size": 5993629,
+                    "date_published": "2026-02-12T20:33:32.123926Z"
                 }
             ]
         },
