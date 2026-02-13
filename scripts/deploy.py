@@ -205,7 +205,7 @@ def write_folder(fs: ExarotonServer, src: str, dst: str):
     if dst in FULL_SYNC_DIRS:
         for file_info in server_files:
             if file_info.name not in files:
-                fs.remove(file_info.path)
+                fs.remove(file_info.path.removeprefix("/"))
 
     Parallel(n_jobs=4)(
         delayed(_write_file_task)(fs, src, dst, fn, server_files_names) for fn in files
