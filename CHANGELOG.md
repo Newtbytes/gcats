@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.4.1](https://github.com/Newtbytes/gcats/compare/v0.4.0...v0.4.1) (2026-02-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **mods:** Update to 1.21.11 ([#110](https://github.com/Newtbytes/gcats/issues/110))
+
+### Additions
+
+* **dev:** Add `update` target to makefile ([5c31112](https://github.com/Newtbytes/gcats/commit/5c31112d112898e5d2fd6ff8112145d953bdfd23))
+* **mods:** Update to 1.21.11 ([#110](https://github.com/Newtbytes/gcats/issues/110)) ([14c6639](https://github.com/Newtbytes/gcats/commit/14c6639dc1855d3874925caa3cfefa737439af4a))
+* **readme:** Add project icons to readme ([614b1dc](https://github.com/Newtbytes/gcats/commit/614b1dc25fe5e65d42a291462b11cac68ca3c359))
+* **release:** Add changes section to changelog ([a2bd0f0](https://github.com/Newtbytes/gcats/commit/a2bd0f037ad16919f9e5b7adcd9b85d82e48bbb7))
+* **release:** Update changelog sections ([#128](https://github.com/Newtbytes/gcats/issues/128)) ([a2bd0f0](https://github.com/Newtbytes/gcats/commit/a2bd0f037ad16919f9e5b7adcd9b85d82e48bbb7))
+* **test:** Implement testing with pytest ([2045aed](https://github.com/Newtbytes/gcats/commit/2045aed48bc6fbed89c9f2a6a5f0e4edd5db914e))
+* **test:** Implement testing with pytest ([9a411a2](https://github.com/Newtbytes/gcats/commit/9a411a24435b16d9d100aecbef470f4824d48b84))
+
+
+### Changes
+
+* **release:** Rename features section to addtions ([a2bd0f0](https://github.com/Newtbytes/gcats/commit/a2bd0f037ad16919f9e5b7adcd9b85d82e48bbb7))
+* **release:** Rename reverted section to removals ([a2bd0f0](https://github.com/Newtbytes/gcats/commit/a2bd0f037ad16919f9e5b7adcd9b85d82e48bbb7))
+
+
+### Bug Fixes
+
+* **ci:** Checkout submodules in lint workflow ([26e4a2b](https://github.com/Newtbytes/gcats/commit/26e4a2bb755df9a9540241eb346070a7ac7e60e7))
+* **docs:** Fix typo ([99fa5b2](https://github.com/Newtbytes/gcats/commit/99fa5b25d578d97fd76f0f376a221166303db72e))
+* **release:** change how version bumps work pre-1.0 ([#114](https://github.com/Newtbytes/gcats/issues/114)) ([5b97cf2](https://github.com/Newtbytes/gcats/commit/5b97cf250d6938534283f0ee92fc6017d92ea310))
+* **release:** Fix uploading release artifacts ([#115](https://github.com/Newtbytes/gcats/issues/115)) ([b18ff9a](https://github.com/Newtbytes/gcats/commit/b18ff9a52a807f3a14b744277aa80ec0d0dd9192))
+* **resources:** Remove Re-covered ([6178fd1](https://github.com/Newtbytes/gcats/commit/6178fd19fd44079059e0ddbbf1a7f516072ef191))
+
 ## [0.4.0](https://github.com/Newtbytes/gcats/compare/v0.3.2...v0.4.0) (2026-02-05)
 
 
