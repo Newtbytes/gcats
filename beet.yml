@@ -28,7 +28,7 @@ data_pack:
     - datapack/VanillaTweaks_CraftingTweaks_MC1.21-1.21.11.zip
     - datapack/modally_stranded
     - datapack/clifftree-tweaks
-    - datapack/nametag
+    - datapack/nametag-recipe
 
   zipped: true
 
