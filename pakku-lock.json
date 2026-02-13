@@ -2171,6 +2171,49 @@
             ]
         },
         {
+            "pakku_id": "VU95C3iSKP0NOn9i",
+            "pakku_links": [
+                "ytwAeMYoHmqPnRPq"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "quad"
+            },
+            "name": {
+                "modrinth": "Quad"
+            },
+            "id": {
+                "modrinth": "7jzrCiK0"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "quad-1.2.14+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/7jzrCiK0/versions/5AVRVP1o/quad-1.2.14+1.21.11-fabric.jar",
+                    "id": "5AVRVP1o",
+                    "parent_id": "7jzrCiK0",
+                    "hashes": {
+                        "sha512": "2349c0ff89ec5a8102019128860441fd6ee16a3948e03425b1078de03f229b1719624d99072c33e2f01cc162dda12f6d8388abc0885ddd3ad6dea88a18f52c35",
+                        "sha1": "4b8647405f3858bdd7c5978ca6864a9fc5eb4419"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 73447,
+                    "date_published": "2025-12-10T13:27:54.747771Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "JVGsRYZ8iEyG2CvJ",
             "type": "MOD",
             "side": "BOTH",
