@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/Newtbytes/gcats/compare/v0.4.1...v0.4.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* **deploy:** Remove first slash when removing files from dirs in `FULL_SYNC_DIRS` ([6552c7b](https://github.com/Newtbytes/gcats/commit/6552c7b71f6b971c79885dc22028eadc97cc0c95))
+
 ## [0.4.1](https://github.com/Newtbytes/gcats/compare/v0.4.0...v0.4.1) (2026-02-13)
 
 
