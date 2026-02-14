@@ -18,6 +18,20 @@
                         ]
                     }
                 ]
+            },
+            {
+                "pack_type": "server_data",
+                "patch": "add_cloth_to_entity_drops",
+                "targets": [
+                    {
+                        "namespace": [ "minecraft" ],
+                        "path": [
+                            {
+                                "pattern": "loot_table/entities/.*\\.json"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }

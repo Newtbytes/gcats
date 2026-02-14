@@ -39,8 +39,6 @@ data_pack:
 pipeline:
   - beet.contrib.copy_files
   - beet.contrib.auto_yaml
-  - beet.contrib.vanilla.load_vanilla
-  - beet_plugins.patches.add_entry_replacement_to_loot_tables
   - beet.contrib.format_json
 
 meta:
@@ -51,17 +49,5 @@ meta:
     data_pack:
       pack.png: server-icon.png
       patches: datapack/balanced_beginnings/patches
-  load_vanilla:
-    match:
-      loot_table: "*"
-      recipe: "*_bed"
-  add_entry_replacement_to_loot_tables:
-    source: minecraft:rotten_flesh
-    target: gcats:cloth
-    skip:
-      - camel_husk
-      - zombie_nautilus
-      - zombie_horse
-      - zoglin
 
 output: build
