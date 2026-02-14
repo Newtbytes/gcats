@@ -1,0 +1,17 @@
+[
+    {
+        "op": "test",
+        "path": "/type",
+        "value": "minecraft:crafting_shaped"
+    },
+    {
+        "op": "add",
+        "path": "/key/O",
+        "value": "gcats:cloth"
+    },
+    {
+        "op": "replace",
+        "path": "/pattern/0",
+        "value": "OO#"
+    }
+]

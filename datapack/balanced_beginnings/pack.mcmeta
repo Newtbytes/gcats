@@ -1,5 +1,24 @@
 {
     "pack": {
         "description": "Balanced Beginnings datapack for GCATs"
+    },
+    "patched": {
+        "format_version": 1,
+        "patch_targets": [
+            {
+                "pack_type": "server_data",
+                "patch": "add_cloth_to_bed_recipes",
+                "targets": [
+                    {
+                        "namespace": [ "minecraft" ],
+                        "path": [
+                            {
+                                "pattern": "recipe/.*_bed\\.json"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }
