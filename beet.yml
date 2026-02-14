@@ -22,10 +22,6 @@ resource_pack:
 
 data_pack:
   load:
-    - datapack/anti creeper grief v1.1.15 (MC 1.21-1.21.11).zip
-    - datapack/double shulker shells v1.3.15 (MC 1.21-1.21.11).zip
-    - datapack/more effective tools v1.0.9 (MC 1.21-1.21.11).zip
-    - datapack/VanillaTweaks_CraftingTweaks_MC1.21-1.21.11.zip
     - datapack/modally_stranded
     - datapack/clifftree-tweaks
 
