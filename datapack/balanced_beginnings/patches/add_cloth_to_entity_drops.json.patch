@@ -1,0 +1,27 @@
+[
+    {
+        "op": "test",
+        "path": "/type",
+        "value": "minecraft:entity"
+    },
+    {
+        "op": "test",
+        "path": "/pools/0/entries/0/name",
+        "value": "minecraft:rotten_flesh"
+    },
+    {
+        "op": "copy",
+        "from": "/pools/0",
+        "path": "/temporary_pool"
+    },
+    {
+        "op": "replace",
+        "path": "/temporary_pool/entries/0/name",
+        "value": "gcats:cloth"
+    },
+    {
+        "op": "move",
+        "from": "/temporary_pool",
+        "path": "/pools/-"
+    }
+]

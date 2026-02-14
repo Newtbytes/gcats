@@ -82,6 +82,7 @@ No client mods required! | [https://modrinth.com/project/yANxwqSX](https://modri
 | M.R.U | A library mod used by IMB11's mods to function. | [https://modrinth.com/project/SNVQ2c0g](https://modrinth.com/project/SNVQ2c0g) |
 | MidnightLib | Common library providing a lightweight configuration system | [https://modrinth.com/project/codAaoxh](https://modrinth.com/project/codAaoxh) |
 | No Chat Reports | Makes chat unreportable (where possible) | [https://modrinth.com/project/qQyHxfxd](https://modrinth.com/project/qQyHxfxd) |
+| Patched | Allows data/resource packs and mods to modify parts of json files instead of completely replacing them. | [https://modrinth.com/project/IBlGrJtC](https://modrinth.com/project/IBlGrJtC) |
 | Puzzles Lib | Why it's called Puzzles, you ask? That's the puzzle! | [https://modrinth.com/project/QAGBst4M](https://modrinth.com/project/QAGBst4M) |
 | Resourceful Config | Resourceful Config is a mod that allows for developers to make cross-platform configs | [https://modrinth.com/project/M1953qlQ](https://modrinth.com/project/M1953qlQ) |
 | ScalableLux | A Fabric mod based on Starlight that improves the performance of light updates in Minecraft. | [https://modrinth.com/project/Ps1zyz6x](https://modrinth.com/project/Ps1zyz6x) |
