@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.2](https://github.com/Newtbytes/gcats/compare/v0.4.1...v0.4.2) (2026-02-16)
+
+
+### Changes
+
+* **resources:** Don't merge extern datapacks into GCATs datapack ([bd0dabb](https://github.com/Newtbytes/gcats/commit/bd0dabb599aba2b6928b4d3d2892d947424b52ec))
+
+
+### Bug Fixes
+
+* **deploy:** Remove first slash when removing files from dirs in `FULL_SYNC_DIRS` ([6552c7b](https://github.com/Newtbytes/gcats/commit/6552c7b71f6b971c79885dc22028eadc97cc0c95))
+
 ## [0.4.1](https://github.com/Newtbytes/gcats/compare/v0.4.0...v0.4.1) (2026-02-13)
 
 
