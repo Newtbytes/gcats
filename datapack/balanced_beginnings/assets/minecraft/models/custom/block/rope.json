@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:block/cross",
-	"textures": {
-		"cross": "block/rope"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "block/rope"
+  }
 }
