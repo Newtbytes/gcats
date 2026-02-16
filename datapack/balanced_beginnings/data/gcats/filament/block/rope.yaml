@@ -7,7 +7,7 @@ vanillaItem: minecraft:twisting_vines
 blockModelType: vines_block
 
 blockResource:
-  parent: minecraft:block/twisting_vines
+  parent: minecraft:block/cross
   models:
     default: minecraft:custom/block/rope
 
