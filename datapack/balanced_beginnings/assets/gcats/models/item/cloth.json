@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/paper",
   "textures": {
-    "layer0": "minecraft:item/cloth"
+    "layer0": "gcats:item/cloth"
   }
 }

@@ -6,7 +6,7 @@
   "vanillaItem": "minecraft:paper",
   "itemResource": {
     "models": {
-      "default": "minecraft:custom/misc/cloth"
+      "default": "gcats:item/cloth"
     }
   }
 }
