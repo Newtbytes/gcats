@@ -1,0 +1,5 @@
+parent: minecraft:block/slab
+textures:
+  top: minecraft:block/white_wool
+  bottom: minecraft:block/oak_planks
+  side: minecraft:block/oak_planks
