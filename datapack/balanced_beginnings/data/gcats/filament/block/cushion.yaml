@@ -1,0 +1,25 @@
+id: gcats:cushion
+
+translations:
+  en_us: Cushion
+
+blockResource:
+  models:
+    type=top: "gcats:block/cushion_top"
+    type=bottom: "gcats:block/cushion"
+    type=double: "gcats:block/cushion_double"
+
+behaviour:
+  slab: {}
+  seat:
+    - offset: [0, 0.42, 0]
+    - offset: [1, 0.42, 0]
+
+properties:
+  blockBase: minecraft:oak_slab
+
+blocks:
+  - origin: [0.0, 0.0, 0.0]
+    size: [1.0, 0.5, 1.0]
+  - origin: [1, 0, 0]
+    size: [1, 1, 1]
