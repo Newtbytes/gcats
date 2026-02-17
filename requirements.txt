@@ -5,3 +5,4 @@ backoff==2.2.1
 python-dotenv==1.2.1
 yarl==1.22.0
 pytest==9.0.2
+jsonpatch==1.33.0
