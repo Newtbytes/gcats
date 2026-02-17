@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "?": "minecraft:string"
+  },
+  "pattern": [
+    "?",
+    "?",
+    "?"
+  ],
+  "result": {
+    "count": 4,
+    "id": "gcats:rope"
+  }
+}
