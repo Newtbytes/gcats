@@ -6,6 +6,7 @@ pakku.jar
 # output fils
 **.mrpack
 build/
+resources/
 
 # python
 .venv/
