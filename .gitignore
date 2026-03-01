@@ -1,6 +1,7 @@
 # dev tools
-.vscode/
+.vscode/*
 pakku.jar
+!.vscode/settings.json
 
 # output fils
 **.mrpack
