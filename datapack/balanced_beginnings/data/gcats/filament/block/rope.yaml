@@ -1,0 +1,25 @@
+id: gcats:rope
+
+translation:
+  en_us: Rope
+
+vanillaItem: minecraft:twisting_vines
+blockModelType: vines_block
+
+blockResource:
+  parent: minecraft:block/cross
+  models:
+    default: minecraft:custom/block/rope
+
+properties:
+  blockBase: minecraft:scaffolding
+  destroyTime: 1
+  transparent: true
+  solid: false
+  collision: false
+  pushReaction: destroy
+
+behaviour:
+  flammable:
+    burn: 5
+    spread: 20
