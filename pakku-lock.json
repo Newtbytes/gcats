@@ -2079,6 +2079,43 @@
             ]
         },
         {
+            "pakku_id": "WNgIrS65ErTDTgSP",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "patched"
+            },
+            "name": {
+                "modrinth": "Patched"
+            },
+            "id": {
+                "modrinth": "IBlGrJtC"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Patched-8.0.0+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/IBlGrJtC/versions/xGBdwxVG/Patched-8.0.0+1.21.11-fabric.jar",
+                    "id": "xGBdwxVG",
+                    "parent_id": "IBlGrJtC",
+                    "hashes": {
+                        "sha512": "866f9ca1844f8c59053d0587a59e3d415da9a415935a45b48e6532ff991ffae79ea2ffdc4c79efa8ba99b23fa0ffb64b0c847014dca557a1e0ffbbec021b41d0",
+                        "sha1": "a734954c73f5e5989f220ecb23189373984d4cd0"
+                    },
+                    "required_dependencies": [],
+                    "size": 201755,
+                    "date_published": "2026-01-11T00:48:49.857884Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LszPmcS2rEVmjlo3",
             "type": "MOD",
             "side": "SERVER",

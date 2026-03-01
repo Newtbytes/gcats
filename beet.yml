@@ -1,5 +1,8 @@
 require:
   - datapack.cascades
+  - beet.contrib.unknown_files
+  - beet.contrib.auto_yaml
+  - beet.contrib.format_json
 
 name: GCATs
 description: GCATs server resources.
@@ -13,36 +16,38 @@ resource_pack:
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip
     - https://cdn.modrinth.com/data/zp6touiL/versions/43cYxPZ8/Just-Atlas_RP_v2-1_1-21-5.zip
     - resourcepack/remove-too-expensive
+    - datapack/balanced_beginnings
 
   zipped: true
 
   name: "{{ project_name }}-resourcepack"
   description: "{{ project_description }}"
-  pack_format: 69
+  pack_format: 75
 
 data_pack:
   load:
-    - datapack/anti creeper grief v1.1.15 (MC 1.21-1.21.11).zip
-    - datapack/double shulker shells v1.3.15 (MC 1.21-1.21.11).zip
-    - datapack/more effective tools v1.0.9 (MC 1.21-1.21.11).zip
-    - datapack/VanillaTweaks_CraftingTweaks_MC1.21-1.21.11.zip
     - datapack/modally_stranded
     - datapack/clifftree-tweaks
+    - datapack/balanced_beginnings
 
   zipped: true
 
   name: "{{ project_name }}-datapack"
   description: "{{ project_description }}"
-  pack_format: 88
+  pack_format: 94
 
 pipeline:
   - beet.contrib.copy_files
+  - beet.contrib.auto_yaml
+  - beet.contrib.format_json
 
 meta:
   copy_files:
     resource_pack:
       pack.png: server-icon.png
+      patches: datapack/balanced_beginnings/patches
     data_pack:
       pack.png: server-icon.png
+      patches: datapack/balanced_beginnings/patches
 
 output: build
