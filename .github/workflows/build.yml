@@ -163,7 +163,7 @@ jobs:
           echo "SERVER_VERSION=${SERVER_VERSION}" >> $GITHUB_ENV
 
       - name: Download zip artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: zip-${{ env.SERVER_VERSION }}
           path: build/
