@@ -123,13 +123,13 @@ jobs:
         run: ls -R build/
 
       - name: Upload mrpack artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: mrpack-${{ env.SERVER_VERSION }}
           path: build/**/*.mrpack
 
       - name: Upload zip artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: zip-${{ env.SERVER_VERSION }}
           path: build/**/*.zip
