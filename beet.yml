@@ -1,4 +1,5 @@
 require:
+  - beet_plugins.mergeables
   - datapack.cascades
 
 name: GCATs
@@ -22,6 +23,11 @@ resource_pack:
 
 data_pack:
   load:
+    - https://cdn.modrinth.com/data/Jmx5kJiS/versions/zCun0Pkf/cascades-v1.0.5-1.21.9-1.21.10.zip
+    - https://cdn.modrinth.com/data/hl5OLM95/versions/NocMg9CU/Geophilic%20v3.4.4%20f15-88.dp.zip
+    - https://cdn.modrinth.com/data/wXiGiyGX/versions/68re3WvL/Amplified_Nether_1.21_v1.2.11.zip
+    - https://cdn.modrinth.com/data/BuWCQzqf/versions/cn9MTN70/hopobetterunderwaterruins-1-21-10-1-2-5.zip
+    - https://cdn.modrinth.com/data/9IxCUYAP/versions/E4SgyyKV/hopobettermineshaft-1-21-10-1-3-4.zip
     - datapack/modally_stranded
     - datapack/clifftree-tweaks
 
@@ -33,6 +39,8 @@ data_pack:
 
 pipeline:
   - beet.contrib.copy_files
+  - beet_plugins.fix_formats
+  - beet_plugins.remove_overlays
 
 meta:
   copy_files:
@@ -40,5 +48,11 @@ meta:
       pack.png: server-icon.png
     data_pack:
       pack.png: server-icon.png
+  remove_overlays:
+    overlays:
+      # this overlay exists in geophilic but is not used, which confuses beet and breaks the pack
+      - biomes_1_20
+
+      - empty-overlay
 
 output: build
