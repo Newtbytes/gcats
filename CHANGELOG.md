@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.0](https://github.com/Newtbytes/gcats/compare/v0.4.1...v0.5.0) (2026-03-03)
+
+
+### Additions
+
+* **dev:** Teach project compatibillity with 'Makefile Tools' vscode extension ([92c07e2](https://github.com/Newtbytes/gcats/commit/92c07e29a3f64418f73ff32e4e43648e3403b69b))
+
+
+### Changes
+
+* **resources:** Don't merge extern datapacks into GCATs datapack ([bd0dabb](https://github.com/Newtbytes/gcats/commit/bd0dabb599aba2b6928b4d3d2892d947424b52ec))
+
+
+### Bug Fixes
+
+* **deploy:** Remove first slash when removing files from dirs in `FULL_SYNC_DIRS` ([6552c7b](https://github.com/Newtbytes/gcats/commit/6552c7b71f6b971c79885dc22028eadc97cc0c95))
+* **dev:** Fix shebang line in `preconfigure.sh` ([9262c6b](https://github.com/Newtbytes/gcats/commit/9262c6b79b4615ef2296447f760775e31c62e8a4))
+
 ## [0.4.1](https://github.com/Newtbytes/gcats/compare/v0.4.0...v0.4.1) (2026-02-13)
 
 
