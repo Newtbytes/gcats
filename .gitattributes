@@ -1,2 +1,7 @@
 # use lfs for worlds
 **/worlds/*.zip filter=lfs diff=lfs merge=lfs -text
+
+# use lfs for datapacks & resourcepacks
+extern/**/*.zip filter=lfs diff=lfs merge=lfs -text
+datapack/**/*.zip filter=lfs diff=lfs merge=lfs -text
+resourcepack/**/*.zip filter=lfs diff=lfs merge=lfs -text
