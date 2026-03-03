@@ -4,49 +4,76 @@ include makefile.env
 PAKKU ?= pakku
 BEET ?= beet
 
-# Output:
-# - build/{SERVER_NAME}-resourcepack.zip
-# - build/{SERVER_NAME}-datapack/
-build-resources:
+BUILD_DIR := build
+SERVER_DIR := $(BUILD_DIR)/server
+EXTERN_DIR := extern
+EXTERN_DATAPACK_DIR := $(EXTERN_DIR)/datapack
+
+SERVER_ICON := server-icon.png
+DATAPACK_SOURCES := $(wildcard datapack/**/*)
+RESOURCEPACK_SOURCES := $(wildcard resourcepack/**/*)
+RESOURCES_SOURCES := $(DATAPACK_SOURCES) $(RESOURCEPACK_SOURCES) beet.yml $(SERVER_ICON)
+EXTERN_DATAPACK_SOURCES := $(wildcard $(EXTERN_DATAPACK_DIR)/**/*)
+
+PAKKU_SOURCES := pakku.json pakku-lock.json $(wildcard .pakku/**/*)
+# TODO: add SERVER_ICON here if it ever is use in the modpack export
+MODPACK_SOURCES := $(RESOURCES_SOURCES) $(PAKKU_SOURCES)
+
+SCRIPTS_SOURCES := $(wildcard scripts/**/*.py) requirements.txt
+TESTS_SOURCES := $(wildcard tests/**/*.py) requirements.txt
+
+RESOURCES_DATAPACK_DIR := resources/datapack/required
+RESOURCES_RESOURCEPACK_DIR := resources/resourcepack/required
+RESOURCES_DATAPACK := $(RESOURCES_DATAPACK_DIR)/${SERVER_NAME}-datapack.zip
+RESOURCES_RESOURCEPACK := $(RESOURCES_RESOURCEPACK_DIR)/${SERVER_NAME}-resourcepack.zip
+RESOURCES_EXTERN_DATAPACKS = $(RESOURCES_RESOURCEPACK_DIR)/%.zip
+
+RESOURCEPACK := $(BUILD_DIR)/${SERVER_NAME}-resourcepack.zip
+DATAPACK := $(BUILD_DIR)/${SERVER_NAME}-datapack.zip
+MODRINTH_MODPACK := $(BUILD_DIR)/modrinth/${SERVER_NAME}-${SERVER_VERSION}.mrpack
+SERVERPACK := $(BUILD_DIR)/serverpack/${SERVER_NAME}-${SERVER_VERSION}.zip
+
+resources $(DATAPACK) $(RESOURCEPACK): $(RESOURCES_SOURCES)
 	$(BEET) --log debug
 
-# Output:
-# - build/serverpack/{SERVER_NAME}-{SERVER_VERSION}.zip
-# - build/modrinth/{SERVER_NAME}-{SERVER_VERSION}.mrpack
-build-modpack: build-resources env
-	mkdir -p resources/resourcepack/required
-	mkdir -p resources/datapack/required/
+$(RESOURCES_DATAPACK_DIR) $(SERVER_DIR):
+	mkdir -p $@
 
-	cp -r build/${SERVER_NAME}-resourcepack.zip resources/resourcepack/required/${SERVER_NAME}.zip
-	cp -r build/${SERVER_NAME}-datapack.zip resources/datapack/required/${SERVER_NAME}.zip
+$(RESOURCES_DATAPACK) : $(RESOURCES_DATAPACK_DIR) $(DATAPACK)
+	cp $(DATAPACK) $@
 
+$(RESOURCES_EXTERN_DATAPACKS) : $(EXTERN_DATAPACK_SOURCES)
+	cp -r $(EXTERN_DATAPACK_DIR)/* $(RESOURCES_DATAPACK_DIR)
+
+$(SERVERPACK) $(MODRINTH_MODPACK): $(PAKKU_SOURCES) | $(RESOURCES_DATAPACK) $(RESOURCES_RESOURCEPACK) $(RESOURCES_EXTERN_DATAPACKS)
 	$(PAKKU) export
 
-	rm -rf resources
+$(SERVER_DIR)/server.jar: $(SERVERPACK) | $(SERVER_DIR)
+	unzip -o $(SERVERPACK) -d $(SERVER_DIR)
+	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
 
-# Output:
-# Complete server ready to run/test
-# - build/server/
-build-server: build-modpack env
-	# move serverpack
-	unzip -o build/serverpack/*.zip -d build/server
+$(SERVER_DIR)/eula.txt: | $(SERVER_DIR)
+	cd $(SERVER_DIR) && echo "eula=true" > eula.txt
 
-	# Download fabric-launcher
-	curl -o build/server/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
+server: $(SERVER_DIR)/server.jar $(SERVER_DIR)/eula.txt
 
-build: build-server
+all: server $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)
 
-run: build-server
-	cd build/server && echo "eula=true" > eula.txt
-	cd build/server && java -jar server.jar nogui
+run: server
+	cd $(SERVER_DIR) && java -jar server.jar nogui
 
-test: build-server
-	echo "eula=true" > build/server/eula.txt
-	cd build/server && echo "stop" | java -jar server.jar nogui
+update: $(SCRIPTS_SOURCES) $(PAKKU_SOURCES)
+	$(PAKKU) update -a
+	python scripts/list_mods.py pakku-lock.json README.md
+
+test: server $(TESTS_SOURCES)
+	pytest
 
 clean:
-	rm -rf build
-	rm -rf resources
+	rm -rf $(BUILD_DIR) resources
 
-.PHONY: env build-modpack build-server build-resources build run test clean
-.DEFAULT_GOAL := build
+.PHONY: resources server all run update test clean
+.DEFAULT_GOAL := all
+.DELETE_ON_ERROR:
+.INTERMEDIATE: $(RESOURCES_RESOURCEPACK) $(RESOURCES_DATAPACK)
+.NOTINTERMEDIATE: $(SERVERPACK) $(MODRINTH_MODPACK) $(RESOURCEPACK)

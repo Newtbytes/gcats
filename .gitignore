@@ -1,11 +1,16 @@
 # dev tools
-.vscode/
+.vscode/*
 pakku.jar
+!.vscode/settings.json
 
 # output fils
 **.mrpack
 build/
+resources/
 
 # python
 .venv/
 __pycache__/
+
+# secrets (ssshhhhh)
+secrets.env

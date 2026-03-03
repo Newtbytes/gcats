@@ -1,0 +1,4 @@
+{
+    "makefile.preConfigureScript": "${workspaceFolder}/preconfigure.sh",
+    "makefile.alwaysPreConfigure": true
+}

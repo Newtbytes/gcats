@@ -1,0 +1,6 @@
+data_pack:
+  load:
+    - https://cdn.modrinth.com/data/Jmx5kJiS/versions/zCun0Pkf/cascades-v1.0.5-1.21.9-1.21.10.zip
+
+pipeline:
+  - cascades_source.make_cascades_source
