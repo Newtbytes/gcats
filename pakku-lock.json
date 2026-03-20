@@ -2310,6 +2310,43 @@
             ]
         },
         {
+            "pakku_id": "RQQSoqMTInH0r3Fn",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "sha1runtime"
+            },
+            "name": {
+                "modrinth": "Runtime Hash Updater"
+            },
+            "id": {
+                "modrinth": "YoRtMPzM"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "SHA1Runtime-1.21.11-1.4.1.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/YoRtMPzM/versions/xOPNzoIc/SHA1Runtime-1.21.11-1.4.1.jar",
+                    "id": "xOPNzoIc",
+                    "parent_id": "YoRtMPzM",
+                    "hashes": {
+                        "sha512": "6da7488f9ea99bc0d318280063197d1fbacf60199bcb138d642576437033e8813c05ccc89e80eb7786b2237deef29a9ff6f0669e9dc2915811c32cf5081dd8bc",
+                        "sha1": "2b4c8bdf48a23eb28028ad1ace7d8c56812587ea"
+                    },
+                    "required_dependencies": [],
+                    "size": 26362,
+                    "date_published": "2025-12-12T16:58:00.529166Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5JnxMW1ktDTmbKCu",
             "pakku_links": [
                 "0UKKTAd6dRIQbXRi",
