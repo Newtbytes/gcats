@@ -67,7 +67,7 @@ update: $(SCRIPTS_SOURCES) $(PAKKU_SOURCES)
 	python scripts/list_mods.py pakku-lock.json README.md
 
 test: server $(TESTS_SOURCES)
-	pytest
+	pytest -s
 
 clean:
 	rm -rf $(BUILD_DIR) resources
