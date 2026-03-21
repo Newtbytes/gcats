@@ -3,6 +3,7 @@ from dataclasses import dataclass
 import sys
 import os.path
 from typing import Optional
+import string
 
 import requests
 from dotenv import load_dotenv
@@ -17,6 +18,39 @@ from utils import requester
 # e.g. if the deployment server has a file that isn't in the folder being deployed, it is removed
 # for the mods folder for example, this prevents old versions of mods being kept
 FULL_SYNC_DIRS = ["mods"]
+
+
+def parse_conf_file(fn: str) -> dict:
+    """Parse a key=value style config file."""
+
+    with open(fn) as f:
+        content = f.read()
+
+    parsed: dict = {
+        line[: line.find("=")]: line[line.find("=") + 1 :]
+        for line in content.splitlines()
+        if not line.startswith("#") and line.strip()
+    }
+
+    def is_str(s: str) -> bool:
+        return (s.startswith('"') and s.endswith('"')) or (
+            s.startswith("'") and s.endswith("'")
+        )
+
+    for k, v in list(parsed.items()):
+        if is_str(v):
+            for quote in ['"', "'"]:
+                v.removeprefix(quote)
+                v.removesuffix(quote)
+            continue
+
+        if v == "true" or v == "false":
+            parsed[k] = bool(v)
+
+        if v.isdecimal():
+            parsed[k] = int(v)
+
+    return parsed
 
 
 @dataclass
@@ -62,6 +96,10 @@ class ExarotonServer:
     def files_uri(self) -> URL:
         return self.server_uri / "files"
 
+    @property
+    def config_uri(self) -> URL:
+        return self.files_uri / "config"
+
     def files_data_uri(self, path: str) -> str:
         return str(self.files_uri / "data" / path)
 
@@ -82,6 +120,26 @@ class ExarotonServer:
             raise Exception(content["error"])
 
         return content["data"]["software"]["version"]
+
+    def is_conf_file(self, fn: str) -> bool:
+        return fn.endswith("server.properties")
+
+    def post_conf_file(self, data: dict, fn: str):
+        url = str(self.config_uri / fn)
+
+        resp = requests.post(
+            url=url,
+            headers={**self.headers, "Content-Type": "application/json"},
+        )
+        resp.raise_for_status()
+
+        content = resp.json()
+
+        if content["error"] is not None:
+            raise ValueError(content["error"])
+
+    def writable(self, fn: str) -> bool:
+        return not any([fn.endswith(f) for f in ["server.jar", "eula.txt"]])
 
     @requester
     def mkdir(self, path: str):
@@ -146,18 +204,24 @@ class ExarotonServer:
     def write(self, src: str, dst: str):
         url = self.files_data_uri(dst)
 
-        dst_dir = os.path.dirname(dst)
-        if dst_dir and not self.exists(dst_dir):
-            self.mkdir(dst_dir)
+        if not self.writable(dst):
+            return
 
-        if os.path.isdir(src):
-            headers = {"Content-Type": "inode/directory", **self.headers}
-            requests.put(url, headers=headers, timeout=10).raise_for_status()
+        if self.is_conf_file(dst):
+            self.post_conf_file(parse_conf_file(src), dst)
         else:
-            with open(src, "rb") as f:
-                requests.put(
-                    url, data=f, headers=self.headers, timeout=10
-                ).raise_for_status()
+            dst_dir = os.path.dirname(dst)
+            if dst_dir and not self.exists(dst_dir):
+                self.mkdir(dst_dir)
+
+            if os.path.isdir(src):
+                headers = {"Content-Type": "inode/directory", **self.headers}
+                requests.put(url, headers=headers, timeout=10).raise_for_status()
+            else:
+                with open(src, "rb") as f:
+                    requests.put(
+                        url, data=f, headers=self.headers, timeout=10
+                    ).raise_for_status()
 
         print(f"+ {dst}")
 
@@ -185,11 +249,19 @@ def collect_files(root: str, collect_directories=True) -> list[str]:
     return files
 
 
+def is_versioned_file(fn: str):
+    return (
+        any([d in fn for d in string.digits])
+        and fn.count(".") > 1
+        and len(fn) > len("server.jar")
+    )
+
+
 def _write_file_task(
     fs: ExarotonServer, src: str, dst: str, fn: str, server_files_names: list[str]
 ):
     """Helper function for parallelized file writing."""
-    if fn in server_files_names and fn.endswith(".jar"):
+    if fn in server_files_names and is_versioned_file(fn):
         print(f"  {fn}")
         return
 
@@ -198,7 +270,7 @@ def _write_file_task(
 
 # explicitly not abstract right now since there's no need
 def write_folder(fs: ExarotonServer, src: str, dst: str):
-    files = collect_files(src, collect_directories=False)
+    files = os.listdir(src)
     server_files = fs.listdir(dst) if fs.exists(dst) else []
     server_files_names = [f.name for f in server_files]
 
@@ -208,8 +280,18 @@ def write_folder(fs: ExarotonServer, src: str, dst: str):
                 fs.remove(file_info.path.removeprefix("/"))
 
     Parallel(n_jobs=4)(
-        delayed(_write_file_task)(fs, src, dst, fn, server_files_names) for fn in files
+        delayed(_write_file_task)(fs, src, dst, fn, server_files_names)
+        for fn in files
+        if not os.path.isdir(os.path.join(src, fn))
     )
+
+    for subdir in files:
+        path = os.path.join(src, subdir)
+
+        if not os.path.isdir(path):
+            continue
+
+        write_folder(fs, path, os.path.join(dst, subdir))
 
 
 def main():
@@ -236,11 +318,7 @@ def main():
             f"WARNING: Server version {deploy_tgt.version} not in lockfile versions {supported_versions}"
         )
 
-    for subdir in os.listdir(server_dir):
-        dir = os.path.join(server_dir, subdir)
-
-        if os.path.isdir(dir):
-            write_folder(deploy_tgt, dir, subdir)
+    write_folder(deploy_tgt, server_dir, "")
 
 
 if __name__ == "__main__":
