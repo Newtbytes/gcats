@@ -1,0 +1,64 @@
+name: Run make update to update mods
+
+permissions:
+  pull-requests: write
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday
+  workflow_dispatch:
+
+env:
+  PAKKU: java -jar pakku.jar
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: "temurin"
+          java-version: "22"
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Load .env variables
+        run: |
+          source .env
+          echo "PAKKU_VERSION=${PAKKU_VERSION}" >> $GITHUB_ENV
+
+      - name: Cache pakku.jar
+        id: cache-pakku-jar
+        uses: actions/cache@v5
+        with:
+          path: pakku.jar
+          key: pakku-jar-cache-${{ hashFiles('pakku.jar') }}
+
+      - name: Download pakku.jar if not cached
+        if: steps.cache-pakku-jar.outputs.cache-hit != 'true'
+        run: |
+          curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ env.PAKKU_VERSION }}/pakku.jar
+
+      - name: Run make update
+        run: make update
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "chore(mods): Update mods with make update"
+          branch: chore/mods/update
+          title: "Weekly mod updates"
+          body: "Updates the versions of all mods using pakku, changing the mod list in the README if necessary."
+          labels: |
+            dependencies
+            mods
