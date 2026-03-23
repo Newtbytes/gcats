@@ -42,7 +42,7 @@ jobs:
         uses: actions/cache@v5
         with:
           path: pakku.jar
-          key: pakku-jar-cache-${{ hashFiles('pakku.jar') }}
+          key: pakku-jar-cache-${{ env.PAKKU_VERSION }}
 
       - name: Download pakku.jar if not cached
         if: steps.cache-pakku-jar.outputs.cache-hit != 'true'
