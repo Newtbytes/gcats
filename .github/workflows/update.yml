@@ -1,5 +1,9 @@
 name: Run make update to update mods
 
+permissions:
+  pull-requests: write
+  contents: write
+
 on:
   schedule:
     - cron: "0 6 * * 1" # every Monday
@@ -20,6 +24,13 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "22"
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
 
       - name: Load .env variables
         run: |
