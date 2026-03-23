@@ -6,7 +6,7 @@ description: GCATs server resources.
 
 resource_pack:
   load:
-    - resourcepack/VanillaTweaks_MC1.21.x.zip
+    - resourcepack/VanillaTweaks_MC26.1.x.zip
     - https://cdn.modrinth.com/data/tPtjib62/versions/w7MCM1Bk/visual_armor_trims_4.1.zip
     - https://cdn.modrinth.com/data/6gN7YVi7/versions/4z5iFY64/Re-covered.zip
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/4if0gBBN/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
