@@ -2123,43 +2123,6 @@
             ]
         },
         {
-            "pakku_id": "jn7acntzviC83g3v",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "polymer"
-            },
-            "name": {
-                "modrinth": "Polymer"
-            },
-            "id": {
-                "modrinth": "xGdtZczs"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "polymer-bundled-0.16.0-pre.3+26.1.jar",
-                    "mc_versions": [
-                        "26.1"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/xGdtZczs/versions/wZwko27P/polymer-bundled-0.16.0-pre.3+26.1.jar",
-                    "id": "wZwko27P",
-                    "parent_id": "xGdtZczs",
-                    "hashes": {
-                        "sha512": "abfc3688c1d65582d5b5752306ad47aeb67b2275ff22403625798fdde6db3603ed9f7e35043279c1f83af28db80f9caf10e541926d9e4bc40a4fcf4da1ebb0a3",
-                        "sha1": "f0e38b49c93b243ddfe2d28c3e61dd307d795c41"
-                    },
-                    "required_dependencies": [],
-                    "size": 1357670,
-                    "date_published": "2026-03-26T18:57:42.153697Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "IGWzlzrKApBetwRv",
             "type": "MOD",
             "side": "SERVER",
@@ -3288,48 +3251,6 @@
                     "required_dependencies": [],
                     "size": 247011,
                     "date_published": "2026-03-18T20:02:56.305131Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "cz6jyN5x8rpgJQR7",
-            "pakku_links": [
-                "jn7acntzviC83g3v"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "universal-shops"
-            },
-            "name": {
-                "modrinth": "Universal Shops"
-            },
-            "id": {
-                "modrinth": "cnIatHrN"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "universal_shops-1.14.0+26.1.jar",
-                    "mc_versions": [
-                        "26.1"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cnIatHrN/versions/7GUTevWM/universal_shops-1.14.0+26.1.jar",
-                    "id": "7GUTevWM",
-                    "parent_id": "cnIatHrN",
-                    "hashes": {
-                        "sha512": "f7a2042136a37db5d569208d340f24a6ed25d7f2e1bb46c6a93884950ba058e89223f11b0846569eb3d87f959c221a588afcfa3860b0ababba44d8ec838f1a60",
-                        "sha1": "67f1e9b7e52732343ead4a2956a7f9fc5f65a8a6"
-                    },
-                    "required_dependencies": [
-                        "xGdtZczs"
-                    ],
-                    "size": 612407,
-                    "date_published": "2026-03-24T21:13:57.807492Z"
                 }
             ]
         },
