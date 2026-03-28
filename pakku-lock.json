@@ -2604,6 +2604,43 @@
             ]
         },
         {
+            "pakku_id": "uxcp4FGR12tIQl9I",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "slabbed"
+            },
+            "name": {
+                "modrinth": "Slabbed"
+            },
+            "id": {
+                "modrinth": "5nraCxl9"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "slabbed-0.2.0-beta.1-hotfix.2.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/5nraCxl9/versions/gghEOcVy/slabbed-0.2.0-beta.1-hotfix.2.jar",
+                    "id": "gghEOcVy",
+                    "parent_id": "5nraCxl9",
+                    "hashes": {
+                        "sha512": "1770851220f20624aa75419dc3a8026076376c1a104d179d212ffc724bedd971b0a2d6071f531cd1f65c0db37f552fd9482c4fb5077407e8f286b030b5cab4bb",
+                        "sha1": "b0093496726fd0a933381c89122294f43ef9b5ff"
+                    },
+                    "required_dependencies": [],
+                    "size": 68043,
+                    "date_published": "2026-02-17T21:52:39.036294Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YljJrGxJyaH3yUti",
             "pakku_links": [
                 "RMEKddjcm3IXNKOi"
