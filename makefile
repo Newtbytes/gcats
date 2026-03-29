@@ -49,6 +49,7 @@ $(SERVERPACK) $(MODRINTH_MODPACK): $(PAKKU_SOURCES) | $(RESOURCES_DATAPACK) $(RE
 	$(PAKKU) export
 
 $(SERVER_DIR)/server.jar: $(SERVERPACK) | $(SERVER_DIR)
+	rm -r $(SERVER_DIR)
 	unzip -o $(SERVERPACK) -d $(SERVER_DIR)
 	curl -o $(SERVER_DIR)/server.jar https://meta.fabricmc.net/v2/versions/loader/$(MC_VERSION)/$(FABRIC_VERSION)/$(FABRIC_INSTALLER_VERSION)/server/jar
 
