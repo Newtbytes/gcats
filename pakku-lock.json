@@ -2209,6 +2209,70 @@
             ]
         },
         {
+            "pakku_id": "uy3eLCR5y79hKxFd",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "remove-terralith-intro-message"
+            },
+            "name": {
+                "modrinth": "Remove Stardust Labs Intro Message"
+            },
+            "id": {
+                "modrinth": "sk4iFZGy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "zRemove_SDL_Intro_v1.2.2.jar",
+                    "mc_versions": [
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11",
+                        "26.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/sk4iFZGy/versions/BHr8OLOk/zRemove_SDL_Intro_v1.2.2.jar",
+                    "id": "BHr8OLOk",
+                    "parent_id": "sk4iFZGy",
+                    "hashes": {
+                        "sha512": "2a5b1f3a074d567c6134b918cd711ad64015cf3db0c1dfaf083f66af56004ae2ecda80e63593e1c20dae99f7237b718efde851e1e85f6e1ba604ba87469f60ff",
+                        "sha1": "c1c3067dc507b045eac4b07995e70b32172ee844"
+                    },
+                    "required_dependencies": [],
+                    "size": 12238,
+                    "date_published": "2026-03-29T14:12:58.501816Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "JVGsRYZ8iEyG2CvJ",
             "type": "MOD",
             "side": "BOTH",
