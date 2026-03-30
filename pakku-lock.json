@@ -932,51 +932,6 @@
             ]
         },
         {
-            "pakku_id": "tbrkESpGU1FaCjUj",
-            "pakku_links": [
-                "r9oUCVZY6KnoVpXs"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "first-join-message"
-            },
-            "name": {
-                "modrinth": "First Join Message"
-            },
-            "id": {
-                "modrinth": "Ppny3rjF"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "firstjoinmessage-1.21.11-3.8.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge",
-                        "neoforge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ppny3rjF/versions/Uhu35jqw/firstjoinmessage-1.21.11-3.8.jar",
-                    "id": "Uhu35jqw",
-                    "parent_id": "Ppny3rjF",
-                    "hashes": {
-                        "sha512": "e4bc1059c22ae042c1d93bcd34b106b3adf80cdddba72f4088f9503f6070be155724a20bc4ea1a5605b4e0027c29c7efe08903ddbe71b18ca8deb9517d769a73",
-                        "sha1": "21ecd23057e24e5acc66b47d7132f7c6c8ed6f90"
-                    },
-                    "required_dependencies": [
-                        "e0M1UDsY"
-                    ],
-                    "size": 36928,
-                    "date_published": "2025-12-11T00:37:14.265489Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "eSklrKcguirojp7N",
             "type": "MOD",
             "side": "SERVER",
