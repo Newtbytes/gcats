@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.5.0](https://github.com/Newtbytes/gcats/compare/v0.4.2...v0.5.0) (2026-03-30)
+
+
+### Additions
+
+* **ci:** Implement update workflow for automated mod updates ([#148](https://github.com/Newtbytes/gcats/issues/148)) ([2fab1f6](https://github.com/Newtbytes/gcats/commit/2fab1f67223d719e09967f3bd5e9d54973cd6aba))
+* **release:** Implement deploying config files (e.g. server.properties) ([be815b7](https://github.com/Newtbytes/gcats/commit/be815b76a96ea652f307ef9e4e2f68b79c2ca282))
+* **textures:** Add Chat Reporting Helper resource pack ([054e817](https://github.com/Newtbytes/gcats/commit/054e8173000cc7c26acbfe4ac68a7a871cb086e0))
+
+
+### Changes
+
+* **mods:** Remove Stardust Labs intro message ([c404910](https://github.com/Newtbytes/gcats/commit/c404910177fa346f9a32f995b036252cc1cfb672))
+
+
+### Bug Fixes
+
+* **ci:** Use PAKKU_VERSION for `pakku.jar` cache key ([bd23089](https://github.com/Newtbytes/gcats/commit/bd2308932304d91c57a1038636be2fe73679c245))
+
+
+### Removals
+
+* **mods:** Remove mod 'First Join Message' ([b63379a](https://github.com/Newtbytes/gcats/commit/b63379a71b5eebf183a1448efb5976646a600e5b))
+
 ## [0.4.2](https://github.com/Newtbytes/gcats/compare/v0.4.1...v0.4.2) (2026-03-21)
 
 
