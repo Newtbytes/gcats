@@ -7,6 +7,21 @@
     "projects": {
         "modmenu": {
             "side": "SERVER"
+        },
+        "explorations": {
+            "export": false
+        },
+        "taxfreelevels": {
+            "export": false
+        },
+        "audaki-cart-engine": {
+            "export": false
+        },
+        "imfast": {
+            "export": false
+        },
+        "biome-dither": {
+            "export": false
         }
     }
 }

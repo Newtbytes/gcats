@@ -200,6 +200,7 @@
             "id": {
                 "modrinth": "V8qsCwta"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -741,6 +742,7 @@
             "id": {
                 "modrinth": "pcGnjJ39"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -2126,6 +2128,7 @@
             "id": {
                 "modrinth": "xlybdB0E"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -3180,6 +3183,7 @@
             "id": {
                 "modrinth": "jCBrrLTs"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
