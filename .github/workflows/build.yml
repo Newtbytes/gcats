@@ -68,7 +68,7 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: "temurin"
-          java-version: "22"
+          java-version: "25"
 
       - name: Cache pakku.jar
         id: cache-pakku-jar
@@ -150,7 +150,7 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: "temurin"
-          java-version: "22"
+          java-version: "25"
 
       - uses: actions/setup-python@v6
         with:
