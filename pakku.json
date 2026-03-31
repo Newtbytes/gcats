@@ -17,10 +17,16 @@
         "audaki-cart-engine": {
             "export": false
         },
-        "imfast": {
+        "im-fast": {
             "export": false
         },
         "biome-dither": {
+            "export": false
+        },
+        "cliff-face": {
+            "export": false
+        },
+        "sleep-warp-updated": {
             "export": false
         }
     }

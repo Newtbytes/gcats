@@ -397,6 +397,7 @@
             "id": {
                 "modrinth": "TIAnANoy"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -559,48 +560,6 @@
                     "required_dependencies": [],
                     "size": 1135373,
                     "date_published": "2026-03-26T16:04:35.361210Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "YSCFMirIZJI6pWu8",
-            "pakku_links": [
-                "ytwAeMYoHmqPnRPq"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "cobweb"
-            },
-            "name": {
-                "modrinth": "Cobweb"
-            },
-            "id": {
-                "modrinth": "dQcfqGbl"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "cobweb-fabric-1.21.11-1.4.0.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dQcfqGbl/versions/5zc1dsfq/cobweb-fabric-1.21.11-1.4.0.jar",
-                    "id": "5zc1dsfq",
-                    "parent_id": "dQcfqGbl",
-                    "hashes": {
-                        "sha512": "9035b27f2581497339dfba7defa683053c3e3c3554d7aa0c3626f27a849d52abd6cd08ae16bcebab02a11df5c4a329c4d78691e9756e862e2a880be47b5b5099",
-                        "sha1": "93fd343edc7d616f5f83ab8f415cb700ef943905"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 95070,
-                    "date_published": "2025-12-20T00:55:28.150491Z"
                 }
             ]
         },
