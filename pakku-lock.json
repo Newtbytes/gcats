@@ -1368,27 +1368,27 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "InvView-1.4.19-1.21.11+.jar",
+                    "file_name": "InvView-1.4.20-26.1+.jar",
                     "mc_versions": [
-                        "1.21.11"
+                        "26.1"
                     ],
                     "loaders": [
                         "fabric",
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/jrDKjZP7/versions/r95mrAaQ/InvView-1.4.19-1.21.11+.jar",
-                    "id": "r95mrAaQ",
+                    "url": "https://cdn.modrinth.com/data/jrDKjZP7/versions/fqTW8gQ3/InvView-1.4.20-26.1+.jar",
+                    "id": "fqTW8gQ3",
                     "parent_id": "jrDKjZP7",
                     "hashes": {
-                        "sha512": "63de563def778f03963061c039073a638e15339b0a23a61a92f8d3d4ddd824439e02f990e907d8b196ba9481b3e57148fc99cf25990d3eb793cc25057feebad9",
-                        "sha1": "27aaeb27643f564dd179bac5fbed5d9066211744"
+                        "sha512": "320d89b83a5613f6cb2c168e3981505f1a3542ac221b8d2649d9abb814a19c607d17a9b1b6d37eaaadb84013d9ce0394df105037870b6c0d64b5d27d08f0107b",
+                        "sha1": "c28b81317921b351609053331b6a301613044cc9"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 172490,
-                    "date_published": "2025-12-17T22:17:18.080575Z"
+                    "size": 168652,
+                    "date_published": "2026-03-31T21:41:42.391941Z"
                 }
             ]
         },
