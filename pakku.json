@@ -11,13 +11,7 @@
         "explorations": {
             "export": false
         },
-        "taxfreelevels": {
-            "export": false
-        },
         "audaki-cart-engine": {
-            "export": false
-        },
-        "im-fast": {
             "export": false
         },
         "biome-dither": {
@@ -27,6 +21,30 @@
             "export": false
         },
         "sleep-warp-updated": {
+            "export": false
+        },
+        "climate-rivers": {
+            "export": false
+        },
+        "puzzles-lib": {
+            "export": false
+        },
+        "interdimensional-map-markers": {
+            "export": false
+        },
+        "geyser": {
+            "export": false
+        },
+        "floodgate": {
+            "export": false
+        },
+        "grind-enchantments": {
+            "export": false
+        },
+        "mc-258859": {
+            "export": false
+        },
+        "wabi-sabi-structures": {
             "export": false
         }
     }
