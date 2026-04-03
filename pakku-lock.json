@@ -129,7 +129,8 @@
                         "1.21.9",
                         "1.21.10",
                         "1.21.11",
-                        "26.1"
+                        "26.1",
+                        "26.1.1"
                     ],
                     "loaders": [
                         "fabric",
@@ -875,7 +876,8 @@
                         "1.21.9",
                         "1.21.10",
                         "1.21.11",
-                        "26.1"
+                        "26.1",
+                        "26.1.1"
                     ],
                     "loaders": [
                         "fabric"
@@ -1088,7 +1090,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.5-b1108.jar",
+                    "file_name": "geyser-fabric-Geyser-Fabric-2.9.5-b1110.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1096,18 +1098,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/YgokOb0l/geyser-fabric-Geyser-Fabric-2.9.5-b1108.jar",
-                    "id": "YgokOb0l",
+                    "url": "https://cdn.modrinth.com/data/wKkoqHrH/versions/ysiu3WGD/geyser-fabric-Geyser-Fabric-2.9.5-b1110.jar",
+                    "id": "ysiu3WGD",
                     "parent_id": "wKkoqHrH",
                     "hashes": {
-                        "sha512": "6b000e5c6015d7e92577c79e0db5bf8870d31274802a83e0412034cc7cfe58559f57c8192b79218c0dd57b6be7e21fe1169da8b3790051eb7ee0bcb72f62006f",
-                        "sha1": "4a9a04920a567a46ad8e78e8f942b23129a7c87e"
+                        "sha512": "90cbd9408c94816116105f2ac400a29b38f992752d25664d797c9b9071d4bc8c07ff4edd1ef99476ce91cb18cad53a7a74b29d544c7277d149a1265fbdcd3483",
+                        "sha1": "eb7ee207e9daca5e13f104437217645097fde3ed"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 12693572,
-                    "date_published": "2026-03-29T14:12:56.432925Z"
+                    "size": 12694091,
+                    "date_published": "2026-04-03T18:43:12.751365Z"
                 }
             ]
         },
@@ -2204,7 +2206,8 @@
                         "1.21.9",
                         "1.21.10",
                         "1.21.11",
-                        "26.1"
+                        "26.1",
+                        "26.1.1"
                     ],
                     "loaders": [
                         "fabric",
@@ -3344,7 +3347,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ViaBackwards-5.8.1-SNAPSHOT.jar",
+                    "file_name": "ViaBackwards-5.9.0-SNAPSHOT.jar",
                     "mc_versions": [
                         "1.10",
                         "1.10.1",
@@ -3410,18 +3413,18 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/2xkcPccL/ViaBackwards-5.8.1-SNAPSHOT.jar",
-                    "id": "2xkcPccL",
+                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/8YdMHUIl/ViaBackwards-5.9.0-SNAPSHOT.jar",
+                    "id": "8YdMHUIl",
                     "parent_id": "NpvuJQoq",
                     "hashes": {
-                        "sha512": "6e80210124ca845557308fb6fc66fb65d90c6bdd2bcf840856d013cf8646280b34d1b72f41394ffa41500d4f25f64c1f3557c061f65171d94a6e6a15a03c8bd8",
-                        "sha1": "ebebfc2375720fcbe3aa9d0215886b80273915c6"
+                        "sha512": "2685067c194f179d309549c4f9eb088bdf327ee774f7684ff3b25b3b20f97a252ea1004a4acfca55ad967f67df0798872bb5776a31fa1d5bd80af69cf546168f",
+                        "sha1": "9ec6b4689eb58e979ddd7c3286cd876b3c4026e5"
                     },
                     "required_dependencies": [
                         "P1OZGk5p"
                     ],
-                    "size": 1456670,
-                    "date_published": "2026-03-29T13:20:02.124712Z"
+                    "size": 1407420,
+                    "date_published": "2026-04-04T12:27:48.979673Z"
                 }
             ]
         },
@@ -3441,7 +3444,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ViaFabric-0.4.21+150-1.14-1.21.jar",
+                    "file_name": "ViaFabric-0.4.21+153-1.14-1.21.jar",
                     "mc_versions": [
                         "1.14.4",
                         "1.15.2",
@@ -3456,18 +3459,18 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/YlKdE5VK/versions/68H0iHhY/ViaFabric-0.4.21+150-1.14-1.21.jar",
-                    "id": "68H0iHhY",
+                    "url": "https://cdn.modrinth.com/data/YlKdE5VK/versions/epvpVCPS/ViaFabric-0.4.21+153-1.14-1.21.jar",
+                    "id": "epvpVCPS",
                     "parent_id": "YlKdE5VK",
                     "hashes": {
-                        "sha512": "9ad962c768cae4241729d5cee3f1f8a302d80b95455efb113b47e0f2964edc687b4204c74c02f73433d2456fc08b9e8e60b1dc8aa1dfa4b24c17a38f8fef4698",
-                        "sha1": "a5955ffff5c9eb0d3be562107819cc5e5b729fd0"
+                        "sha512": "e1c44a6133636b8c15a9e7bc512759a600bd70ecc2c958b453deaf8708faa997b36705c3e199bb2b4193c72ba4b0afe8a4a8524f01497126102707470b519b22",
+                        "sha1": "4a8be702c97fadd8836176935fc249506b7a0672"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 6006596,
-                    "date_published": "2026-03-29T13:55:53.844755Z"
+                    "size": 6008048,
+                    "date_published": "2026-04-02T18:47:42.329316Z"
                 }
             ]
         },
@@ -3487,7 +3490,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ViaVersion-5.8.1-SNAPSHOT.jar",
+                    "file_name": "ViaVersion-5.9.0-SNAPSHOT.jar",
                     "mc_versions": [
                         "1.8.9",
                         "1.9",
@@ -3550,7 +3553,8 @@
                         "1.21.9",
                         "1.21.10",
                         "1.21.11",
-                        "26.1"
+                        "26.1",
+                        "26.1.1"
                     ],
                     "loaders": [
                         "fabric",
@@ -3559,16 +3563,16 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/qpEO2UXv/ViaVersion-5.8.1-SNAPSHOT.jar",
-                    "id": "qpEO2UXv",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/h6BRGUz3/ViaVersion-5.9.0-SNAPSHOT.jar",
+                    "id": "h6BRGUz3",
                     "parent_id": "P1OZGk5p",
                     "hashes": {
-                        "sha512": "c3d30ec0c62207477bbda2b9f4bfc2477663da09b82d4f0afef30ae00e9ab539a972c19a4dc3792da4850afaaa9f209bb5d050ced05eb5e02a30d28d462e8b12",
-                        "sha1": "3d7e5c0c1afac724a16837f79edc8d74728a8728"
+                        "sha512": "1555699bde6c91725368bd3c8d0ec0ac02e0f283a97c72c4f6b0d4183cf8d73717af38d8615fa9fdb12f516c9fbbab8302d29327a08bead94404a37e7cb7925b",
+                        "sha1": "c7daff92f6925dc445149a56cf2e1fd48610e360"
                     },
                     "required_dependencies": [],
-                    "size": 6114160,
-                    "date_published": "2026-03-29T19:39:29.359196Z"
+                    "size": 6119429,
+                    "date_published": "2026-04-04T15:44:00.055097Z"
                 }
             ]
         },
