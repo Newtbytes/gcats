@@ -14,6 +14,7 @@ requester = backoff.on_exception(
     (
         requests.exceptions.RequestException,
         requests.exceptions.Timeout,
+        requests.exceptions.ReadTimeout,
         TimeoutError,
     ),
     max_time=500,
