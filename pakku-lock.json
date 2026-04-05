@@ -3452,18 +3452,18 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/PWvQhQAh/ViaBackwards-5.9.0-SNAPSHOT.jar",
-                    "id": "PWvQhQAh",
+                    "url": "https://cdn.modrinth.com/data/NpvuJQoq/versions/aU0bNwd0/ViaBackwards-5.9.0-SNAPSHOT.jar",
+                    "id": "aU0bNwd0",
                     "parent_id": "NpvuJQoq",
                     "hashes": {
-                        "sha512": "9ad86acc7088113fb5ef89162aa4ccedea092b9432cf5b454b1a3635792549a210353efdda77a57539e5bda9bb1b084e554a7f00b4bd0c7ad7400d36a618d1f6",
-                        "sha1": "03f63d5807c0edd29abf3a1a4f962cf0c481fe5f"
+                        "sha512": "87ba63bb945a6229d170923305a67d2f455bee698a9bb159ca3189d900b2efeb6efa7276f74513d00261a506e98fb2af4d221712798a4ba93252ffda3691368d",
+                        "sha1": "7f5af0ae9153c3fd003b9ea2e77237d2e4d8e8a2"
                     },
                     "required_dependencies": [
                         "P1OZGk5p"
                     ],
-                    "size": 1408614,
-                    "date_published": "2026-04-05T16:49:06.577604Z"
+                    "size": 1407755,
+                    "date_published": "2026-04-06T11:54:41.653581Z"
                 }
             ]
         },
@@ -3602,16 +3602,16 @@
                         "velocity"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/j4jGd74D/ViaVersion-5.9.0-SNAPSHOT.jar",
-                    "id": "j4jGd74D",
+                    "url": "https://cdn.modrinth.com/data/P1OZGk5p/versions/rOaJSfXN/ViaVersion-5.9.0-SNAPSHOT.jar",
+                    "id": "rOaJSfXN",
                     "parent_id": "P1OZGk5p",
                     "hashes": {
-                        "sha512": "820f8bd60ea3166d562dd2724606558b5851fda266f6e461f65ecef3e83986f5f5f2a01a3426515874b1072f9d6cb0596a6a1b63ac142d6f11944122c80cb6e7",
-                        "sha1": "cc5b480fae21b594b7555899080f3a8c09c12b50"
+                        "sha512": "7e325279ed8852827cc87cf59b99d9a4ffd62a3d814787dc7fda7980605a7535d709f90e5d1d3038f5ed2693ca666cd303f2672a8eaf5fe3a488f092ad346fed",
+                        "sha1": "02d733cd4954d681dec5565ae490fbf92bf44d19"
                     },
                     "required_dependencies": [],
-                    "size": 6119573,
-                    "date_published": "2026-04-05T16:59:54.729965Z"
+                    "size": 6121588,
+                    "date_published": "2026-04-06T11:51:09.936218Z"
                 }
             ]
         },
