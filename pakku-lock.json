@@ -2073,6 +2073,44 @@
             ]
         },
         {
+            "pakku_id": "j1zsB3ef0YBE2CM6",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "packet-fixer"
+            },
+            "name": {
+                "modrinth": "Packet Fixer"
+            },
+            "id": {
+                "modrinth": "c7m1mi73"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "packetfixer-fabric-3.3.4-1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/CUh1DWeO/packetfixer-fabric-3.3.4-1.21.11.jar",
+                    "id": "CUh1DWeO",
+                    "parent_id": "c7m1mi73",
+                    "hashes": {
+                        "sha512": "33331b16cb40c5e6fbaade3cacc26f3a0e8fa5805a7186f94d7366a0e14dbeee9de2d2e8c76fa71f5e9dd24eb1c261667c35447e32570ea965ca0f154fdfba0a",
+                        "sha1": "b9edf3b37b76653c98d096962ae0d76c96eab2c2"
+                    },
+                    "required_dependencies": [],
+                    "size": 31241,
+                    "date_published": "2026-01-24T12:14:44.655265Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "IGWzlzrKApBetwRv",
             "type": "MOD",
             "side": "SERVER",
