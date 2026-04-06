@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/Newtbytes/gcats/compare/v0.5.0...v0.5.1) (2026-04-04)
+
+
+### Bug Fixes
+
+* **build:** remove server dir prior to build ([d3a82c7](https://github.com/Newtbytes/gcats/commit/d3a82c73650982b629dc3fe58a128f4b87f43485))
+
 ## [0.5.0](https://github.com/Newtbytes/gcats/compare/v0.4.2...v0.5.0) (2026-03-30)
 
 
