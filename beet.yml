@@ -23,7 +23,7 @@ resource_pack:
 
 data_pack:
   load:
-    - datapack/modally_stranded
+    - datapack/gamemode-zones
     - datapack/clifftree-tweaks
 
   zipped: true
