@@ -2,6 +2,7 @@
 .vscode/*
 pakku.jar
 !.vscode/settings.json
+.minecraft/
 
 # output fils
 **.mrpack

@@ -70,8 +70,11 @@ update: $(SCRIPTS_SOURCES) $(PAKKU_SOURCES)
 test: server $(TESTS_SOURCES)
 	pytest -s
 
+dev: server
+	python -m scripts.dev --version $(MC_VERSION) --quickPlayMultiplayer localhost
+
 clean:
-	rm -rf $(BUILD_DIR) resources
+	rm -rf $(BUILD_DIR) resources .minecraft
 
 .PHONY: resources server all run update test clean
 .DEFAULT_GOAL := all
