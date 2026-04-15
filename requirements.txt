@@ -4,4 +4,4 @@ joblib==1.5.3
 backoff==2.2.1
 python-dotenv==1.2.2
 yarl==1.23.0
-pytest==9.0.2
+pytest==9.0.3
