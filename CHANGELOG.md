@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2](https://github.com/Newtbytes/gcats/compare/v0.5.1...v0.5.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* Add mod Packet Fixer to solve some packet issues encountered by players ([b875f22](https://github.com/Newtbytes/gcats/commit/b875f2201f69f884931ecc50c67a19b41e9e17ee))
+* **release:** Add `requests.exceptions.ReadTimeout` to exceptions to retry with ([ae13f95](https://github.com/Newtbytes/gcats/commit/ae13f951b986b47c61944fb1b0b341fbe0bad511))
+
 ## [0.5.1](https://github.com/Newtbytes/gcats/compare/v0.5.0...v0.5.1) (2026-04-04)
 
 
