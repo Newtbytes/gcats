@@ -49,16 +49,36 @@ jobs:
         run: |
           curl -OL https://github.com/juraj-hrivnak/Pakku/releases/download/v${{ env.PAKKU_VERSION }}/pakku.jar
 
+      - name: Save old pakku-lock.jsn
+        run: cp pakku-lock.json pakku-lock-old.json
+
       - name: Run make update
         run: make update
+
+      - name: Create changelog of mod changes in conventional commits format
+        run: |
+          ${{ env.PAKKU }} diff pakku-lock-old.json pakku-lock.json --markdown-diff=diff.md
+          rm pakku-lock-old.json
+
+          python scripts/diff_to_commit_msg.py diff.md > commit_message.txt
+          rm diff.md
+
+          # move commit message to env variable for use in the pull request step
+          echo "COMMIT_MESSAGE=$(cat commit_message.txt)" >> $GITHUB_ENV
+          rm commit_message.txt
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
-          commit-message: "chore(mods): Update mods with make update"
+          commit-message: |
+            chore(mods): Update mods with make update
+
+            ${{ env.COMMIT_MESSAGE }}
+
           branch: chore/mods/update
           title: "Weekly mod updates"
-          body: "Updates the versions of all mods using pakku, changing the mod list in the README if necessary."
+          body: "Updates the versions of all mods using pakku, changing the mod list in
+            the README if necessary."
           labels: |
             dependencies
             mods
