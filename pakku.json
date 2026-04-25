@@ -11,6 +11,9 @@
         "explorations": {
             "export": false
         },
+        "geophilic": {
+            "export": false
+        },
         "audaki-cart-engine": {
             "export": false
         },
