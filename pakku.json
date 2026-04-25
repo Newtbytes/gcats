@@ -20,6 +20,9 @@
         "cliff-face": {
             "export": false
         },
+        "clifftree": {
+            "export": false
+        },
         "sleep-warp-updated": {
             "export": false
         },

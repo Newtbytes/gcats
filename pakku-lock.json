@@ -449,6 +449,48 @@
             ]
         },
         {
+            "pakku_id": "eg8YpUcqLVUgyne1",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "cliffbranch"
+            },
+            "name": {
+                "modrinth": "Cliff under a Branch (CliffBranch)"
+            },
+            "id": {
+                "modrinth": "neAzjYNu"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "cliffbranch-2.1.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/neAzjYNu/versions/eZ0EhRPb/cliffbranch-2.1.jar",
+                    "id": "eZ0EhRPb",
+                    "parent_id": "neAzjYNu",
+                    "hashes": {
+                        "sha512": "e5d60e48ef9ef3f7da5996e9063c97ad077c21f9a11e47bef87935548caa09ee10e4d5de035d48f88ad1e74e0b8a65dd844b388ab039d7b2484ce81cafb87ccd",
+                        "sha1": "24a9dedaec8161053b79b88abb10c20d586dd99c"
+                    },
+                    "required_dependencies": [],
+                    "size": 3482845,
+                    "date_published": "2026-04-11T06:42:37.902827Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Y6i6ccy90CjDj2vi",
             "pakku_links": [
                 "m3nGIGMaW87d6cxY"
@@ -464,6 +506,7 @@
             "id": {
                 "modrinth": "59ypHk8x"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
