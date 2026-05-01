@@ -19,7 +19,7 @@ resource_pack:
 
   name: "{{ project_name }}-resourcepack"
   description: "{{ project_description }}"
-  pack_format: 69
+  pack_format: 84
 
 data_pack:
   load:
@@ -30,7 +30,7 @@ data_pack:
 
   name: "{{ project_name }}-datapack"
   description: "{{ project_description }}"
-  pack_format: 88
+  pack_format: 101
 
 pipeline:
   - beet.contrib.copy_files
