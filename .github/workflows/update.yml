@@ -64,7 +64,9 @@ jobs:
           rm diff.md
 
           # move commit message to env variable for use in the pull request step
-          echo "COMMIT_MESSAGE=$(cat commit_message.txt)" >> $GITHUB_ENV
+          echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_ENV
+          cat commit_message.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
           rm commit_message.txt
 
       - name: Create Pull Request
