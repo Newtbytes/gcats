@@ -1,4 +1,7 @@
 {
     "makefile.preConfigureScript": "${workspaceFolder}/preconfigure.sh",
-    "makefile.alwaysPreConfigure": true
+    "makefile.alwaysPreConfigure": true,
+    "explorer.fileNesting.patterns": {
+        "pakku.json": "pakku-lock.json"
+    }
 }
