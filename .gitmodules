@@ -1,0 +1,3 @@
+[submodule "datapack/cascades/cascades"]
+	path = datapack/cascades/cascades
+	url = https://github.com/RealFascinated/Hybrid-Beta.git
