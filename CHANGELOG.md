@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.5.2](https://github.com/Newtbytes/gcats/compare/v0.5.1...v0.5.2) (2026-05-02)
+
+
+### Additions
+
+* **ci:** Add mod changelog to update workflow's commit messages ([722c082](https://github.com/Newtbytes/gcats/commit/722c082d7e23813b022fcc84c872314cef68a208))
+
+
+### Changes
+
+* **mods:** Update mod Audaki Cart Engine (Faster Minecarts) ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Biolith ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Collective ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Fabric Language Kotlin ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Geyser ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Lithostitched ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod Packet Fixer ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod ViaBackwards ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod ViaFabric ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+* **mods:** Update mod ViaVersion ([6cea12c](https://github.com/Newtbytes/gcats/commit/6cea12ce217b6ce0043d4b0d2c80b347607cdf9f))
+
+
+### Bug Fixes
+
+* Add mod Packet Fixer to solve some packet issues encountered by players ([b875f22](https://github.com/Newtbytes/gcats/commit/b875f2201f69f884931ecc50c67a19b41e9e17ee))
+* **ci:** Properly delimit multiline commit message ([47879da](https://github.com/Newtbytes/gcats/commit/47879da1bc5b8d49c2c7e3a6b84ce5cc91d6b82c))
+* **release:** Add `requests.exceptions.ReadTimeout` to exceptions to retry with ([ae13f95](https://github.com/Newtbytes/gcats/commit/ae13f951b986b47c61944fb1b0b341fbe0bad511))
+
 ## [0.5.1](https://github.com/Newtbytes/gcats/compare/v0.5.0...v0.5.1) (2026-04-04)
 
 
