@@ -38,5 +38,3 @@ meta:
       pack.png: server-icon.png
     data_pack:
       pack.png: server-icon.png
-
-output: build
