@@ -26,7 +26,7 @@ jobs:
       pakku_json: ${{ steps.pakku-lock.outputs.path }}
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Check pakku.json
         id: pakku
@@ -54,7 +54,7 @@ jobs:
       BEET: python -m beet
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
 
@@ -143,7 +143,7 @@ jobs:
       BEET: python -m beet
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
 
