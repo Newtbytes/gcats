@@ -25,7 +25,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@v5
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
@@ -83,7 +83,7 @@ jobs:
         run: make all test
 
       - name: Upload artifacts to release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ needs.release.outputs.tag_name }}
           files: |
