@@ -399,61 +399,6 @@
             ]
         },
         {
-            "pakku_id": "L3wif828Y1RY3ZDk",
-            "pakku_links": [
-                "Zhv0xEKDgxcdvscy",
-                "ytwAeMYoHmqPnRPq"
-            ],
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "cliff-face"
-            },
-            "name": {
-                "modrinth": "Cliff Face"
-            },
-            "id": {
-                "modrinth": "TIAnANoy"
-            },
-            "export": false,
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "cliff-face-2.0+1.21.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/TIAnANoy/versions/bG1RvM4K/cliff-face-2.0+1.21.jar",
-                    "id": "bG1RvM4K",
-                    "parent_id": "TIAnANoy",
-                    "hashes": {
-                        "sha512": "613c51b243f0abee7e9ad8c94ad5eceebdb5e89c7bff94a2b7a065415291d4cca603c2009a769f06cd53db453457d1430332610802df5667c3343ace07b4c8ac",
-                        "sha1": "1865e7f05518ce2c0ca3152ba4f2fe08af6bca41"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 12637,
-                    "date_published": "2024-10-19T20:37:50.901646Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Y6i6ccy90CjDj2vi",
             "pakku_links": [
                 "m3nGIGMaW87d6cxY"

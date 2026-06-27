@@ -11,16 +11,7 @@
         "explorations": {
             "export": false
         },
-        "geophilic": {
-            "export": false
-        },
         "biome-dither": {
-            "export": false
-        },
-        "cliff-face": {
-            "export": false
-        },
-        "geyser": {
             "export": false
         },
         "mc-258859": {
