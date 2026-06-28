@@ -1,5 +1,80 @@
 # Changelog
 
+## [0.6.0](https://github.com/Newtbytes/gcats/compare/v0.5.2...v0.6.0) (2026-06-28)
+
+
+### Additions
+
+* **mods:** Add mod Grind enchantments ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Add mod Structurify remove(mods): Remove mod Structure Control ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* Update to 26.1 ([#151](https://github.com/Newtbytes/gcats/issues/151)) ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+
+
+### Changes
+
+* Bump fabric loader to 0.19.0 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **ci:** Update to Java 25 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **datapacks:** Update Cascades to latest (supports 1.21.11) ([c36db5c](https://github.com/Newtbytes/gcats/commit/c36db5ceb8a6cbe671938bc3aaa87a51a60faae0))
+* **mods:** Update mod Balm ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Biolith ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Biolith ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod Collective ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Collective ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Compact Help Command ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Concurrent Chunk Management Engine (Fabric) ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Concurrent Chunk Management Engine (Fabric) ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod Fabric API ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod Fabric Language Kotlin ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Geophilic ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Geophilic ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod Geyser ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod Just Mob Heads ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Just Mob Heads ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Just Player Heads ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod MidnightLib ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod Name Tag Tweaks ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Puzzles Lib ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Simple Snowy Fix (Forge / Fabric) ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Sodium ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Sodium ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod Sodium ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod Structurify ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod Tax Free Levels ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod Tax Free Levels ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod Tax Free Levels ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod ViaBackwards ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod ViaBackwards ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod ViaBackwards ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod ViaBackwards ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod ViaFabric ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod ViaFabric ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update mod ViaVersion ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* **mods:** Update mod ViaVersion ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Update mod ViaVersion ([26dfd1a](https://github.com/Newtbytes/gcats/commit/26dfd1aaad77683e3547d969b9bbb9dabe24136e))
+* **mods:** Update mod ViaVersion ([591b334](https://github.com/Newtbytes/gcats/commit/591b33403fab4cdee4cf1930952511b6afa7333f))
+* **mods:** Update to fabric loader 0.19.2 ([f9528b1](https://github.com/Newtbytes/gcats/commit/f9528b1ba700060042d3416f98571591f118d3b5))
+* **resources:** Update data pack format to 101 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **resources:** Update resource pack format to 84 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **textures:** Update Chat Reporting Helper to 5.2 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **textures:** Update Enchanted Books: Re-covered to 3.0.1 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **textures:** Update Visual: Armor Trims to 4.2 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* Update mods to 26.1 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* Update resource packs to 26.1 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* Update VanillaTweaks to 26.1 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+
+
+### Bug Fixes
+
+* rm unintentional git submodule ([c1efec4](https://github.com/Newtbytes/gcats/commit/c1efec4700ab07cb1b8c88d7e5ea44423e8d7e33))
+
+
+### Removals
+
+* Cliff Face mod removed as it doesn't seem to be maintained. ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+* **mods:** Remove mod Grind Enchantments ([59017c8](https://github.com/Newtbytes/gcats/commit/59017c89da5efed4b4a02602c7cc902774e2c3aa))
+* **mods:** Remove mod Structurify ([e885269](https://github.com/Newtbytes/gcats/commit/e8852693c7ee09bc418312a90b55dfdeb02deb5c))
+* No longer exporting mods Explorations, Pufferfish's Biome Dither, MC-258859, or Wabi-Sabi Structures as they do not yet support 26.1 ([56e5d34](https://github.com/Newtbytes/gcats/commit/56e5d34fc9f0441cefeefc96e3a33d8dd8a886ea))
+
 ## [0.5.2](https://github.com/Newtbytes/gcats/compare/v0.5.1...v0.5.2) (2026-05-02)
 
 
