@@ -1,22 +1,25 @@
+require:
+  - datapack.cascades
+
 name: GCATs
 description: GCATs server resources.
 
 resource_pack:
   load:
-    - resourcepack/VanillaTweaks_MC1.21.x.zip
-    - https://cdn.modrinth.com/data/tPtjib62/versions/w7MCM1Bk/visual_armor_trims_4.1.zip
-    - https://cdn.modrinth.com/data/6gN7YVi7/versions/4z5iFY64/Re-covered.zip
+    - resourcepack/VanillaTweaks_MC26.1.x.zip
+    - https://cdn.modrinth.com/data/tPtjib62/versions/Qt949MJE/visual_armor_trims_4.2.zip
+    - https://cdn.modrinth.com/data/6gN7YVi7/versions/rKH59r8y/Re-covered.zip
     - https://cdn.modrinth.com/data/OhzX8kDf/versions/4if0gBBN/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip
     - https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip
     - https://cdn.modrinth.com/data/zp6touiL/versions/43cYxPZ8/Just-Atlas_RP_v2-1_1-21-5.zip
-    - https://cdn.modrinth.com/data/tN4E9NfV/versions/O1wZAlha/Chat%20Reporting%20Helper.zip
+    - https://cdn.modrinth.com/data/tN4E9NfV/versions/sgJzJzeA/Chat%20Reporting%20Helper.zip
     - resourcepack/remove-too-expensive
 
   zipped: true
 
   name: "{{ project_name }}-resourcepack"
   description: "{{ project_description }}"
-  pack_format: 69
+  pack_format: 84
 
 data_pack:
   load:
@@ -27,7 +30,7 @@ data_pack:
 
   name: "{{ project_name }}-datapack"
   description: "{{ project_description }}"
-  pack_format: 88
+  pack_format: 101
 
 pipeline:
   - beet.contrib.copy_files

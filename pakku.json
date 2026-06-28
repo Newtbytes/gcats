@@ -7,6 +7,18 @@
     "projects": {
         "modmenu": {
             "side": "SERVER"
+        },
+        "explorations": {
+            "export": false
+        },
+        "biome-dither": {
+            "export": false
+        },
+        "mc-258859": {
+            "export": false
+        },
+        "wabi-sabi-structures": {
+            "export": false
         }
     }
 }
