@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/Newtbytes/gcats/compare/v0.6.0...v0.6.1) (2026-06-28)
+
+
+### Changes
+
+* Update pakku, fabric loader, and fix exports ([5f582bf](https://github.com/Newtbytes/gcats/commit/5f582bf853a1b3515136f6172a470b8d6b6de767))
+
 ## [0.6.0](https://github.com/Newtbytes/gcats/compare/v0.5.2...v0.6.0) (2026-06-28)
 
 
