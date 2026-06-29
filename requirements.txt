@@ -1,5 +1,5 @@
 requests==2.34.2
-beet==0.115.0
+beet==0.116.0
 joblib==1.5.3
 backoff==2.2.1
 python-dotenv==1.2.2
