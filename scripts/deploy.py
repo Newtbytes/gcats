@@ -17,7 +17,7 @@ from utils import requester
 # directories that should be fullied synchronized
 # e.g. if the deployment server has a file that isn't in the folder being deployed, it is removed
 # for the mods folder for example, this prevents old versions of mods being kept
-FULL_SYNC_DIRS = ["mods"]
+FULL_SYNC_DIRS = ["mods", "resources"]
 
 
 def parse_conf_file(fn: str) -> dict:
