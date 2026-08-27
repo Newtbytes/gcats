@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.6.1](https://github.com/Newtbytes/gcats/compare/v0.6.0...v0.6.1) (2026-08-27)
+
+
+### Changes
+
+* **mods:** Update mod Amplified Nether ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Balm ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Biolith ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **mods:** Update mod Biolith ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Concurrent Chunk Management Engine (Fabric) ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **mods:** Update mod Concurrent Chunk Management Engine (Fabric) ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Fabric API ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Fabric Language Kotlin ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Geyser ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod ImmediatelyFast ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Lithostitched ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod M.R.U ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Mod Menu ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Nullscape ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Puzzles Lib ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod ScalableLux ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod Sodium ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod ViaBackwards ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **mods:** Update mod ViaBackwards ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod ViaFabric ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **mods:** Update mod ViaFabric ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod ViaVersion ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **mods:** Update mod ViaVersion ([4e0ce38](https://github.com/Newtbytes/gcats/commit/4e0ce3851524d265cb19880bc55ff72e9c48b668))
+* **mods:** Update mod YetAnotherConfigLib (YACL) ([7323c40](https://github.com/Newtbytes/gcats/commit/7323c40e0e706a68735a69850d9109033249919c))
+* **textures:** Add Rainbow's Foliage ([09a9e9b](https://github.com/Newtbytes/gcats/commit/09a9e9bfcfd847524115c5a9ac81ee2d19bdc764))
+* Update pakku, fabric loader, and fix exports ([5f582bf](https://github.com/Newtbytes/gcats/commit/5f582bf853a1b3515136f6172a470b8d6b6de767))
+
 ## [0.6.0](https://github.com/Newtbytes/gcats/compare/v0.5.2...v0.6.0) (2026-06-28)
 
 
